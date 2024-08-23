@@ -162,6 +162,28 @@
                     plugins: {
                         legend: {
                             position: 'top',
+                            onClick: function(e, legendItem) {
+                                var index = legendItem.datasetIndex;
+                                var ci = this.chart;
+                                var meta = ci.getDatasetMeta(index);
+
+                                // 表示・非表示を切り替える
+                                meta.hidden = meta.hidden === null ? !ci.data.datasets[index].hidden : null;
+
+                                // 更新処理
+                                ci.update();
+
+                                // 新しい横軸の最大値を計算
+                                var newMaxLength = 0;
+                                ci.data.datasets.forEach(function(dataset, i) {
+                                    if (!ci.isDatasetVisible(i)) return;
+                                    newMaxLength = Math.max(newMaxLength, dataset.data.length);
+                                });
+
+                                // 横軸の最大値を更新
+                                ci.options.scales.x.max = newMaxLength;
+                                ci.update();
+                            }
                         },
                         title: {
                             display: true,
@@ -313,6 +335,28 @@
                     plugins: {
                         legend: {
                             position: 'top',
+                            onClick: function(e, legendItem) {
+                                var index = legendItem.datasetIndex;
+                                var ci = this.chart;
+                                var meta = ci.getDatasetMeta(index);
+
+                                // 表示・非表示を切り替える
+                                meta.hidden = meta.hidden === null ? !ci.data.datasets[index].hidden : null;
+
+                                // 更新処理
+                                ci.update();
+
+                                // 新しい横軸の最大値を計算
+                                var newMaxLength = 0;
+                                ci.data.datasets.forEach(function(dataset, i) {
+                                    if (!ci.isDatasetVisible(i)) return;
+                                    newMaxLength = Math.max(newMaxLength, dataset.data.length);
+                                });
+
+                                // 横軸の最大値を更新
+                                ci.options.scales.x.max = newMaxLength;
+                                ci.update();
+                            }
                         },
                         title: {
                             display: true,
@@ -453,6 +497,28 @@
                     plugins: {
                         legend: {
                             position: 'top',
+                            onClick: function(e, legendItem) {
+                                var index = legendItem.datasetIndex;
+                                var ci = this.chart;
+                                var meta = ci.getDatasetMeta(index);
+
+                                // 表示・非表示を切り替える
+                                meta.hidden = meta.hidden === null ? !ci.data.datasets[index].hidden : null;
+
+                                // 更新処理
+                                ci.update();
+
+                                // 新しい横軸の最大値を計算
+                                var newMaxLength = 0;
+                                ci.data.datasets.forEach(function(dataset, i) {
+                                    if (!ci.isDatasetVisible(i)) return;
+                                    newMaxLength = Math.max(newMaxLength, dataset.data.length);
+                                });
+
+                                // 横軸の最大値を更新
+                                ci.options.scales.x.max = newMaxLength;
+                                ci.update();
+                            }
                         },
                         title: {
                             display: true,
