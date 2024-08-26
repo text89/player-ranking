@@ -222,9 +222,9 @@
                 filterTable(tabName);
             }
 
-            function toggleFilterSection() {
-                let filterSection = document.querySelector('.filter-section');
-                let toggleButton = document.querySelector('.filter-toggle');
+            function toggleFilterSection(tabName) {
+                let filterSection = document.querySelector('#' + tabName + '-content .filter-section');
+                let toggleButton = document.querySelector('#' + tabName + '-content .filter-toggle');
                 if (filterSection.classList.contains('open')) {
                     filterSection.classList.remove('open');
                     toggleButton.style.transform = 'rotate(0deg)';
@@ -250,7 +250,7 @@
 
         
         <div id="Kiki-content" class="content">
-            <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection()">v</span></h3>
+            <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection('Kiki')">v</span></h3>
             <div class="filter-section">
                 <div>
                     <h4>サーバー:</h4>
@@ -1772,7 +1772,7 @@
         </div>
         
         <div id="Anica-content" class="content">
-            <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection()">v</span></h3>
+            <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection('Anica')">v</span></h3>
             <div class="filter-section">
                 <div>
                     <h4>サーバー:</h4>
@@ -3306,7 +3306,7 @@
         </div>
         
         <div id="Hugo-content" class="content">
-            <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection()">v</span></h3>
+            <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection('Hugo')">v</span></h3>
             <div class="filter-section">
                 <div>
                     <h4>サーバー:</h4>
