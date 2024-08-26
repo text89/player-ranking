@@ -62,6 +62,7 @@
             .guild-filter-group label {
                 display: block;
                 margin-bottom: 5px;
+                white-space: nowrap; /* 改行が発生するときに、チェックボックスとラベルがセットで改行されるようにする */
             }
             .guild-filter-group h4 {
                 margin: 0;
@@ -92,6 +93,7 @@
             }
             label input[type="checkbox"] {
                 margin-right: 10px;
+                display: inline-block; /* チェックボックスをインラインブロック要素にする */
             }
             .filter-toggle {
                 display: inline-block;
