@@ -70,6 +70,9 @@
                 color: #007bff;
                 margin-bottom: 10px;
             }
+            div#upper-menu {
+                text-align: center;
+            }
             table {
                 width: 100%;
                 max-width: 1200px;
@@ -255,138 +258,140 @@
     </head>
     <body>
         <h1>プレイヤーランキング</h1>
-        <p><a href="./index.html">>>ランキングサマリー</a><br>更新日: 2024/09/09</p>
-        <div>
-            
-            <div class="tab" id="Kiki-tab" onclick="showTab('Kiki')">Kiki</div>
-            
-            <div class="tab" id="Anica-tab" onclick="showTab('Anica')">Anica</div>
-            
-            <div class="tab" id="Hugo-tab" onclick="showTab('Hugo')">Hugo</div>
-            
-        </div>
+        <div id="upper-menu">
+            <p><a href="./index.html">>>ランキングサマリー</a><br>更新日: 2024/09/09</p>
+            <div>
+                
+                <div class="tab" id="Kiki-tab" onclick="showTab('Kiki')">Kiki</div>
+                
+                <div class="tab" id="Anica-tab" onclick="showTab('Anica')">Anica</div>
+                
+                <div class="tab" id="Hugo-tab" onclick="showTab('Hugo')">Hugo</div>
+                
+            </div>
 
-        
-        <div id="Kiki-content" class="content">
-            <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection('Kiki')">v</span></h3>
-            <div class="filter-section">
-                <div>
-                    <h4>サーバー:</h4>
-                    <label><input type="checkbox" id="Kiki-server-all" name="server" value="all" checked onchange="toggleServerCheckbox('Kiki', 'all')"> 全て</label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Kiki1" checked onchange="toggleServerCheckbox('Kiki', 'Kiki1')"> 
-                        Kiki1
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Kiki2" checked onchange="toggleServerCheckbox('Kiki', 'Kiki2')"> 
-                        Kiki2
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Kiki3" checked onchange="toggleServerCheckbox('Kiki', 'Kiki3')"> 
-                        Kiki3
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Kiki4" checked onchange="toggleServerCheckbox('Kiki', 'Kiki4')"> 
-                        Kiki4
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Kiki5" checked onchange="toggleServerCheckbox('Kiki', 'Kiki5')"> 
-                        Kiki5
-                    </label>
-                    
-                </div>
-                <div>
-                    <h4>ギルド:</h4>
-                    <div class="guild-filter-container">
+            
+            <div id="Kiki-content" class="content">
+                <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection('Kiki')">v</span></h3>
+                <div class="filter-section">
+                    <div>
+                        <h4>サーバー:</h4>
+                        <label><input type="checkbox" id="Kiki-server-all" name="server" value="all" checked onchange="toggleServerCheckbox('Kiki', 'all')"> 全て</label>
                         
-                        <div class="guild-filter-group">
-                            <h4>Kiki1</h4>
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Kiki1" checked onchange="toggleServerCheckbox('Kiki', 'Kiki1')"> 
+                            Kiki1
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Kiki2" checked onchange="toggleServerCheckbox('Kiki', 'Kiki2')"> 
+                            Kiki2
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Kiki3" checked onchange="toggleServerCheckbox('Kiki', 'Kiki3')"> 
+                            Kiki3
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Kiki4" checked onchange="toggleServerCheckbox('Kiki', 'Kiki4')"> 
+                            Kiki4
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Kiki5" checked onchange="toggleServerCheckbox('Kiki', 'Kiki5')"> 
+                            Kiki5
+                        </label>
+                        
+                    </div>
+                    <div>
+                        <h4>ギルド:</h4>
+                        <div class="guild-filter-container">
                             
-                            <label><input type="checkbox" name="guild" value="Kiki1-OZ" onchange="toggleGuildCheckbox('Kiki')"> OZ</label>
+                            <div class="guild-filter-group">
+                                <h4>Kiki1</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki1-OZ" onchange="toggleGuildCheckbox('Kiki')"> OZ</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki1-ぴつじの野望" onchange="toggleGuildCheckbox('Kiki')"> ぴつじの野望</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki1-異世界戦線" onchange="toggleGuildCheckbox('Kiki')"> 異世界戦線</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki1-豚箱" onchange="toggleGuildCheckbox('Kiki')"> 豚箱</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki1-Tempest" onchange="toggleGuildCheckbox('Kiki')"> Tempest</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki1-所属無し" onchange="toggleGuildCheckbox('Kiki')"> 所属無し</label>
+                                
+                            </div>
                             
-                            <label><input type="checkbox" name="guild" value="Kiki1-ぴつじの野望" onchange="toggleGuildCheckbox('Kiki')"> ぴつじの野望</label>
+                            <div class="guild-filter-group">
+                                <h4>Kiki2</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki2-castra" onchange="toggleGuildCheckbox('Kiki')"> castra</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki2-Loki" onchange="toggleGuildCheckbox('Kiki')"> Loki</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki2-castera" onchange="toggleGuildCheckbox('Kiki')"> castera</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki2-所属無し" onchange="toggleGuildCheckbox('Kiki')"> 所属無し</label>
+                                
+                            </div>
                             
-                            <label><input type="checkbox" name="guild" value="Kiki1-異世界戦線" onchange="toggleGuildCheckbox('Kiki')"> 異世界戦線</label>
+                            <div class="guild-filter-group">
+                                <h4>Kiki3</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki3-LUXE" onchange="toggleGuildCheckbox('Kiki')"> LUXE</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki3-あとらんてぃす" onchange="toggleGuildCheckbox('Kiki')"> あとらんてぃす</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki3-Remake" onchange="toggleGuildCheckbox('Kiki')"> Remake</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki3-焼肉協会" onchange="toggleGuildCheckbox('Kiki')"> 焼肉協会</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki3-ー朧ー" onchange="toggleGuildCheckbox('Kiki')"> ー朧ー</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki3-Himawari" onchange="toggleGuildCheckbox('Kiki')"> Himawari</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki3-動物園" onchange="toggleGuildCheckbox('Kiki')"> 動物園</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki3-所属無し" onchange="toggleGuildCheckbox('Kiki')"> 所属無し</label>
+                                
+                            </div>
                             
-                            <label><input type="checkbox" name="guild" value="Kiki1-豚箱" onchange="toggleGuildCheckbox('Kiki')"> 豚箱</label>
+                            <div class="guild-filter-group">
+                                <h4>Kiki4</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki4-強カワRUSH" onchange="toggleGuildCheckbox('Kiki')"> 強カワRUSH</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki4-涼風一陣1" onchange="toggleGuildCheckbox('Kiki')"> 涼風一陣1</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki4-猫缶" onchange="toggleGuildCheckbox('Kiki')"> 猫缶</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki4-Liens" onchange="toggleGuildCheckbox('Kiki')"> Liens</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki4-Elnath" onchange="toggleGuildCheckbox('Kiki')"> Elnath</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki4-所属無し" onchange="toggleGuildCheckbox('Kiki')"> 所属無し</label>
+                                
+                            </div>
                             
-                            <label><input type="checkbox" name="guild" value="Kiki1-Tempest" onchange="toggleGuildCheckbox('Kiki')"> Tempest</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki1-所属無し" onchange="toggleGuildCheckbox('Kiki')"> 所属無し</label>
+                            <div class="guild-filter-group">
+                                <h4>Kiki5</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki5-ロクトフェイト" onchange="toggleGuildCheckbox('Kiki')"> ロクトフェイト</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki5-Eternity" onchange="toggleGuildCheckbox('Kiki')"> Eternity</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki5-ショッカー軍団" onchange="toggleGuildCheckbox('Kiki')"> ショッカー軍団</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki5-Scorpio" onchange="toggleGuildCheckbox('Kiki')"> Scorpio</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki5-所属無し" onchange="toggleGuildCheckbox('Kiki')"> 所属無し</label>
+                                
+                            </div>
                             
                         </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Kiki2</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki2-castra" onchange="toggleGuildCheckbox('Kiki')"> castra</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki2-Loki" onchange="toggleGuildCheckbox('Kiki')"> Loki</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki2-castera" onchange="toggleGuildCheckbox('Kiki')"> castera</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki2-所属無し" onchange="toggleGuildCheckbox('Kiki')"> 所属無し</label>
-                            
-                        </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Kiki3</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki3-LUXE" onchange="toggleGuildCheckbox('Kiki')"> LUXE</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki3-あとらんてぃす" onchange="toggleGuildCheckbox('Kiki')"> あとらんてぃす</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki3-Remake" onchange="toggleGuildCheckbox('Kiki')"> Remake</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki3-焼肉協会" onchange="toggleGuildCheckbox('Kiki')"> 焼肉協会</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki3-ー朧ー" onchange="toggleGuildCheckbox('Kiki')"> ー朧ー</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki3-Himawari" onchange="toggleGuildCheckbox('Kiki')"> Himawari</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki3-動物園" onchange="toggleGuildCheckbox('Kiki')"> 動物園</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki3-所属無し" onchange="toggleGuildCheckbox('Kiki')"> 所属無し</label>
-                            
-                        </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Kiki4</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki4-強カワRUSH" onchange="toggleGuildCheckbox('Kiki')"> 強カワRUSH</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki4-涼風一陣1" onchange="toggleGuildCheckbox('Kiki')"> 涼風一陣1</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki4-猫缶" onchange="toggleGuildCheckbox('Kiki')"> 猫缶</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki4-Liens" onchange="toggleGuildCheckbox('Kiki')"> Liens</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki4-Elnath" onchange="toggleGuildCheckbox('Kiki')"> Elnath</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki4-所属無し" onchange="toggleGuildCheckbox('Kiki')"> 所属無し</label>
-                            
-                        </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Kiki5</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki5-ロクトフェイト" onchange="toggleGuildCheckbox('Kiki')"> ロクトフェイト</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki5-Eternity" onchange="toggleGuildCheckbox('Kiki')"> Eternity</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki5-ショッカー軍団" onchange="toggleGuildCheckbox('Kiki')"> ショッカー軍団</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki5-Scorpio" onchange="toggleGuildCheckbox('Kiki')"> Scorpio</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Kiki5-所属無し" onchange="toggleGuildCheckbox('Kiki')"> 所属無し</label>
-                            
-                        </div>
-                        
                     </div>
                 </div>
             </div>
@@ -1812,118 +1817,119 @@
             </table>
         </div>
         
-        <div id="Anica-content" class="content">
-            <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection('Anica')">v</span></h3>
-            <div class="filter-section">
-                <div>
-                    <h4>サーバー:</h4>
-                    <label><input type="checkbox" id="Anica-server-all" name="server" value="all" checked onchange="toggleServerCheckbox('Anica', 'all')"> 全て</label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Anica1" checked onchange="toggleServerCheckbox('Anica', 'Anica1')"> 
-                        Anica1
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Anica2" checked onchange="toggleServerCheckbox('Anica', 'Anica2')"> 
-                        Anica2
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Anica3" checked onchange="toggleServerCheckbox('Anica', 'Anica3')"> 
-                        Anica3
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Anica4" checked onchange="toggleServerCheckbox('Anica', 'Anica4')"> 
-                        Anica4
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Anica5" checked onchange="toggleServerCheckbox('Anica', 'Anica5')"> 
-                        Anica5
-                    </label>
-                    
-                </div>
-                <div>
-                    <h4>ギルド:</h4>
-                    <div class="guild-filter-container">
+            <div id="Anica-content" class="content">
+                <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection('Anica')">v</span></h3>
+                <div class="filter-section">
+                    <div>
+                        <h4>サーバー:</h4>
+                        <label><input type="checkbox" id="Anica-server-all" name="server" value="all" checked onchange="toggleServerCheckbox('Anica', 'all')"> 全て</label>
                         
-                        <div class="guild-filter-group">
-                            <h4>Anica1</h4>
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Anica1" checked onchange="toggleServerCheckbox('Anica', 'Anica1')"> 
+                            Anica1
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Anica2" checked onchange="toggleServerCheckbox('Anica', 'Anica2')"> 
+                            Anica2
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Anica3" checked onchange="toggleServerCheckbox('Anica', 'Anica3')"> 
+                            Anica3
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Anica4" checked onchange="toggleServerCheckbox('Anica', 'Anica4')"> 
+                            Anica4
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Anica5" checked onchange="toggleServerCheckbox('Anica', 'Anica5')"> 
+                            Anica5
+                        </label>
+                        
+                    </div>
+                    <div>
+                        <h4>ギルド:</h4>
+                        <div class="guild-filter-container">
                             
-                            <label><input type="checkbox" name="guild" value="Anica1-わっしょい" onchange="toggleGuildCheckbox('Anica')"> わっしょい</label>
+                            <div class="guild-filter-group">
+                                <h4>Anica1</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica1-わっしょい" onchange="toggleGuildCheckbox('Anica')"> わっしょい</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica1-M2O" onchange="toggleGuildCheckbox('Anica')"> M2O</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica1-エンジェル" onchange="toggleGuildCheckbox('Anica')"> エンジェル</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica1-DIABLO" onchange="toggleGuildCheckbox('Anica')"> DIABLO</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica1-所属無し" onchange="toggleGuildCheckbox('Anica')"> 所属無し</label>
+                                
+                            </div>
                             
-                            <label><input type="checkbox" name="guild" value="Anica1-M2O" onchange="toggleGuildCheckbox('Anica')"> M2O</label>
+                            <div class="guild-filter-group">
+                                <h4>Anica2</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica2-ぴーすxすまいる" onchange="toggleGuildCheckbox('Anica')"> ぴーすxすまいる</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica2-Cradle" onchange="toggleGuildCheckbox('Anica')"> Cradle</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica2-NoiR" onchange="toggleGuildCheckbox('Anica')"> NoiR</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica2-月桂樹" onchange="toggleGuildCheckbox('Anica')"> 月桂樹</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica2-所属無し" onchange="toggleGuildCheckbox('Anica')"> 所属無し</label>
+                                
+                            </div>
                             
-                            <label><input type="checkbox" name="guild" value="Anica1-エンジェル" onchange="toggleGuildCheckbox('Anica')"> エンジェル</label>
+                            <div class="guild-filter-group">
+                                <h4>Anica3</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica3-てぃーたいむ" onchange="toggleGuildCheckbox('Anica')"> てぃーたいむ</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica3-とりあえずギルド" onchange="toggleGuildCheckbox('Anica')"> とりあえずギルド</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica3-一日一善" onchange="toggleGuildCheckbox('Anica')"> 一日一善</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica3-Rooibos" onchange="toggleGuildCheckbox('Anica')"> Rooibos</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica3-ソロモン" onchange="toggleGuildCheckbox('Anica')"> ソロモン</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica3-すす" onchange="toggleGuildCheckbox('Anica')"> すす</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica3-所属無し" onchange="toggleGuildCheckbox('Anica')"> 所属無し</label>
+                                
+                            </div>
                             
-                            <label><input type="checkbox" name="guild" value="Anica1-DIABLO" onchange="toggleGuildCheckbox('Anica')"> DIABLO</label>
+                            <div class="guild-filter-group">
+                                <h4>Anica4</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica4-闇鴉" onchange="toggleGuildCheckbox('Anica')"> 闇鴉</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica4-霧ケ峰" onchange="toggleGuildCheckbox('Anica')"> 霧ケ峰</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica4-GIFTED" onchange="toggleGuildCheckbox('Anica')"> GIFTED</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica4-卍ぱるぷん帝国卍" onchange="toggleGuildCheckbox('Anica')"> 卍ぱるぷん帝国卍</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica4-所属無し" onchange="toggleGuildCheckbox('Anica')"> 所属無し</label>
+                                
+                            </div>
                             
-                            <label><input type="checkbox" name="guild" value="Anica1-所属無し" onchange="toggleGuildCheckbox('Anica')"> 所属無し</label>
+                            <div class="guild-filter-group">
+                                <h4>Anica5</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica5-Lish" onchange="toggleGuildCheckbox('Anica')"> Lish</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica5-じゃがりこ" onchange="toggleGuildCheckbox('Anica')"> じゃがりこ</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica5-所属無し" onchange="toggleGuildCheckbox('Anica')"> 所属無し</label>
+                                
+                            </div>
                             
                         </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Anica2</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica2-ぴーすxすまいる" onchange="toggleGuildCheckbox('Anica')"> ぴーすxすまいる</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica2-Cradle" onchange="toggleGuildCheckbox('Anica')"> Cradle</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica2-NoiR" onchange="toggleGuildCheckbox('Anica')"> NoiR</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica2-月桂樹" onchange="toggleGuildCheckbox('Anica')"> 月桂樹</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica2-所属無し" onchange="toggleGuildCheckbox('Anica')"> 所属無し</label>
-                            
-                        </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Anica3</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica3-てぃーたいむ" onchange="toggleGuildCheckbox('Anica')"> てぃーたいむ</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica3-とりあえずギルド" onchange="toggleGuildCheckbox('Anica')"> とりあえずギルド</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica3-一日一善" onchange="toggleGuildCheckbox('Anica')"> 一日一善</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica3-Rooibos" onchange="toggleGuildCheckbox('Anica')"> Rooibos</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica3-ソロモン" onchange="toggleGuildCheckbox('Anica')"> ソロモン</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica3-すす" onchange="toggleGuildCheckbox('Anica')"> すす</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica3-所属無し" onchange="toggleGuildCheckbox('Anica')"> 所属無し</label>
-                            
-                        </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Anica4</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica4-闇鴉" onchange="toggleGuildCheckbox('Anica')"> 闇鴉</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica4-霧ケ峰" onchange="toggleGuildCheckbox('Anica')"> 霧ケ峰</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica4-GIFTED" onchange="toggleGuildCheckbox('Anica')"> GIFTED</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica4-卍ぱるぷん帝国卍" onchange="toggleGuildCheckbox('Anica')"> 卍ぱるぷん帝国卍</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica4-所属無し" onchange="toggleGuildCheckbox('Anica')"> 所属無し</label>
-                            
-                        </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Anica5</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica5-Lish" onchange="toggleGuildCheckbox('Anica')"> Lish</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica5-じゃがりこ" onchange="toggleGuildCheckbox('Anica')"> じゃがりこ</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Anica5-所属無し" onchange="toggleGuildCheckbox('Anica')"> 所属無し</label>
-                            
-                        </div>
-                        
                     </div>
                 </div>
             </div>
@@ -3349,104 +3355,105 @@
             </table>
         </div>
         
-        <div id="Hugo-content" class="content">
-            <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection('Hugo')">v</span></h3>
-            <div class="filter-section">
-                <div>
-                    <h4>サーバー:</h4>
-                    <label><input type="checkbox" id="Hugo-server-all" name="server" value="all" checked onchange="toggleServerCheckbox('Hugo', 'all')"> 全て</label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Hugo1" checked onchange="toggleServerCheckbox('Hugo', 'Hugo1')"> 
-                        Hugo1
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Hugo2" checked onchange="toggleServerCheckbox('Hugo', 'Hugo2')"> 
-                        Hugo2
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Hugo3" checked onchange="toggleServerCheckbox('Hugo', 'Hugo3')"> 
-                        Hugo3
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Hugo4" checked onchange="toggleServerCheckbox('Hugo', 'Hugo4')"> 
-                        Hugo4
-                    </label>
-                    
-                    <label style="display: inline-flex; align-items: center; white-space: nowrap;">
-                        <input type="checkbox" name="server" value="Hugo5" checked onchange="toggleServerCheckbox('Hugo', 'Hugo5')"> 
-                        Hugo5
-                    </label>
-                    
-                </div>
-                <div>
-                    <h4>ギルド:</h4>
-                    <div class="guild-filter-container">
+            <div id="Hugo-content" class="content">
+                <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection('Hugo')">v</span></h3>
+                <div class="filter-section">
+                    <div>
+                        <h4>サーバー:</h4>
+                        <label><input type="checkbox" id="Hugo-server-all" name="server" value="all" checked onchange="toggleServerCheckbox('Hugo', 'all')"> 全て</label>
                         
-                        <div class="guild-filter-group">
-                            <h4>Hugo1</h4>
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Hugo1" checked onchange="toggleServerCheckbox('Hugo', 'Hugo1')"> 
+                            Hugo1
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Hugo2" checked onchange="toggleServerCheckbox('Hugo', 'Hugo2')"> 
+                            Hugo2
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Hugo3" checked onchange="toggleServerCheckbox('Hugo', 'Hugo3')"> 
+                            Hugo3
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Hugo4" checked onchange="toggleServerCheckbox('Hugo', 'Hugo4')"> 
+                            Hugo4
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Hugo5" checked onchange="toggleServerCheckbox('Hugo', 'Hugo5')"> 
+                            Hugo5
+                        </label>
+                        
+                    </div>
+                    <div>
+                        <h4>ギルド:</h4>
+                        <div class="guild-filter-container">
                             
-                            <label><input type="checkbox" name="guild" value="Hugo1-HOALOHA" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA</label>
+                            <div class="guild-filter-group">
+                                <h4>Hugo1</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo1-HOALOHA" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo1-なみだふくよ" onchange="toggleGuildCheckbox('Hugo')"> なみだふくよ</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo1-HOALOHA玉" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA玉</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo1-所属無し" onchange="toggleGuildCheckbox('Hugo')"> 所属無し</label>
+                                
+                            </div>
                             
-                            <label><input type="checkbox" name="guild" value="Hugo1-なみだふくよ" onchange="toggleGuildCheckbox('Hugo')"> なみだふくよ</label>
+                            <div class="guild-filter-group">
+                                <h4>Hugo2</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo2-プリキュア" onchange="toggleGuildCheckbox('Hugo')"> プリキュア</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo2-所属無し" onchange="toggleGuildCheckbox('Hugo')"> 所属無し</label>
+                                
+                            </div>
                             
-                            <label><input type="checkbox" name="guild" value="Hugo1-HOALOHA玉" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA玉</label>
+                            <div class="guild-filter-group">
+                                <h4>Hugo3</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA愛" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA愛</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA豚" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA豚</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA2" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA2</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA友" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA友</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA雪" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA雪</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA空" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA空</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo3-所属無し" onchange="toggleGuildCheckbox('Hugo')"> 所属無し</label>
+                                
+                            </div>
                             
-                            <label><input type="checkbox" name="guild" value="Hugo1-所属無し" onchange="toggleGuildCheckbox('Hugo')"> 所属無し</label>
+                            <div class="guild-filter-group">
+                                <h4>Hugo4</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo4-がっつりこまり" onchange="toggleGuildCheckbox('Hugo')"> がっつりこまり</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo4-所属無し" onchange="toggleGuildCheckbox('Hugo')"> 所属無し</label>
+                                
+                            </div>
+                            
+                            <div class="guild-filter-group">
+                                <h4>Hugo5</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo5-KINGDOM2" onchange="toggleGuildCheckbox('Hugo')"> KINGDOM2</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo5-QUEENDOM" onchange="toggleGuildCheckbox('Hugo')"> QUEENDOM</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Hugo5-所属無し" onchange="toggleGuildCheckbox('Hugo')"> 所属無し</label>
+                                
+                            </div>
                             
                         </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Hugo2</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo2-プリキュア" onchange="toggleGuildCheckbox('Hugo')"> プリキュア</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo2-所属無し" onchange="toggleGuildCheckbox('Hugo')"> 所属無し</label>
-                            
-                        </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Hugo3</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA愛" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA愛</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA豚" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA豚</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA2" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA2</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA友" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA友</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA雪" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA雪</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo3-HOALOHA空" onchange="toggleGuildCheckbox('Hugo')"> HOALOHA空</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo3-所属無し" onchange="toggleGuildCheckbox('Hugo')"> 所属無し</label>
-                            
-                        </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Hugo4</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo4-がっつりこまり" onchange="toggleGuildCheckbox('Hugo')"> がっつりこまり</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo4-所属無し" onchange="toggleGuildCheckbox('Hugo')"> 所属無し</label>
-                            
-                        </div>
-                        
-                        <div class="guild-filter-group">
-                            <h4>Hugo5</h4>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo5-KINGDOM2" onchange="toggleGuildCheckbox('Hugo')"> KINGDOM2</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo5-QUEENDOM" onchange="toggleGuildCheckbox('Hugo')"> QUEENDOM</label>
-                            
-                            <label><input type="checkbox" name="guild" value="Hugo5-所属無し" onchange="toggleGuildCheckbox('Hugo')"> 所属無し</label>
-                            
-                        </div>
-                        
                     </div>
                 </div>
             </div>
