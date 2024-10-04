@@ -75,12 +75,9 @@
                 margin-bottom: 10px;
             }
             
-            
-
             table {
-                table-layout: fixed; /* 各列の幅を固定する */
                 width: 100%;
-                max-width: 1200px; /* 最大幅を指定 */
+                max-width: 1200px;
                 margin: auto;
                 border-collapse: collapse;
                 margin-top: 8px;
@@ -89,28 +86,20 @@
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                 overflow: hidden;
             }
-
             table th, table td {
                 padding: 12px 15px;
                 text-align: center;
                 border-bottom: 1px solid #ddd;
-                white-space: nowrap; /* テキストが折り返されないようにする */
             }
-
-            /* 親要素に横スクロールを可能にする */
-            .table-wrapper {
-                width: 100%;
-                overflow-x: auto; /* 横スクロールを可能にする */
-            }
-
             table th {
                 background-color: #007bff;
                 color: #fff;
             }
-
             table tr:last-child td {
                 border-bottom: none;
             }
+
+            
             label input[type="checkbox"] {
                 margin-right: 10px;
                 display: inline-block; /* チェックボックスをインラインブロック要素にする */
