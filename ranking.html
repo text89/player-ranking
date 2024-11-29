@@ -262,7 +262,7 @@
     <body>
         <h1>プレイヤーランキング</h1>
         <div id="content-wrapper">
-            <p><a href="./index.html">>>ランキングサマリー</a><br>更新日: 2024/11/28</p>
+            <p><a href="./index.html">>>ランキングサマリー</a><br>更新日: 2024/11/29</p>
             <div>
                 
                 <div class="tab" id="Kiki-tab" onclick="showTab('Kiki')">Kiki</div>
@@ -314,6 +314,8 @@
                             <div class="guild-filter-group">
                                 <h4>Kiki1</h4>
                                 
+                                <label><input type="checkbox" name="guild" value="Kiki1-強カワRUSH" onchange="toggleGuildCheckbox('Kiki')"> 強カワRUSH</label>
+                                
                                 <label><input type="checkbox" name="guild" value="Kiki1-焼肉協会" onchange="toggleGuildCheckbox('Kiki')"> 焼肉協会</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Kiki1-ショッカー軍団" onchange="toggleGuildCheckbox('Kiki')"> ショッカー軍団</label>
@@ -344,15 +346,15 @@
                             <div class="guild-filter-group">
                                 <h4>Kiki3</h4>
                                 
+                                <label><input type="checkbox" name="guild" value="Kiki3-一日一善" onchange="toggleGuildCheckbox('Kiki')"> 一日一善</label>
+                                
                                 <label><input type="checkbox" name="guild" value="Kiki3-tuna" onchange="toggleGuildCheckbox('Kiki')"> tuna</label>
                                 
-                                <label><input type="checkbox" name="guild" value="Kiki3-Himawari" onchange="toggleGuildCheckbox('Kiki')"> Himawari</label>
+                                <label><input type="checkbox" name="guild" value="Kiki3-セラフィム" onchange="toggleGuildCheckbox('Kiki')"> セラフィム</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Kiki3-鳥の巣" onchange="toggleGuildCheckbox('Kiki')"> 鳥の巣</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Kiki3-Lien" onchange="toggleGuildCheckbox('Kiki')"> Lien</label>
-                                
-                                <label><input type="checkbox" name="guild" value="Kiki3-動物園" onchange="toggleGuildCheckbox('Kiki')"> 動物園</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Kiki3-所属無し" onchange="toggleGuildCheckbox('Kiki')"> 所属無し</label>
                                 
@@ -365,9 +367,9 @@
                                 
                                 <label><input type="checkbox" name="guild" value="Kiki4-ふぁぶりーずぅ" onchange="toggleGuildCheckbox('Kiki')"> ふぁぶりーずぅ</label>
                                 
-                                <label><input type="checkbox" name="guild" value="Kiki4-強カワRUSH" onchange="toggleGuildCheckbox('Kiki')"> 強カワRUSH</label>
-                                
                                 <label><input type="checkbox" name="guild" value="Kiki4-涼風一陣1" onchange="toggleGuildCheckbox('Kiki')"> 涼風一陣1</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Kiki4-流星雨" onchange="toggleGuildCheckbox('Kiki')"> 流星雨</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Kiki4-Elnath" onchange="toggleGuildCheckbox('Kiki')"> Elnath</label>
                                 
@@ -387,8 +389,6 @@
                                 <h4>Kiki5</h4>
                                 
                                 <label><input type="checkbox" name="guild" value="Kiki5-Scorpio" onchange="toggleGuildCheckbox('Kiki')"> Scorpio</label>
-                                
-                                <label><input type="checkbox" name="guild" value="Kiki5-流星雨" onchange="toggleGuildCheckbox('Kiki')"> 流星雨</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Kiki5-Eternity" onchange="toggleGuildCheckbox('Kiki')"> Eternity</label>
                                 
@@ -491,13 +491,13 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="強カワRUSH">
+                            <tr data-server="Kiki1" data-guild="強カワRUSH">
                                 
                                 <td>6</td>
                                 
                                 <td>81</td>
                                 
-                                <td>Kiki4</td>
+                                <td>Kiki1</td>
                                 
                                 <td>強カワRUSH</td>
                                 
@@ -547,21 +547,21 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="強カワRUSH">
+                            <tr data-server="Kiki1" data-guild="所属無し">
                                 
                                 <td>10</td>
                                 
                                 <td>80</td>
                                 
-                                <td>Kiki4</td>
+                                <td>Kiki1</td>
                                 
-                                <td>強カワRUSH</td>
+                                <td>所属無し</td>
                                 
-                                <td>ShunMyy</td>
+                                <td>お買い物なう</td>
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="強カワRUSH">
+                            <tr data-server="Kiki4" data-guild="所属無し">
                                 
                                 <td>11</td>
                                 
@@ -569,7 +569,7 @@
                                 
                                 <td>Kiki4</td>
                                 
-                                <td>強カワRUSH</td>
+                                <td>所属無し</td>
                                 
                                 <td>せらりな</td>
                                 
@@ -603,23 +603,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki1" data-guild="ショッカー軍団">
-                                
-                                <td>14</td>
-                                
-                                <td>80</td>
-                                
-                                <td>Kiki1</td>
-                                
-                                <td>ショッカー軍団</td>
-                                
-                                <td>とろろんX</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Kiki5" data-guild="Scorpio">
                                 
-                                <td>15</td>
+                                <td>14</td>
                                 
                                 <td>80</td>
                                 
@@ -628,6 +614,20 @@
                                 <td>Scorpio</td>
                                 
                                 <td>チェインドベル</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki1" data-guild="ショッカー軍団">
+                                
+                                <td>15</td>
+                                
+                                <td>80</td>
+                                
+                                <td>Kiki1</td>
+                                
+                                <td>ショッカー軍団</td>
+                                
+                                <td>とろろんX</td>
                                 
                             </tr>
                             
@@ -673,9 +673,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki2" data-guild="castera">
+                            <tr data-server="Kiki3" data-guild="一日一善">
                                 
                                 <td>19</td>
+                                
+                                <td>79</td>
+                                
+                                <td>Kiki3</td>
+                                
+                                <td>一日一善</td>
+                                
+                                <td>西岡ドリル</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki2" data-guild="castera">
+                                
+                                <td>20</td>
                                 
                                 <td>79</td>
                                 
@@ -687,9 +701,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Kiki2" data-guild="所属無し">
+                                
+                                <td>21</td>
+                                
+                                <td>79</td>
+                                
+                                <td>Kiki2</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>おねぇちゃん</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Kiki1" data-guild="OZ">
                                 
-                                <td>20</td>
+                                <td>22</td>
                                 
                                 <td>79</td>
                                 
@@ -701,51 +729,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="強カワRUSH">
-                                
-                                <td>21</td>
-                                
-                                <td>79</td>
-                                
-                                <td>Kiki4</td>
-                                
-                                <td>強カワRUSH</td>
-                                
-                                <td>おねぇちゃん</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki5" data-guild="流星雨">
-                                
-                                <td>22</td>
-                                
-                                <td>79</td>
-                                
-                                <td>Kiki5</td>
-                                
-                                <td>流星雨</td>
-                                
-                                <td>ルウシャ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki4" data-guild="Elnath">
-                                
-                                <td>23</td>
-                                
-                                <td>79</td>
-                                
-                                <td>Kiki4</td>
-                                
-                                <td>Elnath</td>
-                                
-                                <td>あやひ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Kiki4" data-guild="おさかなてんごく">
                                 
-                                <td>24</td>
+                                <td>23</td>
                                 
                                 <td>79</td>
                                 
@@ -754,6 +740,20 @@
                                 <td>おさかなてんごく</td>
                                 
                                 <td>きっちょ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki4" data-guild="流星雨">
+                                
+                                <td>24</td>
+                                
+                                <td>79</td>
+                                
+                                <td>Kiki4</td>
+                                
+                                <td>流星雨</td>
+                                
+                                <td>つくりかけドミノ</td>
                                 
                             </tr>
                             
@@ -771,17 +771,17 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki1" data-guild="ショッカー軍団">
+                            <tr data-server="Kiki4" data-guild="所属無し">
                                 
                                 <td>26</td>
                                 
                                 <td>79</td>
                                 
-                                <td>Kiki1</td>
+                                <td>Kiki4</td>
                                 
-                                <td>ショッカー軍団</td>
+                                <td>所属無し</td>
                                 
-                                <td>塩と胡椒</td>
+                                <td>あやひ</td>
                                 
                             </tr>
                             
@@ -795,13 +795,27 @@
                                 
                                 <td>ショッカー軍団</td>
                                 
+                                <td>塩と胡椒</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki1" data-guild="ショッカー軍団">
+                                
+                                <td>28</td>
+                                
+                                <td>79</td>
+                                
+                                <td>Kiki1</td>
+                                
+                                <td>ショッカー軍団</td>
+                                
                                 <td>キーン</td>
                                 
                             </tr>
                             
                             <tr data-server="Kiki3" data-guild="tuna">
                                 
-                                <td>28</td>
+                                <td>29</td>
                                 
                                 <td>79</td>
                                 
@@ -813,9 +827,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Kiki3" data-guild="セラフィム">
+                                
+                                <td>30</td>
+                                
+                                <td>79</td>
+                                
+                                <td>Kiki3</td>
+                                
+                                <td>セラフィム</td>
+                                
+                                <td>pieeru</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Kiki1" data-guild="ショッカー軍団">
                                 
-                                <td>29</td>
+                                <td>31</td>
                                 
                                 <td>79</td>
                                 
@@ -827,29 +855,15 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki1" data-guild="OZ">
+                            <tr data-server="Kiki4" data-guild="所属無し">
                                 
-                                <td>30</td>
-                                
-                                <td>79</td>
-                                
-                                <td>Kiki1</td>
-                                
-                                <td>OZ</td>
-                                
-                                <td>るちぇ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki4" data-guild="強カワRUSH">
-                                
-                                <td>31</td>
+                                <td>32</td>
                                 
                                 <td>79</td>
                                 
                                 <td>Kiki4</td>
                                 
-                                <td>強カワRUSH</td>
+                                <td>所属無し</td>
                                 
                                 <td>1zu</td>
                                 
@@ -857,9 +871,9 @@
                             
                             <tr data-server="Kiki4" data-guild="涼風一陣1">
                                 
-                                <td>32</td>
+                                <td>33</td>
                                 
-                                <td>78</td>
+                                <td>79</td>
                                 
                                 <td>Kiki4</td>
                                 
@@ -869,9 +883,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Kiki1" data-guild="OZ">
+                                
+                                <td>34</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Kiki1</td>
+                                
+                                <td>OZ</td>
+                                
+                                <td>るちぇ</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Kiki2" data-guild="あとらんてぃす">
                                 
-                                <td>33</td>
+                                <td>35</td>
                                 
                                 <td>78</td>
                                 
@@ -885,7 +913,7 @@
                             
                             <tr data-server="Kiki4" data-guild="Elnath">
                                 
-                                <td>34</td>
+                                <td>36</td>
                                 
                                 <td>78</td>
                                 
@@ -897,59 +925,31 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki3" data-guild="所属無し">
-                                
-                                <td>35</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Kiki3</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>けんさーん</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki3" data-guild="所属無し">
-                                
-                                <td>36</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Kiki3</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>れれれのれー</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki4" data-guild="まいなぽいん">
+                            <tr data-server="Kiki3" data-guild="セラフィム">
                                 
                                 <td>37</td>
                                 
                                 <td>78</td>
                                 
-                                <td>Kiki4</td>
+                                <td>Kiki3</td>
                                 
-                                <td>まいなぽいん</td>
+                                <td>セラフィム</td>
                                 
-                                <td>こもたん</td>
+                                <td>カラ</td>
                                 
                             </tr>
                             
-                            <tr data-server="Kiki5" data-guild="所属無し">
+                            <tr data-server="Kiki1" data-guild="焼肉協会">
                                 
                                 <td>38</td>
                                 
                                 <td>78</td>
                                 
-                                <td>Kiki5</td>
+                                <td>Kiki1</td>
                                 
-                                <td>所属無し</td>
+                                <td>焼肉協会</td>
                                 
-                                <td>月華様</td>
+                                <td>けんさーん</td>
                                 
                             </tr>
                             
@@ -967,9 +967,37 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="ふぁぶりーずぅ">
+                            <tr data-server="Kiki3" data-guild="所属無し">
                                 
                                 <td>40</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Kiki3</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>れれれのれー</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki4" data-guild="まいなぽいん">
+                                
+                                <td>41</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Kiki4</td>
+                                
+                                <td>まいなぽいん</td>
+                                
+                                <td>こもたん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki4" data-guild="ふぁぶりーずぅ">
+                                
+                                <td>42</td>
                                 
                                 <td>78</td>
                                 
@@ -983,7 +1011,7 @@
                             
                             <tr data-server="Kiki1" data-guild="ショッカー軍団">
                                 
-                                <td>41</td>
+                                <td>43</td>
                                 
                                 <td>78</td>
                                 
@@ -997,7 +1025,7 @@
                             
                             <tr data-server="Kiki4" data-guild="おさかなてんごく">
                                 
-                                <td>42</td>
+                                <td>44</td>
                                 
                                 <td>78</td>
                                 
@@ -1009,9 +1037,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Kiki3" data-guild="一日一善">
+                                
+                                <td>45</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Kiki3</td>
+                                
+                                <td>一日一善</td>
+                                
+                                <td>雪見えくれあ</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Kiki4" data-guild="涼風一陣1">
                                 
-                                <td>43</td>
+                                <td>46</td>
                                 
                                 <td>78</td>
                                 
@@ -1025,7 +1067,21 @@
                             
                             <tr data-server="Kiki2" data-guild="castera">
                                 
-                                <td>44</td>
+                                <td>47</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Kiki2</td>
+                                
+                                <td>castera</td>
+                                
+                                <td>よしニキ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki2" data-guild="castera">
+                                
+                                <td>48</td>
                                 
                                 <td>77</td>
                                 
@@ -1037,23 +1093,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki2" data-guild="castera">
-                                
-                                <td>45</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki2</td>
-                                
-                                <td>castera</td>
-                                
-                                <td>よしニキ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Kiki1" data-guild="焼肉協会">
                                 
-                                <td>46</td>
+                                <td>49</td>
                                 
                                 <td>77</td>
                                 
@@ -1067,7 +1109,7 @@
                             
                             <tr data-server="Kiki1" data-guild="OZ">
                                 
-                                <td>47</td>
+                                <td>50</td>
                                 
                                 <td>77</td>
                                 
@@ -1079,23 +1121,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki5" data-guild="所属無し">
-                                
-                                <td>48</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki5</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>られ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Kiki4" data-guild="おさかなてんごく">
                                 
-                                <td>49</td>
+                                <td>51</td>
                                 
                                 <td>77</td>
                                 
@@ -1107,9 +1135,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Kiki2" data-guild="castra">
+                                
+                                <td>52</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Kiki2</td>
+                                
+                                <td>castra</td>
+                                
+                                <td>iga</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Kiki3" data-guild="所属無し">
                                 
-                                <td>50</td>
+                                <td>53</td>
                                 
                                 <td>77</td>
                                 
@@ -1123,7 +1165,7 @@
                             
                             <tr data-server="Kiki4" data-guild="ふぁぶりーずぅ">
                                 
-                                <td>51</td>
+                                <td>54</td>
                                 
                                 <td>77</td>
                                 
@@ -1135,37 +1177,37 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="所属無し">
+                            <tr data-server="Kiki5" data-guild="所属無し">
                                 
-                                <td>52</td>
+                                <td>55</td>
                                 
                                 <td>77</td>
                                 
-                                <td>Kiki4</td>
+                                <td>Kiki5</td>
                                 
                                 <td>所属無し</td>
                                 
-                                <td>アイスの実</td>
+                                <td>られ</td>
                                 
                             </tr>
                             
-                            <tr data-server="Kiki2" data-guild="castra">
+                            <tr data-server="Kiki1" data-guild="ショッカー軍団">
                                 
-                                <td>53</td>
+                                <td>56</td>
                                 
                                 <td>77</td>
                                 
-                                <td>Kiki2</td>
+                                <td>Kiki1</td>
                                 
-                                <td>castra</td>
+                                <td>ショッカー軍団</td>
                                 
-                                <td>iga</td>
+                                <td>戦闘員くじゃ</td>
                                 
                             </tr>
                             
                             <tr data-server="Kiki4" data-guild="ふぁぶりーずぅ">
                                 
-                                <td>54</td>
+                                <td>57</td>
                                 
                                 <td>77</td>
                                 
@@ -1179,7 +1221,7 @@
                             
                             <tr data-server="Kiki1" data-guild="ショッカー軍団">
                                 
-                                <td>55</td>
+                                <td>58</td>
                                 
                                 <td>77</td>
                                 
@@ -1193,7 +1235,7 @@
                             
                             <tr data-server="Kiki2" data-guild="あとらんてぃす">
                                 
-                                <td>56</td>
+                                <td>59</td>
                                 
                                 <td>77</td>
                                 
@@ -1205,9 +1247,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Kiki1" data-guild="強カワRUSH">
+                                
+                                <td>60</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Kiki1</td>
+                                
+                                <td>強カワRUSH</td>
+                                
+                                <td>なつうさぎ</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Kiki1" data-guild="ショッカー軍団">
                                 
-                                <td>57</td>
+                                <td>61</td>
                                 
                                 <td>77</td>
                                 
@@ -1215,27 +1271,13 @@
                                 
                                 <td>ショッカー軍団</td>
                                 
-                                <td>戦闘員くじゃ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki4" data-guild="強カワRUSH">
-                                
-                                <td>58</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki4</td>
-                                
-                                <td>強カワRUSH</td>
-                                
-                                <td>なつとう</td>
+                                <td>ちぇじゅ</td>
                                 
                             </tr>
                             
                             <tr data-server="Kiki2" data-guild="castra">
                                 
-                                <td>59</td>
+                                <td>62</td>
                                 
                                 <td>77</td>
                                 
@@ -1247,23 +1289,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki2" data-guild="所属無し">
-                                
-                                <td>60</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki2</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>サウナ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Kiki4" data-guild="おさかなてんごく">
                                 
-                                <td>61</td>
+                                <td>63</td>
                                 
                                 <td>77</td>
                                 
@@ -1275,23 +1303,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="涼風一陣1">
+                            <tr data-server="Kiki4" data-guild="おさかなてんごく">
                                 
-                                <td>62</td>
+                                <td>64</td>
                                 
                                 <td>77</td>
                                 
                                 <td>Kiki4</td>
                                 
-                                <td>涼風一陣1</td>
+                                <td>おさかなてんごく</td>
                                 
-                                <td>Gotz</td>
+                                <td>ゆりぽ</td>
                                 
                             </tr>
                             
                             <tr data-server="Kiki2" data-guild="castera">
                                 
-                                <td>63</td>
+                                <td>65</td>
                                 
                                 <td>77</td>
                                 
@@ -1305,7 +1333,7 @@
                             
                             <tr data-server="Kiki1" data-guild="焼肉協会">
                                 
-                                <td>64</td>
+                                <td>66</td>
                                 
                                 <td>77</td>
                                 
@@ -1317,49 +1345,21 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="おさかなてんごく">
-                                
-                                <td>65</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki4</td>
-                                
-                                <td>おさかなてんごく</td>
-                                
-                                <td>ゆりぽ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki1" data-guild="ショッカー軍団">
-                                
-                                <td>66</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki1</td>
-                                
-                                <td>ショッカー軍団</td>
-                                
-                                <td>ちぇじゅ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki5" data-guild="Eternity">
+                            <tr data-server="Kiki4" data-guild="涼風一陣1">
                                 
                                 <td>67</td>
                                 
                                 <td>77</td>
                                 
-                                <td>Kiki5</td>
+                                <td>Kiki4</td>
                                 
-                                <td>Eternity</td>
+                                <td>涼風一陣1</td>
                                 
-                                <td>アルウェン</td>
+                                <td>Gotz</td>
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="強カワRUSH">
+                            <tr data-server="Kiki4" data-guild="所属無し">
                                 
                                 <td>68</td>
                                 
@@ -1367,7 +1367,7 @@
                                 
                                 <td>Kiki4</td>
                                 
-                                <td>強カワRUSH</td>
+                                <td>所属無し</td>
                                 
                                 <td>まんだむ</td>
                                 
@@ -1387,9 +1387,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="おさかなてんごく">
+                            <tr data-server="Kiki5" data-guild="Eternity">
                                 
                                 <td>70</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Kiki5</td>
+                                
+                                <td>Eternity</td>
+                                
+                                <td>アルウェン</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki4" data-guild="おさかなてんごく">
+                                
+                                <td>71</td>
                                 
                                 <td>77</td>
                                 
@@ -1403,7 +1417,7 @@
                             
                             <tr data-server="Kiki5" data-guild="所属無し">
                                 
-                                <td>71</td>
+                                <td>72</td>
                                 
                                 <td>77</td>
                                 
@@ -1415,37 +1429,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="所属無し">
-                                
-                                <td>72</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki4</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>あかーき</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki2" data-guild="所属無し">
-                                
-                                <td>73</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki2</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>NewJ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Kiki4" data-guild="聖闘士RUSH">
                                 
-                                <td>74</td>
+                                <td>73</td>
                                 
                                 <td>77</td>
                                 
@@ -1454,6 +1440,20 @@
                                 <td>聖闘士RUSH</td>
                                 
                                 <td>らいでん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki2" data-guild="所属無し">
+                                
+                                <td>74</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Kiki2</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>NewJ</td>
                                 
                             </tr>
                             
@@ -1471,13 +1471,13 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki5" data-guild="流星雨">
+                            <tr data-server="Kiki4" data-guild="流星雨">
                                 
                                 <td>76</td>
                                 
                                 <td>77</td>
                                 
-                                <td>Kiki5</td>
+                                <td>Kiki4</td>
                                 
                                 <td>流星雨</td>
                                 
@@ -1485,23 +1485,37 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki5" data-guild="流星雨">
+                            <tr data-server="Kiki4" data-guild="流星雨">
                                 
                                 <td>77</td>
                                 
                                 <td>77</td>
                                 
-                                <td>Kiki5</td>
+                                <td>Kiki4</td>
                                 
                                 <td>流星雨</td>
                                 
-                                <td>teyoi</td>
+                                <td>パタスモンキー</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki4" data-guild="所属無し">
+                                
+                                <td>78</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Kiki4</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>あかーき</td>
                                 
                             </tr>
                             
                             <tr data-server="Kiki1" data-guild="Tempest">
                                 
-                                <td>78</td>
+                                <td>79</td>
                                 
                                 <td>77</td>
                                 
@@ -1510,20 +1524,6 @@
                                 <td>Tempest</td>
                                 
                                 <td>ArcJoker</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki1" data-guild="異世界戦線">
-                                
-                                <td>79</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki1</td>
-                                
-                                <td>異世界戦線</td>
-                                
-                                <td>三体</td>
                                 
                             </tr>
                             
@@ -1541,9 +1541,37 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="所属無し">
+                            <tr data-server="Kiki1" data-guild="異世界戦線">
                                 
                                 <td>81</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Kiki1</td>
+                                
+                                <td>異世界戦線</td>
+                                
+                                <td>三体</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki1" data-guild="ショッカー軍団">
+                                
+                                <td>82</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Kiki1</td>
+                                
+                                <td>ショッカー軍団</td>
+                                
+                                <td>たまご人間</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki4" data-guild="所属無し">
+                                
+                                <td>83</td>
                                 
                                 <td>77</td>
                                 
@@ -1557,7 +1585,7 @@
                             
                             <tr data-server="Kiki1" data-guild="OZ">
                                 
-                                <td>82</td>
+                                <td>84</td>
                                 
                                 <td>77</td>
                                 
@@ -1569,23 +1597,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki1" data-guild="ショッカー軍団">
-                                
-                                <td>83</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki1</td>
-                                
-                                <td>ショッカー軍団</td>
-                                
-                                <td>たまご人間</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Kiki5" data-guild="Eternity">
                                 
-                                <td>84</td>
+                                <td>85</td>
                                 
                                 <td>77</td>
                                 
@@ -1594,20 +1608,6 @@
                                 <td>Eternity</td>
                                 
                                 <td>ーRIONー</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki1" data-guild="異世界戦線">
-                                
-                                <td>85</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki1</td>
-                                
-                                <td>異世界戦線</td>
-                                
-                                <td>amecha</td>
                                 
                             </tr>
                             
@@ -1625,17 +1625,17 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki3" data-guild="Himawari">
+                            <tr data-server="Kiki1" data-guild="異世界戦線">
                                 
                                 <td>87</td>
                                 
                                 <td>77</td>
                                 
-                                <td>Kiki3</td>
+                                <td>Kiki1</td>
                                 
-                                <td>Himawari</td>
+                                <td>異世界戦線</td>
                                 
-                                <td>Nivuru</td>
+                                <td>amecha</td>
                                 
                             </tr>
                             
@@ -1653,9 +1653,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="Lunablue">
+                            <tr data-server="Kiki3" data-guild="所属無し">
                                 
                                 <td>89</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Kiki3</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>Nivuru</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki4" data-guild="Lunablue">
+                                
+                                <td>90</td>
                                 
                                 <td>77</td>
                                 
@@ -1667,23 +1681,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki3" data-guild="所属無し">
+                            <tr data-server="Kiki5" data-guild="所属無し">
                                 
-                                <td>90</td>
+                                <td>91</td>
                                 
                                 <td>77</td>
                                 
-                                <td>Kiki3</td>
+                                <td>Kiki5</td>
                                 
                                 <td>所属無し</td>
                                 
-                                <td>ちゅきやま</td>
+                                <td>戦鬼</td>
                                 
                             </tr>
                             
                             <tr data-server="Kiki3" data-guild="所属無し">
                                 
-                                <td>91</td>
+                                <td>92</td>
                                 
                                 <td>77</td>
                                 
@@ -1695,9 +1709,51 @@
                                 
                             </tr>
                             
+                            <tr data-server="Kiki3" data-guild="所属無し">
+                                
+                                <td>93</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Kiki3</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>ちゅきやま</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki1" data-guild="OZ">
+                                
+                                <td>94</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Kiki1</td>
+                                
+                                <td>OZ</td>
+                                
+                                <td>xさやかx</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Kiki4" data-guild="所属無し">
                                 
-                                <td>92</td>
+                                <td>95</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Kiki4</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>Ayatsuji</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Kiki4" data-guild="所属無し">
+                                
+                                <td>96</td>
                                 
                                 <td>77</td>
                                 
@@ -1709,51 +1765,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="強カワRUSH">
+                            <tr data-server="Kiki1" data-guild="強カワRUSH">
                                 
-                                <td>93</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Kiki4</td>
-                                
-                                <td>強カワRUSH</td>
-                                
-                                <td>Ayatsuji</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki1" data-guild="OZ">
-                                
-                                <td>94</td>
+                                <td>97</td>
                                 
                                 <td>76</td>
                                 
                                 <td>Kiki1</td>
                                 
-                                <td>OZ</td>
+                                <td>強カワRUSH</td>
                                 
-                                <td>xさやかx</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki3" data-guild="鳥の巣">
-                                
-                                <td>95</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Kiki3</td>
-                                
-                                <td>鳥の巣</td>
-                                
-                                <td>ー覇王鬼帝ー</td>
+                                <td>破滅のカワウソ</td>
                                 
                             </tr>
                             
                             <tr data-server="Kiki2" data-guild="castra">
                                 
-                                <td>96</td>
+                                <td>98</td>
                                 
                                 <td>76</td>
                                 
@@ -1765,37 +1793,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Kiki4" data-guild="強カワRUSH">
+                            <tr data-server="Kiki3" data-guild="鳥の巣">
                                 
-                                <td>97</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Kiki4</td>
-                                
-                                <td>強カワRUSH</td>
-                                
-                                <td>カワウソごろう</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki1" data-guild="焼肉協会">
-                                
-                                <td>98</td>
+                                <td>99</td>
                                 
                                 <td>76</td>
                                 
-                                <td>Kiki1</td>
+                                <td>Kiki3</td>
                                 
-                                <td>焼肉協会</td>
+                                <td>鳥の巣</td>
                                 
-                                <td>Jupis</td>
+                                <td>ー覇王鬼帝ー</td>
                                 
                             </tr>
                             
                             <tr data-server="Kiki3" data-guild="Lien">
                                 
-                                <td>99</td>
+                                <td>100</td>
                                 
                                 <td>76</td>
                                 
@@ -1804,20 +1818,6 @@
                                 <td>Lien</td>
                                 
                                 <td>なんでやねん工藤</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Kiki3" data-guild="動物園">
-                                
-                                <td>100</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Kiki3</td>
-                                
-                                <td>動物園</td>
-                                
-                                <td>xコアラx</td>
                                 
                             </tr>
                             
@@ -1866,13 +1866,13 @@
                             <div class="guild-filter-group">
                                 <h4>Anica1</h4>
                                 
-                                <label><input type="checkbox" name="guild" value="Anica1-MVP" onchange="toggleGuildCheckbox('Anica')"> MVP</label>
+                                <label><input type="checkbox" name="guild" value="Anica1-Cradle" onchange="toggleGuildCheckbox('Anica')"> Cradle</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Anica1-わっしょい" onchange="toggleGuildCheckbox('Anica')"> わっしょい</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Anica1-M2O" onchange="toggleGuildCheckbox('Anica')"> M2O</label>
                                 
-                                <label><input type="checkbox" name="guild" value="Anica1-エンジェル" onchange="toggleGuildCheckbox('Anica')"> エンジェル</label>
+                                <label><input type="checkbox" name="guild" value="Anica1-MVP" onchange="toggleGuildCheckbox('Anica')"> MVP</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Anica1-焼き肉定食" onchange="toggleGuildCheckbox('Anica')"> 焼き肉定食</label>
                                 
@@ -1889,11 +1889,7 @@
                                 
                                 <label><input type="checkbox" name="guild" value="Anica2-ぴーすxすまいる" onchange="toggleGuildCheckbox('Anica')"> ぴーすxすまいる</label>
                                 
-                                <label><input type="checkbox" name="guild" value="Anica2-Cradle" onchange="toggleGuildCheckbox('Anica')"> Cradle</label>
-                                
                                 <label><input type="checkbox" name="guild" value="Anica2-ゴミムシ" onchange="toggleGuildCheckbox('Anica')"> ゴミムシ</label>
-                                
-                                <label><input type="checkbox" name="guild" value="Anica2-xx爆乱隊xx" onchange="toggleGuildCheckbox('Anica')"> xx爆乱隊xx</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Anica2-放置雑適当プレイ" onchange="toggleGuildCheckbox('Anica')"> 放置雑適当プレイ</label>
                                 
@@ -1904,19 +1900,19 @@
                             <div class="guild-filter-group">
                                 <h4>Anica3</h4>
                                 
-                                <label><input type="checkbox" name="guild" value="Anica3-とりあえずギルド" onchange="toggleGuildCheckbox('Anica')"> とりあえずギルド</label>
-                                
                                 <label><input type="checkbox" name="guild" value="Anica3-RioN" onchange="toggleGuildCheckbox('Anica')"> RioN</label>
                                 
-                                <label><input type="checkbox" name="guild" value="Anica3-ソロモン" onchange="toggleGuildCheckbox('Anica')"> ソロモン</label>
+                                <label><input type="checkbox" name="guild" value="Anica3-とりあえずギルド" onchange="toggleGuildCheckbox('Anica')"> とりあえずギルド</label>
                                 
-                                <label><input type="checkbox" name="guild" value="Anica3-一日一善" onchange="toggleGuildCheckbox('Anica')"> 一日一善</label>
+                                <label><input type="checkbox" name="guild" value="Anica3-ソロモン" onchange="toggleGuildCheckbox('Anica')"> ソロモン</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Anica3-すす" onchange="toggleGuildCheckbox('Anica')"> すす</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Anica3-ギルドとりあえず" onchange="toggleGuildCheckbox('Anica')"> ギルドとりあえず</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Anica3-絶対領域" onchange="toggleGuildCheckbox('Anica')"> 絶対領域</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Anica3-くりぱ" onchange="toggleGuildCheckbox('Anica')"> くりぱ</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Anica3-聖ハンマーヘッズ" onchange="toggleGuildCheckbox('Anica')"> 聖ハンマーヘッズ</label>
                                 
@@ -1971,7 +1967,7 @@
                         </thead>
                         <tbody>
                             
-                            <tr data-server="Anica3" data-guild="とりあえずギルド">
+                            <tr data-server="Anica3" data-guild="所属無し">
                                 
                                 <td>1</td>
                                 
@@ -1979,7 +1975,7 @@
                                 
                                 <td>Anica3</td>
                                 
-                                <td>とりあえずギルド</td>
+                                <td>所属無し</td>
                                 
                                 <td>きない</td>
                                 
@@ -1999,7 +1995,7 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica3" data-guild="とりあえずギルド">
+                            <tr data-server="Anica3" data-guild="所属無し">
                                 
                                 <td>3</td>
                                 
@@ -2007,7 +2003,7 @@
                                 
                                 <td>Anica3</td>
                                 
-                                <td>とりあえずギルド</td>
+                                <td>所属無し</td>
                                 
                                 <td>FAKER</td>
                                 
@@ -2027,13 +2023,13 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica2" data-guild="Cradle">
+                            <tr data-server="Anica1" data-guild="Cradle">
                                 
                                 <td>5</td>
                                 
                                 <td>82</td>
                                 
-                                <td>Anica2</td>
+                                <td>Anica1</td>
                                 
                                 <td>Cradle</td>
                                 
@@ -2059,7 +2055,7 @@
                                 
                                 <td>7</td>
                                 
-                                <td>81</td>
+                                <td>82</td>
                                 
                                 <td>Anica4</td>
                                 
@@ -2083,23 +2079,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica1" data-guild="MVP">
-                                
-                                <td>9</td>
-                                
-                                <td>81</td>
-                                
-                                <td>Anica1</td>
-                                
-                                <td>MVP</td>
-                                
-                                <td>ゆずみん</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica4" data-guild="GIFTED">
                                 
-                                <td>10</td>
+                                <td>9</td>
                                 
                                 <td>81</td>
                                 
@@ -2111,17 +2093,31 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica3" data-guild="所属無し">
+                            <tr data-server="Anica3" data-guild="RioN">
                                 
-                                <td>11</td>
+                                <td>10</td>
                                 
                                 <td>80</td>
                                 
                                 <td>Anica3</td>
                                 
-                                <td>所属無し</td>
+                                <td>RioN</td>
                                 
                                 <td>brahman2</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica5" data-guild="野菜王国">
+                                
+                                <td>11</td>
+                                
+                                <td>80</td>
+                                
+                                <td>Anica5</td>
+                                
+                                <td>野菜王国</td>
+                                
+                                <td>黒ぴつじ</td>
                                 
                             </tr>
                             
@@ -2139,23 +2135,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica5" data-guild="野菜王国">
-                                
-                                <td>13</td>
-                                
-                                <td>80</td>
-                                
-                                <td>Anica5</td>
-                                
-                                <td>野菜王国</td>
-                                
-                                <td>黒ぴつじ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica4" data-guild="闇鴉">
                                 
-                                <td>14</td>
+                                <td>13</td>
                                 
                                 <td>80</td>
                                 
@@ -2169,7 +2151,7 @@
                             
                             <tr data-server="Anica3" data-guild="とりあえずギルド">
                                 
-                                <td>15</td>
+                                <td>14</td>
                                 
                                 <td>80</td>
                                 
@@ -2178,6 +2160,20 @@
                                 <td>とりあえずギルド</td>
                                 
                                 <td>wasabi3</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica3" data-guild="所属無し">
+                                
+                                <td>15</td>
+                                
+                                <td>80</td>
+                                
+                                <td>Anica3</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>エタノ一ル</td>
                                 
                             </tr>
                             
@@ -2195,23 +2191,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica3" data-guild="所属無し">
-                                
-                                <td>17</td>
-                                
-                                <td>80</td>
-                                
-                                <td>Anica3</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>エタノ一ル</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica5" data-guild="所属無し">
                                 
-                                <td>18</td>
+                                <td>17</td>
                                 
                                 <td>80</td>
                                 
@@ -2225,7 +2207,7 @@
                             
                             <tr data-server="Anica1" data-guild="わっしょい">
                                 
-                                <td>19</td>
+                                <td>18</td>
                                 
                                 <td>80</td>
                                 
@@ -2234,6 +2216,20 @@
                                 <td>わっしょい</td>
                                 
                                 <td>walker</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica5" data-guild="かもめ幼稚園">
+                                
+                                <td>19</td>
+                                
+                                <td>80</td>
+                                
+                                <td>Anica5</td>
+                                
+                                <td>かもめ幼稚園</td>
+                                
+                                <td>怒怒璃亜</td>
                                 
                             </tr>
                             
@@ -2261,27 +2257,13 @@
                                 
                                 <td>かもめ幼稚園</td>
                                 
-                                <td>怒怒璃亜</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Anica5" data-guild="かもめ幼稚園">
-                                
-                                <td>22</td>
-                                
-                                <td>80</td>
-                                
-                                <td>Anica5</td>
-                                
-                                <td>かもめ幼稚園</td>
-                                
                                 <td>まろっ</td>
                                 
                             </tr>
                             
                             <tr data-server="Anica1" data-guild="所属無し">
                                 
-                                <td>23</td>
+                                <td>22</td>
                                 
                                 <td>79</td>
                                 
@@ -2293,15 +2275,15 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica3" data-guild="とりあえずギルド">
+                            <tr data-server="Anica3" data-guild="所属無し">
                                 
-                                <td>24</td>
+                                <td>23</td>
                                 
                                 <td>79</td>
                                 
                                 <td>Anica3</td>
                                 
-                                <td>とりあえずギルド</td>
+                                <td>所属無し</td>
                                 
                                 <td>けもけも</td>
                                 
@@ -2309,7 +2291,7 @@
                             
                             <tr data-server="Anica4" data-guild="GIFTED">
                                 
-                                <td>25</td>
+                                <td>24</td>
                                 
                                 <td>79</td>
                                 
@@ -2323,7 +2305,7 @@
                             
                             <tr data-server="Anica1" data-guild="わっしょい">
                                 
-                                <td>26</td>
+                                <td>25</td>
                                 
                                 <td>79</td>
                                 
@@ -2337,7 +2319,7 @@
                             
                             <tr data-server="Anica5" data-guild="かもめ幼稚園">
                                 
-                                <td>27</td>
+                                <td>26</td>
                                 
                                 <td>79</td>
                                 
@@ -2351,7 +2333,7 @@
                             
                             <tr data-server="Anica1" data-guild="M2O">
                                 
-                                <td>28</td>
+                                <td>27</td>
                                 
                                 <td>79</td>
                                 
@@ -2365,7 +2347,7 @@
                             
                             <tr data-server="Anica1" data-guild="わっしょい">
                                 
-                                <td>29</td>
+                                <td>28</td>
                                 
                                 <td>79</td>
                                 
@@ -2379,7 +2361,7 @@
                             
                             <tr data-server="Anica1" data-guild="わっしょい">
                                 
-                                <td>30</td>
+                                <td>29</td>
                                 
                                 <td>79</td>
                                 
@@ -2391,23 +2373,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica1" data-guild="エンジェル">
-                                
-                                <td>31</td>
-                                
-                                <td>79</td>
-                                
-                                <td>Anica1</td>
-                                
-                                <td>エンジェル</td>
-                                
-                                <td>pieeru</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica3" data-guild="ソロモン">
                                 
-                                <td>32</td>
+                                <td>30</td>
                                 
                                 <td>78</td>
                                 
@@ -2419,23 +2387,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica1" data-guild="エンジェル">
-                                
-                                <td>33</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Anica1</td>
-                                
-                                <td>エンジェル</td>
-                                
-                                <td>カラ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica5" data-guild="かもめ幼稚園">
                                 
-                                <td>34</td>
+                                <td>31</td>
                                 
                                 <td>78</td>
                                 
@@ -2449,7 +2403,7 @@
                             
                             <tr data-server="Anica2" data-guild="ぴーすxすまいる">
                                 
-                                <td>35</td>
+                                <td>32</td>
                                 
                                 <td>78</td>
                                 
@@ -2463,7 +2417,7 @@
                             
                             <tr data-server="Anica1" data-guild="MVP">
                                 
-                                <td>36</td>
+                                <td>33</td>
                                 
                                 <td>78</td>
                                 
@@ -2475,15 +2429,15 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica3" data-guild="とりあえずギルド">
+                            <tr data-server="Anica3" data-guild="所属無し">
                                 
-                                <td>37</td>
+                                <td>34</td>
                                 
                                 <td>78</td>
                                 
                                 <td>Anica3</td>
                                 
-                                <td>とりあえずギルド</td>
+                                <td>所属無し</td>
                                 
                                 <td>gensan</td>
                                 
@@ -2491,7 +2445,7 @@
                             
                             <tr data-server="Anica5" data-guild="かもめ幼稚園">
                                 
-                                <td>38</td>
+                                <td>35</td>
                                 
                                 <td>78</td>
                                 
@@ -2503,37 +2457,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica3" data-guild="一日一善">
-                                
-                                <td>39</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Anica3</td>
-                                
-                                <td>一日一善</td>
-                                
-                                <td>エクレア長老</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Anica5" data-guild="かもめ幼稚園">
-                                
-                                <td>40</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Anica5</td>
-                                
-                                <td>かもめ幼稚園</td>
-                                
-                                <td>りばや</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica3" data-guild="すす">
                                 
-                                <td>41</td>
+                                <td>36</td>
                                 
                                 <td>78</td>
                                 
@@ -2545,9 +2471,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Anica5" data-guild="かもめ幼稚園">
+                                
+                                <td>37</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Anica5</td>
+                                
+                                <td>かもめ幼稚園</td>
+                                
+                                <td>りばや</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Anica1" data-guild="焼き肉定食">
                                 
-                                <td>42</td>
+                                <td>38</td>
                                 
                                 <td>78</td>
                                 
@@ -2561,7 +2501,7 @@
                             
                             <tr data-server="Anica1" data-guild="M2O">
                                 
-                                <td>43</td>
+                                <td>39</td>
                                 
                                 <td>78</td>
                                 
@@ -2573,25 +2513,39 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica5" data-guild="所属無し">
+                            <tr data-server="Anica5" data-guild="かもめ幼稚園">
                                 
-                                <td>44</td>
+                                <td>40</td>
                                 
                                 <td>78</td>
                                 
                                 <td>Anica5</td>
                                 
-                                <td>所属無し</td>
+                                <td>かもめ幼稚園</td>
                                 
                                 <td>芭羅苔</td>
                                 
                             </tr>
                             
+                            <tr data-server="Anica5" data-guild="野菜王国">
+                                
+                                <td>41</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Anica5</td>
+                                
+                                <td>野菜王国</td>
+                                
+                                <td>山田流星群</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Anica3" data-guild="とりあえずギルド">
                                 
-                                <td>45</td>
+                                <td>42</td>
                                 
-                                <td>77</td>
+                                <td>78</td>
                                 
                                 <td>Anica3</td>
                                 
@@ -2601,25 +2555,11 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica3" data-guild="すす">
-                                
-                                <td>46</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Anica3</td>
-                                
-                                <td>すす</td>
-                                
-                                <td>煌煌</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica3" data-guild="ギルドとりあえず">
                                 
-                                <td>47</td>
+                                <td>43</td>
                                 
-                                <td>77</td>
+                                <td>78</td>
                                 
                                 <td>Anica3</td>
                                 
@@ -2629,9 +2569,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Anica3" data-guild="すす">
+                                
+                                <td>44</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Anica3</td>
+                                
+                                <td>すす</td>
+                                
+                                <td>煌煌</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Anica5" data-guild="かもめ幼稚園">
                                 
-                                <td>48</td>
+                                <td>45</td>
                                 
                                 <td>77</td>
                                 
@@ -2643,23 +2597,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica5" data-guild="野菜王国">
-                                
-                                <td>49</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Anica5</td>
-                                
-                                <td>野菜王国</td>
-                                
-                                <td>山田流星群</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica2" data-guild="ぴーすxすまいる">
                                 
-                                <td>50</td>
+                                <td>46</td>
                                 
                                 <td>77</td>
                                 
@@ -2673,7 +2613,7 @@
                             
                             <tr data-server="Anica2" data-guild="ぴーすxすまいる">
                                 
-                                <td>51</td>
+                                <td>47</td>
                                 
                                 <td>77</td>
                                 
@@ -2685,23 +2625,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica5" data-guild="かもめ幼稚園">
-                                
-                                <td>52</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Anica5</td>
-                                
-                                <td>かもめ幼稚園</td>
-                                
-                                <td>ギルガメッシュ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica2" data-guild="ぴーすxすまいる">
                                 
-                                <td>53</td>
+                                <td>48</td>
                                 
                                 <td>77</td>
                                 
@@ -2713,9 +2639,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Anica5" data-guild="かもめ幼稚園">
+                                
+                                <td>49</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Anica5</td>
+                                
+                                <td>かもめ幼稚園</td>
+                                
+                                <td>ギルガメッシュ</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Anica3" data-guild="絶対領域">
                                 
-                                <td>54</td>
+                                <td>50</td>
                                 
                                 <td>77</td>
                                 
@@ -2727,23 +2667,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica2" data-guild="ぴーすxすまいる">
-                                
-                                <td>55</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Anica2</td>
-                                
-                                <td>ぴーすxすまいる</td>
-                                
-                                <td>ラプター</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica3" data-guild="とりあえずギルド">
                                 
-                                <td>56</td>
+                                <td>51</td>
                                 
                                 <td>77</td>
                                 
@@ -2755,37 +2681,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica2" data-guild="所属無し">
-                                
-                                <td>57</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Anica2</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>josse</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Anica4" data-guild="GIFTED">
-                                
-                                <td>58</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Anica4</td>
-                                
-                                <td>GIFTED</td>
-                                
-                                <td>反逆のりとる</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica2" data-guild="ぴーすxすまいる">
                                 
-                                <td>59</td>
+                                <td>52</td>
                                 
                                 <td>77</td>
                                 
@@ -2793,13 +2691,13 @@
                                 
                                 <td>ぴーすxすまいる</td>
                                 
-                                <td>スパイラル</td>
+                                <td>ラプター</td>
                                 
                             </tr>
                             
                             <tr data-server="Anica5" data-guild="かもめ幼稚園">
                                 
-                                <td>60</td>
+                                <td>53</td>
                                 
                                 <td>77</td>
                                 
@@ -2811,9 +2709,65 @@
                                 
                             </tr>
                             
+                            <tr data-server="Anica4" data-guild="GIFTED">
+                                
+                                <td>54</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Anica4</td>
+                                
+                                <td>GIFTED</td>
+                                
+                                <td>反逆のりとる</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica2" data-guild="所属無し">
+                                
+                                <td>55</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Anica2</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>josse</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica2" data-guild="所属無し">
+                                
+                                <td>56</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Anica2</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>火縄</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica2" data-guild="ぴーすxすまいる">
+                                
+                                <td>57</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Anica2</td>
+                                
+                                <td>ぴーすxすまいる</td>
+                                
+                                <td>スパイラル</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Anica1" data-guild="わっしょい">
                                 
-                                <td>61</td>
+                                <td>58</td>
                                 
                                 <td>77</td>
                                 
@@ -2827,7 +2781,7 @@
                             
                             <tr data-server="Anica4" data-guild="ICHIE">
                                 
-                                <td>62</td>
+                                <td>59</td>
                                 
                                 <td>77</td>
                                 
@@ -2839,23 +2793,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica1" data-guild="MVP">
-                                
-                                <td>63</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Anica1</td>
-                                
-                                <td>MVP</td>
-                                
-                                <td>おみきマン</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica1" data-guild="わっしょい">
                                 
-                                <td>64</td>
+                                <td>60</td>
                                 
                                 <td>77</td>
                                 
@@ -2867,9 +2807,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Anica1" data-guild="MVP">
+                                
+                                <td>61</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Anica1</td>
+                                
+                                <td>MVP</td>
+                                
+                                <td>おみきマン</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Anica2" data-guild="所属無し">
                                 
-                                <td>65</td>
+                                <td>62</td>
                                 
                                 <td>77</td>
                                 
@@ -2883,7 +2837,7 @@
                             
                             <tr data-server="Anica2" data-guild="ぴーすxすまいる">
                                 
-                                <td>66</td>
+                                <td>63</td>
                                 
                                 <td>77</td>
                                 
@@ -2897,7 +2851,7 @@
                             
                             <tr data-server="Anica5" data-guild="かもめ幼稚園">
                                 
-                                <td>67</td>
+                                <td>64</td>
                                 
                                 <td>77</td>
                                 
@@ -2909,9 +2863,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Anica3" data-guild="とりあえずギルド">
+                                
+                                <td>65</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Anica3</td>
+                                
+                                <td>とりあえずギルド</td>
+                                
+                                <td>たとあ</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Anica1" data-guild="わっしょい">
                                 
-                                <td>68</td>
+                                <td>66</td>
                                 
                                 <td>77</td>
                                 
@@ -2925,7 +2893,7 @@
                             
                             <tr data-server="Anica3" data-guild="とりあえずギルド">
                                 
-                                <td>69</td>
+                                <td>67</td>
                                 
                                 <td>77</td>
                                 
@@ -2933,27 +2901,13 @@
                                 
                                 <td>とりあえずギルド</td>
                                 
-                                <td>たとあ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Anica2" data-guild="ぴーすxすまいる">
-                                
-                                <td>70</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Anica2</td>
-                                
-                                <td>ぴーすxすまいる</td>
-                                
-                                <td>戦鬼</td>
+                                <td>oFRANo</td>
                                 
                             </tr>
                             
                             <tr data-server="Anica4" data-guild="GIFTED">
                                 
-                                <td>71</td>
+                                <td>68</td>
                                 
                                 <td>77</td>
                                 
@@ -2967,7 +2921,7 @@
                             
                             <tr data-server="Anica2" data-guild="ゴミムシ">
                                 
-                                <td>72</td>
+                                <td>69</td>
                                 
                                 <td>77</td>
                                 
@@ -2981,7 +2935,7 @@
                             
                             <tr data-server="Anica3" data-guild="とりあえずギルド">
                                 
-                                <td>73</td>
+                                <td>70</td>
                                 
                                 <td>77</td>
                                 
@@ -2989,13 +2943,13 @@
                                 
                                 <td>とりあえずギルド</td>
                                 
-                                <td>oFRANo</td>
+                                <td>tokoshi</td>
                                 
                             </tr>
                             
                             <tr data-server="Anica1" data-guild="MVP">
                                 
-                                <td>74</td>
+                                <td>71</td>
                                 
                                 <td>77</td>
                                 
@@ -3009,7 +2963,7 @@
                             
                             <tr data-server="Anica1" data-guild="サーフィス">
                                 
-                                <td>75</td>
+                                <td>72</td>
                                 
                                 <td>77</td>
                                 
@@ -3021,23 +2975,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica1" data-guild="M2O">
-                                
-                                <td>76</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Anica1</td>
-                                
-                                <td>M2O</td>
-                                
-                                <td>RONTAMA</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica4" data-guild="GIFTED">
                                 
-                                <td>77</td>
+                                <td>73</td>
                                 
                                 <td>77</td>
                                 
@@ -3051,7 +2991,7 @@
                             
                             <tr data-server="Anica1" data-guild="M2O">
                                 
-                                <td>78</td>
+                                <td>74</td>
                                 
                                 <td>77</td>
                                 
@@ -3063,9 +3003,51 @@
                                 
                             </tr>
                             
+                            <tr data-server="Anica1" data-guild="M2O">
+                                
+                                <td>75</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Anica1</td>
+                                
+                                <td>M2O</td>
+                                
+                                <td>RONTAMA</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica5" data-guild="かもめ幼稚園">
+                                
+                                <td>76</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Anica5</td>
+                                
+                                <td>かもめ幼稚園</td>
+                                
+                                <td>ぶらん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica4" data-guild="GIFTED">
+                                
+                                <td>77</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Anica4</td>
+                                
+                                <td>GIFTED</td>
+                                
+                                <td>Deedlit</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Anica3" data-guild="所属無し">
                                 
-                                <td>79</td>
+                                <td>78</td>
                                 
                                 <td>76</td>
                                 
@@ -3077,79 +3059,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica4" data-guild="GIFTED">
-                                
-                                <td>80</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Anica4</td>
-                                
-                                <td>GIFTED</td>
-                                
-                                <td>Deedlit</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Anica3" data-guild="とりあえずギルド">
-                                
-                                <td>81</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Anica3</td>
-                                
-                                <td>とりあえずギルド</td>
-                                
-                                <td>tokoshi</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Anica3" data-guild="一日一善">
-                                
-                                <td>82</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Anica3</td>
-                                
-                                <td>一日一善</td>
-                                
-                                <td>おGさん</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Anica2" data-guild="xx爆乱隊xx">
-                                
-                                <td>83</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Anica2</td>
-                                
-                                <td>xx爆乱隊xx</td>
-                                
-                                <td>こきまろ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Anica2" data-guild="所属無し">
-                                
-                                <td>84</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Anica2</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>はるchan</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica2" data-guild="放置雑適当プレイ">
                                 
-                                <td>85</td>
+                                <td>79</td>
                                 
                                 <td>76</td>
                                 
@@ -3161,23 +3073,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica5" data-guild="かもめ幼稚園">
-                                
-                                <td>86</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Anica5</td>
-                                
-                                <td>かもめ幼稚園</td>
-                                
-                                <td>ぶらん</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica3" data-guild="すす">
                                 
-                                <td>87</td>
+                                <td>80</td>
                                 
                                 <td>76</td>
                                 
@@ -3189,9 +3087,37 @@
                                 
                             </tr>
                             
+                            <tr data-server="Anica2" data-guild="所属無し">
+                                
+                                <td>81</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Anica2</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>はるchan</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica3" data-guild="すす">
+                                
+                                <td>82</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Anica3</td>
+                                
+                                <td>すす</td>
+                                
+                                <td>卍ブロニキ卍</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Anica1" data-guild="わっしょい">
                                 
-                                <td>88</td>
+                                <td>83</td>
                                 
                                 <td>76</td>
                                 
@@ -3205,7 +3131,7 @@
                             
                             <tr data-server="Anica3" data-guild="とりあえずギルド">
                                 
-                                <td>89</td>
+                                <td>84</td>
                                 
                                 <td>76</td>
                                 
@@ -3217,37 +3143,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica3" data-guild="すす">
-                                
-                                <td>90</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Anica3</td>
-                                
-                                <td>すす</td>
-                                
-                                <td>卍ブロニキ卍</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Anica3" data-guild="すす">
-                                
-                                <td>91</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Anica3</td>
-                                
-                                <td>すす</td>
-                                
-                                <td>DiE4u</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica1" data-guild="DIABLO">
                                 
-                                <td>92</td>
+                                <td>85</td>
                                 
                                 <td>76</td>
                                 
@@ -3259,9 +3157,51 @@
                                 
                             </tr>
                             
+                            <tr data-server="Anica3" data-guild="すす">
+                                
+                                <td>86</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Anica3</td>
+                                
+                                <td>すす</td>
+                                
+                                <td>DiE4u</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica1" data-guild="所属無し">
+                                
+                                <td>87</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Anica1</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>ルクレティア</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica1" data-guild="M2O">
+                                
+                                <td>88</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Anica1</td>
+                                
+                                <td>M2O</td>
+                                
+                                <td>Kazny</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Anica4" data-guild="ICHIE">
                                 
-                                <td>93</td>
+                                <td>89</td>
                                 
                                 <td>76</td>
                                 
@@ -3273,23 +3213,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Anica1" data-guild="わっしょい">
-                                
-                                <td>94</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Anica1</td>
-                                
-                                <td>わっしょい</td>
-                                
-                                <td>ルクレティア</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Anica4" data-guild="闇鴉">
                                 
-                                <td>95</td>
+                                <td>90</td>
                                 
                                 <td>76</td>
                                 
@@ -3303,7 +3229,7 @@
                             
                             <tr data-server="Anica4" data-guild="GIFTED">
                                 
-                                <td>96</td>
+                                <td>91</td>
                                 
                                 <td>76</td>
                                 
@@ -3315,9 +3241,37 @@
                                 
                             </tr>
                             
+                            <tr data-server="Anica3" data-guild="くりぱ">
+                                
+                                <td>92</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Anica3</td>
+                                
+                                <td>くりぱ</td>
+                                
+                                <td>ざざふり</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica1" data-guild="DIABLO">
+                                
+                                <td>93</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Anica1</td>
+                                
+                                <td>DIABLO</td>
+                                
+                                <td>montana</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Anica1" data-guild="M2O">
                                 
-                                <td>97</td>
+                                <td>94</td>
                                 
                                 <td>76</td>
                                 
@@ -3326,6 +3280,48 @@
                                 <td>M2O</td>
                                 
                                 <td>mio83</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica3" data-guild="聖ハンマーヘッズ">
+                                
+                                <td>95</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Anica3</td>
+                                
+                                <td>聖ハンマーヘッズ</td>
+                                
+                                <td>ひろなな</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica4" data-guild="GIFTED">
+                                
+                                <td>96</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Anica4</td>
+                                
+                                <td>GIFTED</td>
+                                
+                                <td>wフクオカw</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Anica1" data-guild="わっしょい">
+                                
+                                <td>97</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Anica1</td>
+                                
+                                <td>わっしょい</td>
+                                
+                                <td>アリエス72</td>
                                 
                             </tr>
                             
@@ -3339,35 +3335,35 @@
                                 
                                 <td>DIABLO</td>
                                 
-                                <td>montana</td>
+                                <td>Karls</td>
                                 
                             </tr>
                             
-                            <tr data-server="Anica4" data-guild="GIFTED">
+                            <tr data-server="Anica1" data-guild="Cradle">
                                 
                                 <td>99</td>
                                 
                                 <td>76</td>
                                 
-                                <td>Anica4</td>
+                                <td>Anica1</td>
                                 
-                                <td>GIFTED</td>
+                                <td>Cradle</td>
                                 
-                                <td>wフクオカw</td>
+                                <td>らくしぃ</td>
                                 
                             </tr>
                             
-                            <tr data-server="Anica3" data-guild="聖ハンマーヘッズ">
+                            <tr data-server="Anica5" data-guild="かもめ幼稚園">
                                 
                                 <td>100</td>
                                 
                                 <td>76</td>
                                 
-                                <td>Anica3</td>
+                                <td>Anica5</td>
                                 
-                                <td>聖ハンマーヘッズ</td>
+                                <td>かもめ幼稚園</td>
                                 
-                                <td>ひろなな</td>
+                                <td>しろくれ</td>
                                 
                             </tr>
                             
@@ -3579,9 +3575,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo3" data-guild="HOALOHA愛">
+                            <tr data-server="Hugo1" data-guild="所属無し">
                                 
                                 <td>6</td>
+                                
+                                <td>81</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>TULLYS</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo3" data-guild="HOALOHA愛">
+                                
+                                <td>7</td>
                                 
                                 <td>81</td>
                                 
@@ -3595,7 +3605,7 @@
                             
                             <tr data-server="Hugo5" data-guild="TSGp">
                                 
-                                <td>7</td>
+                                <td>8</td>
                                 
                                 <td>80</td>
                                 
@@ -3609,7 +3619,7 @@
                             
                             <tr data-server="Hugo1" data-guild="なみだふくよ">
                                 
-                                <td>8</td>
+                                <td>9</td>
                                 
                                 <td>80</td>
                                 
@@ -3623,7 +3633,7 @@
                             
                             <tr data-server="Hugo4" data-guild="がっつりこまり">
                                 
-                                <td>9</td>
+                                <td>10</td>
                                 
                                 <td>80</td>
                                 
@@ -3637,7 +3647,7 @@
                             
                             <tr data-server="Hugo4" data-guild="がっつりこまり">
                                 
-                                <td>10</td>
+                                <td>11</td>
                                 
                                 <td>80</td>
                                 
@@ -3646,20 +3656,6 @@
                                 <td>がっつりこまり</td>
                                 
                                 <td>オソマさん</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo2" data-guild="プリキュア">
-                                
-                                <td>11</td>
-                                
-                                <td>80</td>
-                                
-                                <td>Hugo2</td>
-                                
-                                <td>プリキュア</td>
-                                
-                                <td>市川デビ蔵</td>
                                 
                             </tr>
                             
@@ -3677,9 +3673,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                            <tr data-server="Hugo2" data-guild="プリキュア">
                                 
                                 <td>13</td>
+                                
+                                <td>80</td>
+                                
+                                <td>Hugo2</td>
+                                
+                                <td>プリキュア</td>
+                                
+                                <td>市川デビ蔵</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                                
+                                <td>14</td>
                                 
                                 <td>80</td>
                                 
@@ -3693,7 +3703,7 @@
                             
                             <tr data-server="Hugo4" data-guild="がっつりこまり">
                                 
-                                <td>14</td>
+                                <td>15</td>
                                 
                                 <td>80</td>
                                 
@@ -3707,7 +3717,7 @@
                             
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>15</td>
+                                <td>16</td>
                                 
                                 <td>80</td>
                                 
@@ -3716,20 +3726,6 @@
                                 <td>HOALOHA</td>
                                 
                                 <td>シヴァァァ467</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo4" data-guild="所属無し">
-                                
-                                <td>16</td>
-                                
-                                <td>79</td>
-                                
-                                <td>Hugo4</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>お邪魔しま</td>
                                 
                             </tr>
                             
@@ -3789,9 +3785,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                            <tr data-server="Hugo5" data-guild="KINGDOM2">
                                 
                                 <td>21</td>
+                                
+                                <td>79</td>
+                                
+                                <td>Hugo5</td>
+                                
+                                <td>KINGDOM2</td>
+                                
+                                <td>oguri</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                                
+                                <td>22</td>
                                 
                                 <td>79</td>
                                 
@@ -3803,25 +3813,11 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo5" data-guild="KINGDOM2">
-                                
-                                <td>22</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Hugo5</td>
-                                
-                                <td>KINGDOM2</td>
-                                
-                                <td>oguri</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Hugo2" data-guild="プリキュア">
                                 
                                 <td>23</td>
                                 
-                                <td>78</td>
+                                <td>79</td>
                                 
                                 <td>Hugo2</td>
                                 
@@ -3859,23 +3855,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo1" data-guild="なみだふくよ">
-                                
-                                <td>26</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Hugo1</td>
-                                
-                                <td>なみだふくよ</td>
-                                
-                                <td>カービィ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>27</td>
+                                <td>26</td>
                                 
                                 <td>78</td>
                                 
@@ -3889,7 +3871,7 @@
                             
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>28</td>
+                                <td>27</td>
                                 
                                 <td>78</td>
                                 
@@ -3898,6 +3880,20 @@
                                 <td>HOALOHA</td>
                                 
                                 <td>おれんじっ467</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="なみだふくよ">
+                                
+                                <td>28</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>なみだふくよ</td>
+                                
+                                <td>カービィ</td>
                                 
                             </tr>
                             
@@ -3929,37 +3925,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo1" data-guild="HOALOHA">
-                                
-                                <td>31</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Hugo1</td>
-                                
-                                <td>HOALOHA</td>
-                                
-                                <td>ルーン467</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo1" data-guild="HOALOHA">
-                                
-                                <td>32</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Hugo1</td>
-                                
-                                <td>HOALOHA</td>
-                                
-                                <td>虹色ッ467</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Hugo5" data-guild="もきゅもきゅ帝国">
                                 
-                                <td>33</td>
+                                <td>31</td>
                                 
                                 <td>78</td>
                                 
@@ -3973,7 +3941,21 @@
                             
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>34</td>
+                                <td>32</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>HOALOHA</td>
+                                
+                                <td>ルーン467</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                                
+                                <td>33</td>
                                 
                                 <td>78</td>
                                 
@@ -3985,51 +3967,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo5" data-guild="KINGDOM2">
-                                
-                                <td>35</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Hugo5</td>
-                                
-                                <td>KINGDOM2</td>
-                                
-                                <td>ラキサトーン</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo4" data-guild="がっつりこまり">
-                                
-                                <td>36</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Hugo4</td>
-                                
-                                <td>がっつりこまり</td>
-                                
-                                <td>げんぷぅ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo1" data-guild="なみだふくよ">
-                                
-                                <td>37</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Hugo1</td>
-                                
-                                <td>なみだふくよ</td>
-                                
-                                <td>ことあちゃん</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Hugo3" data-guild="HOALOHA豚">
                                 
-                                <td>38</td>
+                                <td>34</td>
                                 
                                 <td>78</td>
                                 
@@ -4041,9 +3981,79 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo3" data-guild="HOALOHA雪">
+                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                                
+                                <td>35</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>HOALOHA</td>
+                                
+                                <td>虹色ッ467</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo5" data-guild="KINGDOM2">
+                                
+                                <td>36</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Hugo5</td>
+                                
+                                <td>KINGDOM2</td>
+                                
+                                <td>ラキサトーン</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo3" data-guild="所属無し">
+                                
+                                <td>37</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Hugo3</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>飯塚幸三</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="なみだふくよ">
+                                
+                                <td>38</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>なみだふくよ</td>
+                                
+                                <td>ことあちゃん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo4" data-guild="がっつりこまり">
                                 
                                 <td>39</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Hugo4</td>
+                                
+                                <td>がっつりこまり</td>
+                                
+                                <td>げんぷぅ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo3" data-guild="HOALOHA雪">
+                                
+                                <td>40</td>
                                 
                                 <td>78</td>
                                 
@@ -4052,20 +4062,6 @@
                                 <td>HOALOHA雪</td>
                                 
                                 <td>TM銃象467</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo1" data-guild="なみだふくよ">
-                                
-                                <td>40</td>
-                                
-                                <td>78</td>
-                                
-                                <td>Hugo1</td>
-                                
-                                <td>なみだふくよ</td>
-                                
-                                <td>あきぶ</td>
                                 
                             </tr>
                             
@@ -4093,13 +4089,27 @@
                                 
                                 <td>なみだふくよ</td>
                                 
+                                <td>あきぶ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="なみだふくよ">
+                                
+                                <td>43</td>
+                                
+                                <td>78</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>なみだふくよ</td>
+                                
                                 <td>タンスにGON2</td>
                                 
                             </tr>
                             
                             <tr data-server="Hugo5" data-guild="KINGDOM2">
                                 
-                                <td>43</td>
+                                <td>44</td>
                                 
                                 <td>78</td>
                                 
@@ -4113,7 +4123,7 @@
                             
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>44</td>
+                                <td>45</td>
                                 
                                 <td>78</td>
                                 
@@ -4127,9 +4137,9 @@
                             
                             <tr data-server="Hugo4" data-guild="所属無し">
                                 
-                                <td>45</td>
+                                <td>46</td>
                                 
-                                <td>77</td>
+                                <td>78</td>
                                 
                                 <td>Hugo4</td>
                                 
@@ -4141,9 +4151,9 @@
                             
                             <tr data-server="Hugo4" data-guild="がっつりこまり">
                                 
-                                <td>46</td>
+                                <td>47</td>
                                 
-                                <td>77</td>
+                                <td>78</td>
                                 
                                 <td>Hugo4</td>
                                 
@@ -4155,7 +4165,7 @@
                             
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>47</td>
+                                <td>48</td>
                                 
                                 <td>77</td>
                                 
@@ -4164,20 +4174,6 @@
                                 <td>HOALOHA</td>
                                 
                                 <td>xNIVEAx</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo3" data-guild="HOALOHA友">
-                                
-                                <td>48</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Hugo3</td>
-                                
-                                <td>HOALOHA友</td>
-                                
-                                <td>さきっちょ467</td>
                                 
                             </tr>
                             
@@ -4195,23 +4191,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo2" data-guild="プリキュア">
-                                
-                                <td>50</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Hugo2</td>
-                                
-                                <td>プリキュア</td>
-                                
-                                <td>頂き女子りりちゃ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Hugo5" data-guild="もきゅもきゅ帝国">
                                 
-                                <td>51</td>
+                                <td>50</td>
                                 
                                 <td>77</td>
                                 
@@ -4223,9 +4205,37 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo3" data-guild="HOALOHA愛">
+                            <tr data-server="Hugo3" data-guild="HOALOHA友">
+                                
+                                <td>51</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Hugo3</td>
+                                
+                                <td>HOALOHA友</td>
+                                
+                                <td>さきっちょ467</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo2" data-guild="プリキュア">
                                 
                                 <td>52</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Hugo2</td>
+                                
+                                <td>プリキュア</td>
+                                
+                                <td>頂き女子りりちゃ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo3" data-guild="HOALOHA愛">
+                                
+                                <td>53</td>
                                 
                                 <td>77</td>
                                 
@@ -4239,7 +4249,7 @@
                             
                             <tr data-server="Hugo5" data-guild="KINGDOM2">
                                 
-                                <td>53</td>
+                                <td>54</td>
                                 
                                 <td>77</td>
                                 
@@ -4248,20 +4258,6 @@
                                 <td>KINGDOM2</td>
                                 
                                 <td>姜燕</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo5" data-guild="TSGp">
-                                
-                                <td>54</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Hugo5</td>
-                                
-                                <td>TSGp</td>
-                                
-                                <td>スカーフ</td>
                                 
                             </tr>
                             
@@ -4279,31 +4275,31 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                            <tr data-server="Hugo5" data-guild="TSGp">
                                 
                                 <td>56</td>
                                 
                                 <td>77</td>
                                 
-                                <td>Hugo1</td>
+                                <td>Hugo5</td>
                                 
-                                <td>HOALOHA</td>
+                                <td>TSGp</td>
                                 
-                                <td>ごじゃる</td>
+                                <td>スカーフ</td>
                                 
                             </tr>
                             
-                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                            <tr data-server="Hugo3" data-guild="所属無し">
                                 
                                 <td>57</td>
                                 
                                 <td>77</td>
                                 
-                                <td>Hugo1</td>
+                                <td>Hugo3</td>
                                 
-                                <td>HOALOHA</td>
+                                <td>所属無し</td>
                                 
-                                <td>テヒョ</td>
+                                <td>アイスの実</td>
                                 
                             </tr>
                             
@@ -4317,13 +4313,41 @@
                                 
                                 <td>HOALOHA</td>
                                 
+                                <td>ごじゃる</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                                
+                                <td>59</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>HOALOHA</td>
+                                
                                 <td>とーり467</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                                
+                                <td>60</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>HOALOHA</td>
+                                
+                                <td>テヒョ</td>
                                 
                             </tr>
                             
                             <tr data-server="Hugo2" data-guild="プリキュア">
                                 
-                                <td>59</td>
+                                <td>61</td>
                                 
                                 <td>77</td>
                                 
@@ -4337,7 +4361,7 @@
                             
                             <tr data-server="Hugo2" data-guild="プリキュア">
                                 
-                                <td>60</td>
+                                <td>62</td>
                                 
                                 <td>77</td>
                                 
@@ -4349,23 +4373,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo5" data-guild="ぽーたま">
-                                
-                                <td>61</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Hugo5</td>
-                                
-                                <td>ぽーたま</td>
-                                
-                                <td>Otter</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Hugo1" data-guild="HOALOHA玉">
                                 
-                                <td>62</td>
+                                <td>63</td>
                                 
                                 <td>77</td>
                                 
@@ -4377,9 +4387,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Hugo5" data-guild="ぽーたま">
+                                
+                                <td>64</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Hugo5</td>
+                                
+                                <td>ぽーたま</td>
+                                
+                                <td>Otter</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Hugo3" data-guild="fra9ment">
                                 
-                                <td>63</td>
+                                <td>65</td>
                                 
                                 <td>77</td>
                                 
@@ -4391,23 +4415,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo1" data-guild="所属無し">
-                                
-                                <td>64</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Hugo1</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>しんぷるっ467</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Hugo5" data-guild="Verite">
                                 
-                                <td>65</td>
+                                <td>66</td>
                                 
                                 <td>77</td>
                                 
@@ -4419,9 +4429,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Hugo1" data-guild="所属無し">
+                                
+                                <td>67</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>しんぷるっ467</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>66</td>
+                                <td>68</td>
                                 
                                 <td>77</td>
                                 
@@ -4435,7 +4459,7 @@
                             
                             <tr data-server="Hugo3" data-guild="HOALOHA愛">
                                 
-                                <td>67</td>
+                                <td>69</td>
                                 
                                 <td>77</td>
                                 
@@ -4449,7 +4473,7 @@
                             
                             <tr data-server="Hugo1" data-guild="なみだふくよ">
                                 
-                                <td>68</td>
+                                <td>70</td>
                                 
                                 <td>77</td>
                                 
@@ -4463,7 +4487,7 @@
                             
                             <tr data-server="Hugo3" data-guild="HOALOHA友">
                                 
-                                <td>69</td>
+                                <td>71</td>
                                 
                                 <td>77</td>
                                 
@@ -4477,34 +4501,6 @@
                             
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>70</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Hugo1</td>
-                                
-                                <td>HOALOHA</td>
-                                
-                                <td>夜さん</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo4" data-guild="がっつりこまり">
-                                
-                                <td>71</td>
-                                
-                                <td>77</td>
-                                
-                                <td>Hugo4</td>
-                                
-                                <td>がっつりこまり</td>
-                                
-                                <td>らりお</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo1" data-guild="HOALOHA">
-                                
                                 <td>72</td>
                                 
                                 <td>77</td>
@@ -4513,7 +4509,7 @@
                                 
                                 <td>HOALOHA</td>
                                 
-                                <td>Sora467</td>
+                                <td>夜さん</td>
                                 
                             </tr>
                             
@@ -4531,9 +4527,37 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo1" data-guild="なみだふくよ">
+                            <tr data-server="Hugo4" data-guild="がっつりこまり">
                                 
                                 <td>74</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Hugo4</td>
+                                
+                                <td>がっつりこまり</td>
+                                
+                                <td>らりお</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                                
+                                <td>75</td>
+                                
+                                <td>77</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>HOALOHA</td>
+                                
+                                <td>Sora467</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="なみだふくよ">
+                                
+                                <td>76</td>
                                 
                                 <td>77</td>
                                 
@@ -4547,7 +4571,7 @@
                             
                             <tr data-server="Hugo3" data-guild="HOALOHA愛">
                                 
-                                <td>75</td>
+                                <td>77</td>
                                 
                                 <td>77</td>
                                 
@@ -4561,7 +4585,7 @@
                             
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>76</td>
+                                <td>78</td>
                                 
                                 <td>76</td>
                                 
@@ -4575,7 +4599,7 @@
                             
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>77</td>
+                                <td>79</td>
                                 
                                 <td>76</td>
                                 
@@ -4589,7 +4613,7 @@
                             
                             <tr data-server="Hugo3" data-guild="fra9ment">
                                 
-                                <td>78</td>
+                                <td>80</td>
                                 
                                 <td>76</td>
                                 
@@ -4601,51 +4625,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo1" data-guild="HOALOHA">
-                                
-                                <td>79</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Hugo1</td>
-                                
-                                <td>HOALOHA</td>
-                                
-                                <td>かぼちゃまん</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo1" data-guild="HOALOHA">
-                                
-                                <td>80</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Hugo1</td>
-                                
-                                <td>HOALOHA</td>
-                                
-                                <td>てく467</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo5" data-guild="TSGp">
-                                
-                                <td>81</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Hugo5</td>
-                                
-                                <td>TSGp</td>
-                                
-                                <td>にゃおにゃおん</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Hugo5" data-guild="KINGDOM2">
                                 
-                                <td>82</td>
+                                <td>81</td>
                                 
                                 <td>76</td>
                                 
@@ -4657,9 +4639,51 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo1" data-guild="なみだふくよ">
+                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                                
+                                <td>82</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>HOALOHA</td>
+                                
+                                <td>かぼちゃまん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo5" data-guild="TSGp">
                                 
                                 <td>83</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Hugo5</td>
+                                
+                                <td>TSGp</td>
+                                
+                                <td>にゃおにゃおん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                                
+                                <td>84</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>HOALOHA</td>
+                                
+                                <td>てく467</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="なみだふくよ">
+                                
+                                <td>85</td>
                                 
                                 <td>76</td>
                                 
@@ -4673,7 +4697,7 @@
                             
                             <tr data-server="Hugo3" data-guild="HOALOHA豚">
                                 
-                                <td>84</td>
+                                <td>86</td>
                                 
                                 <td>76</td>
                                 
@@ -4687,21 +4711,7 @@
                             
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>85</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Hugo1</td>
-                                
-                                <td>HOALOHA</td>
-                                
-                                <td>DDD467</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo1" data-guild="HOALOHA">
-                                
-                                <td>86</td>
+                                <td>87</td>
                                 
                                 <td>76</td>
                                 
@@ -4715,7 +4725,21 @@
                             
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>87</td>
+                                <td>88</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Hugo1</td>
+                                
+                                <td>HOALOHA</td>
+                                
+                                <td>DDD467</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Hugo1" data-guild="HOALOHA">
+                                
+                                <td>89</td>
                                 
                                 <td>76</td>
                                 
@@ -4729,7 +4753,7 @@
                             
                             <tr data-server="Hugo1" data-guild="Ahahaha">
                                 
-                                <td>88</td>
+                                <td>90</td>
                                 
                                 <td>76</td>
                                 
@@ -4741,23 +4765,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo5" data-guild="所属無し">
-                                
-                                <td>89</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Hugo5</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>珠手ちゆ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Hugo2" data-guild="プリキュア">
                                 
-                                <td>90</td>
+                                <td>91</td>
                                 
                                 <td>76</td>
                                 
@@ -4771,7 +4781,7 @@
                             
                             <tr data-server="Hugo3" data-guild="HOALOHA愛">
                                 
-                                <td>91</td>
+                                <td>92</td>
                                 
                                 <td>76</td>
                                 
@@ -4783,9 +4793,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Hugo3" data-guild="HOALOHA豚">
+                                
+                                <td>93</td>
+                                
+                                <td>76</td>
+                                
+                                <td>Hugo3</td>
+                                
+                                <td>HOALOHA豚</td>
+                                
+                                <td>りゅりゅ467</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Hugo4" data-guild="所属無し">
                                 
-                                <td>92</td>
+                                <td>94</td>
                                 
                                 <td>76</td>
                                 
@@ -4799,7 +4823,7 @@
                             
                             <tr data-server="Hugo4" data-guild="がっつりこまり">
                                 
-                                <td>93</td>
+                                <td>95</td>
                                 
                                 <td>76</td>
                                 
@@ -4811,23 +4835,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo3" data-guild="HOALOHA豚">
+                            <tr data-server="Hugo5" data-guild="もきゅもきゅ帝国">
                                 
-                                <td>94</td>
+                                <td>96</td>
                                 
                                 <td>76</td>
                                 
-                                <td>Hugo3</td>
+                                <td>Hugo5</td>
                                 
-                                <td>HOALOHA豚</td>
+                                <td>もきゅもきゅ帝国</td>
                                 
-                                <td>りゅりゅ467</td>
+                                <td>スーツの新婦</td>
                                 
                             </tr>
                             
                             <tr data-server="Hugo1" data-guild="HOALOHA">
                                 
-                                <td>95</td>
+                                <td>97</td>
                                 
                                 <td>76</td>
                                 
@@ -4841,7 +4865,7 @@
                             
                             <tr data-server="Hugo2" data-guild="所属無し">
                                 
-                                <td>96</td>
+                                <td>98</td>
                                 
                                 <td>76</td>
                                 
@@ -4853,23 +4877,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Hugo3" data-guild="HOALOHA友">
-                                
-                                <td>97</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Hugo3</td>
-                                
-                                <td>HOALOHA友</td>
-                                
-                                <td>おとな467</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Hugo4" data-guild="所属無し">
                                 
-                                <td>98</td>
+                                <td>99</td>
                                 
                                 <td>76</td>
                                 
@@ -4883,7 +4893,7 @@
                             
                             <tr data-server="Hugo1" data-guild="ナミダフクネ">
                                 
-                                <td>99</td>
+                                <td>100</td>
                                 
                                 <td>76</td>
                                 
@@ -4892,20 +4902,6 @@
                                 <td>ナミダフクネ</td>
                                 
                                 <td>悦びに咲く花</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Hugo1" data-guild="HOALOHA">
-                                
-                                <td>100</td>
-                                
-                                <td>76</td>
-                                
-                                <td>Hugo1</td>
-                                
-                                <td>HOALOHA</td>
-                                
-                                <td>灰色467</td>
                                 
                             </tr>
                             
