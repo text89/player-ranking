@@ -273,6 +273,8 @@
                 
                 <div class="tab" id="Lucas-tab" onclick="showTab('Lucas')">Lucas</div>
                 
+                <div class="tab" id="Boosting-tab" onclick="showTab('Boosting')">Boosting</div>
+                
             </div>
 
             
@@ -6332,6 +6334,1540 @@
                                 <td>グレイゴースト</td>
                                 
                                 <td>ゲゲゲのキッコロ</td>
+                                
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div id="Boosting-content" class="content">
+                <h3>絞り込み<span class="filter-toggle" onclick="toggleFilterSection('Boosting')">v</span></h3>
+                <div class="filter-section">
+                    <div>
+                        <h4>サーバー:</h4>
+                        <label><input type="checkbox" id="Boosting-server-all" name="server" value="all" checked onchange="toggleServerCheckbox('Boosting', 'all')"> 全て</label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Boosting1" checked onchange="toggleServerCheckbox('Boosting', 'Boosting1')"> 
+                            Boosting1
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Boosting2" checked onchange="toggleServerCheckbox('Boosting', 'Boosting2')"> 
+                            Boosting2
+                        </label>
+                        
+                        <label style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <input type="checkbox" name="server" value="Boosting3" checked onchange="toggleServerCheckbox('Boosting', 'Boosting3')"> 
+                            Boosting3
+                        </label>
+                        
+                    </div>
+                    <div>
+                        <h4>ギルド:</h4>
+                        <div class="guild-filter-container">
+                            
+                            <div class="guild-filter-group">
+                                <h4>Boosting1</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting1-鯖缶" onchange="toggleGuildCheckbox('Boosting')"> 鯖缶</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting1-にんにんランド" onchange="toggleGuildCheckbox('Boosting')"> にんにんランド</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting1-ぺこりん村" onchange="toggleGuildCheckbox('Boosting')"> ぺこりん村</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting1-LEVABULL" onchange="toggleGuildCheckbox('Boosting')"> LEVABULL</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting1-お珍珍亭" onchange="toggleGuildCheckbox('Boosting')"> お珍珍亭</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting1-秋のパン祭り" onchange="toggleGuildCheckbox('Boosting')"> 秋のパン祭り</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting1-星の調律者" onchange="toggleGuildCheckbox('Boosting')"> 星の調律者</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting1-所属無し" onchange="toggleGuildCheckbox('Boosting')"> 所属無し</label>
+                                
+                            </div>
+                            
+                            <div class="guild-filter-group">
+                                <h4>Boosting2</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-烏合の衆" onchange="toggleGuildCheckbox('Boosting')"> 烏合の衆</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-レッツサーフィス" onchange="toggleGuildCheckbox('Boosting')"> レッツサーフィス</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-モールス" onchange="toggleGuildCheckbox('Boosting')"> モールス</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-KMK48" onchange="toggleGuildCheckbox('Boosting')"> KMK48</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-MBTI" onchange="toggleGuildCheckbox('Boosting')"> MBTI</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-おさけやさん" onchange="toggleGuildCheckbox('Boosting')"> おさけやさん</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-セラポン" onchange="toggleGuildCheckbox('Boosting')"> セラポン</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-烏合の衆ー弐" onchange="toggleGuildCheckbox('Boosting')"> 烏合の衆ー弐</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-夢の異世界生活" onchange="toggleGuildCheckbox('Boosting')"> 夢の異世界生活</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-mofmof" onchange="toggleGuildCheckbox('Boosting')"> mofmof</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-封印されし、めう" onchange="toggleGuildCheckbox('Boosting')"> 封印されし、めう</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-こくみん" onchange="toggleGuildCheckbox('Boosting')"> こくみん</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-二度目の骨折" onchange="toggleGuildCheckbox('Boosting')"> 二度目の骨折</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting2-所属無し" onchange="toggleGuildCheckbox('Boosting')"> 所属無し</label>
+                                
+                            </div>
+                            
+                            <div class="guild-filter-group">
+                                <h4>Boosting3</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting3-自由民主党" onchange="toggleGuildCheckbox('Boosting')"> 自由民主党</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting3-猫の部屋出張所" onchange="toggleGuildCheckbox('Boosting')"> 猫の部屋出張所</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting3-どういうこっ茶" onchange="toggleGuildCheckbox('Boosting')"> どういうこっ茶</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting3-聖女の洗脳騎士団" onchange="toggleGuildCheckbox('Boosting')"> 聖女の洗脳騎士団</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting3-B朧" onchange="toggleGuildCheckbox('Boosting')"> B朧</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting3-自由への招待" onchange="toggleGuildCheckbox('Boosting')"> 自由への招待</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting3-Elnyath" onchange="toggleGuildCheckbox('Boosting')"> Elnyath</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting3-異世界レストラン" onchange="toggleGuildCheckbox('Boosting')"> 異世界レストラン</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting3-日進月歩" onchange="toggleGuildCheckbox('Boosting')"> 日進月歩</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Boosting3-所属無し" onchange="toggleGuildCheckbox('Boosting')"> 所属無し</label>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                
+                                <th>ランキング</th>
+                                
+                                <th>レベル</th>
+                                
+                                <th>サーバー</th>
+                                
+                                <th>ギルド</th>
+                                
+                                <th>キャラクター</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr data-server="Boosting3" data-guild="自由民主党">
+                                
+                                <td>1</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>自由民主党</td>
+                                
+                                <td>あそでたろたろ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="猫の部屋出張所">
+                                
+                                <td>2</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>猫の部屋出張所</td>
+                                
+                                <td>スープごはん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="どういうこっ茶">
+                                
+                                <td>3</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>どういうこっ茶</td>
+                                
+                                <td>カ茶ンドラ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="自由民主党">
+                                
+                                <td>4</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>自由民主党</td>
+                                
+                                <td>菅義偉</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="自由民主党">
+                                
+                                <td>5</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>自由民主党</td>
+                                
+                                <td>幻影白虎</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="自由民主党">
+                                
+                                <td>6</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>自由民主党</td>
+                                
+                                <td>抹茶の息子</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>7</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>綺稀</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>8</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>DDY</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>9</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>黒捷</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="レッツサーフィス">
+                                
+                                <td>10</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>レッツサーフィス</td>
+                                
+                                <td>牡蠣の生姜焼き</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>11</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>かかってこいよ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="モールス">
+                                
+                                <td>12</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>モールス</td>
+                                
+                                <td>豚豚豚豚豚</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="鯖缶">
+                                
+                                <td>13</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>鯖缶</td>
+                                
+                                <td>ポムポム爺</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="にんにんランド">
+                                
+                                <td>14</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>にんにんランド</td>
+                                
+                                <td>つるぺたにんにん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="鯖缶">
+                                
+                                <td>15</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>鯖缶</td>
+                                
+                                <td>yuminz</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="鯖缶">
+                                
+                                <td>16</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>鯖缶</td>
+                                
+                                <td>SABA缶</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="鯖缶">
+                                
+                                <td>17</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>鯖缶</td>
+                                
+                                <td>いーぬー</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="猫の部屋出張所">
+                                
+                                <td>18</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>猫の部屋出張所</td>
+                                
+                                <td>火力pt募集</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="にんにんランド">
+                                
+                                <td>19</td>
+                                
+                                <td>85</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>にんにんランド</td>
+                                
+                                <td>Gotzニン</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="モールス">
+                                
+                                <td>20</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>モールス</td>
+                                
+                                <td>豚2豚2</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="にんにんランド">
+                                
+                                <td>21</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>にんにんランド</td>
+                                
+                                <td>ちいちいにん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="KMK48">
+                                
+                                <td>22</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>KMK48</td>
+                                
+                                <td>ワタシは大砲よ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="鯖缶">
+                                
+                                <td>23</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>鯖缶</td>
+                                
+                                <td>みけぽ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="猫の部屋出張所">
+                                
+                                <td>24</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>猫の部屋出張所</td>
+                                
+                                <td>モンドンゴ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>25</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>カラカラ帝</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="鯖缶">
+                                
+                                <td>26</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>鯖缶</td>
+                                
+                                <td>ヤミちん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="MBTI">
+                                
+                                <td>27</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>MBTI</td>
+                                
+                                <td>提唱者まるちゃん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="ぺこりん村">
+                                
+                                <td>28</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>ぺこりん村</td>
+                                
+                                <td>SihaS2</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="どういうこっ茶">
+                                
+                                <td>29</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>どういうこっ茶</td>
+                                
+                                <td>抹茶系IK</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>30</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>筆ぴーや</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="おさけやさん">
+                                
+                                <td>31</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>おさけやさん</td>
+                                
+                                <td>こーちゃさん3</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="レッツサーフィス">
+                                
+                                <td>32</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>レッツサーフィス</td>
+                                
+                                <td>じゃがばたぁ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="鯖缶">
+                                
+                                <td>33</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>鯖缶</td>
+                                
+                                <td>銀色の闍</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="セラポン">
+                                
+                                <td>34</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>セラポン</td>
+                                
+                                <td>ツーポン</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="猫の部屋出張所">
+                                
+                                <td>35</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>猫の部屋出張所</td>
+                                
+                                <td>ニャン子スター</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="モールス">
+                                
+                                <td>36</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>モールス</td>
+                                
+                                <td>ツートソトソ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="LEVABULL">
+                                
+                                <td>37</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>LEVABULL</td>
+                                
+                                <td>先バレ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="鯖缶">
+                                
+                                <td>38</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>鯖缶</td>
+                                
+                                <td>るいるい王子</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="にんにんランド">
+                                
+                                <td>39</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>にんにんランド</td>
+                                
+                                <td>んっっっっっ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>40</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>賢者のひ孫</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="モールス">
+                                
+                                <td>41</td>
+                                
+                                <td>84</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>モールス</td>
+                                
+                                <td>ツートントン</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="モールス">
+                                
+                                <td>42</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>モールス</td>
+                                
+                                <td>班長しおこんぶ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="おさけやさん">
+                                
+                                <td>43</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>おさけやさん</td>
+                                
+                                <td>ネコロジー</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="モールス">
+                                
+                                <td>44</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>モールス</td>
+                                
+                                <td>とんつ一</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="おさけやさん">
+                                
+                                <td>45</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>おさけやさん</td>
+                                
+                                <td>ていねいに暮らす</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆ー弐">
+                                
+                                <td>46</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆ー弐</td>
+                                
+                                <td>bostart</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="聖女の洗脳騎士団">
+                                
+                                <td>47</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>聖女の洗脳騎士団</td>
+                                
+                                <td>聖女なたけしろ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="鯖缶">
+                                
+                                <td>48</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>鯖缶</td>
+                                
+                                <td>ニャンともネー</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="お珍珍亭">
+                                
+                                <td>49</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>お珍珍亭</td>
+                                
+                                <td>うぉんてっど</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="夢の異世界生活">
+                                
+                                <td>50</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>夢の異世界生活</td>
+                                
+                                <td>転生しても貧弱</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="KMK48">
+                                
+                                <td>51</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>KMK48</td>
+                                
+                                <td>せいなo</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>52</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>みつるき</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="秋のパン祭り">
+                                
+                                <td>53</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>秋のパン祭り</td>
+                                
+                                <td>タピオカパン</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="B朧">
+                                
+                                <td>54</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>B朧</td>
+                                
+                                <td>うりゅりーん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="おさけやさん">
+                                
+                                <td>55</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>おさけやさん</td>
+                                
+                                <td>柴犬太郎</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="KMK48">
+                                
+                                <td>56</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>KMK48</td>
+                                
+                                <td>のえるo</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="秋のパン祭り">
+                                
+                                <td>57</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>秋のパン祭り</td>
+                                
+                                <td>ぶるぅぁん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="セラポン">
+                                
+                                <td>58</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>セラポン</td>
+                                
+                                <td>piepon</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="mofmof">
+                                
+                                <td>59</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>mofmof</td>
+                                
+                                <td>PCN</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="自由への招待">
+                                
+                                <td>60</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>自由への招待</td>
+                                
+                                <td>ユニクス</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="猫の部屋出張所">
+                                
+                                <td>61</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>猫の部屋出張所</td>
+                                
+                                <td>ぱぷりかの浅漬け</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="レッツサーフィス">
+                                
+                                <td>62</td>
+                                
+                                <td>83</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>レッツサーフィス</td>
+                                
+                                <td>グラムライツ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="モールス">
+                                
+                                <td>63</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>モールス</td>
+                                
+                                <td>トントンツー</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="KMK48">
+                                
+                                <td>64</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>KMK48</td>
+                                
+                                <td>もにょちゃん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="mofmof">
+                                
+                                <td>65</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>mofmof</td>
+                                
+                                <td>Furfur</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="聖女の洗脳騎士団">
+                                
+                                <td>66</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>聖女の洗脳騎士団</td>
+                                
+                                <td>聖女なマリモ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="自由への招待">
+                                
+                                <td>67</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>自由への招待</td>
+                                
+                                <td>桃色片思い</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>68</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>明石家さんま</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="封印されし、めう">
+                                
+                                <td>69</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>封印されし、めう</td>
+                                
+                                <td>めうめうのタタキ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>70</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>大竹しのぶ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="封印されし、めう">
+                                
+                                <td>71</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>封印されし、めう</td>
+                                
+                                <td>ぺころす君</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>72</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>明るい村長</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="聖女の洗脳騎士団">
+                                
+                                <td>73</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>聖女の洗脳騎士団</td>
+                                
+                                <td>聖女なゴリラ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="Elnyath">
+                                
+                                <td>74</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>Elnyath</td>
+                                
+                                <td>ルシにゃ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="聖女の洗脳騎士団">
+                                
+                                <td>75</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>聖女の洗脳騎士団</td>
+                                
+                                <td>聖女な大福</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="こくみん">
+                                
+                                <td>76</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>こくみん</td>
+                                
+                                <td>たべてくる</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="B朧">
+                                
+                                <td>77</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>B朧</td>
+                                
+                                <td>床屋</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>78</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>ユノboos</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="どういうこっ茶">
+                                
+                                <td>79</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>どういうこっ茶</td>
+                                
+                                <td>沏倒茶</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="異世界レストラン">
+                                
+                                <td>80</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>異世界レストラン</td>
+                                
+                                <td>冷やしトマト</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>81</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>あっちこっちっち</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="KMK48">
+                                
+                                <td>82</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>KMK48</td>
+                                
+                                <td>狂い獅子</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="二度目の骨折">
+                                
+                                <td>83</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>二度目の骨折</td>
+                                
+                                <td>びよん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="にんにんランド">
+                                
+                                <td>84</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>にんにんランド</td>
+                                
+                                <td>真島ごろー</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="レッツサーフィス">
+                                
+                                <td>85</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>レッツサーフィス</td>
+                                
+                                <td>デルセメンテリオ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="日進月歩">
+                                
+                                <td>86</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>日進月歩</td>
+                                
+                                <td>ホルスワン</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="にんにんランド">
+                                
+                                <td>87</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>にんにんランド</td>
+                                
+                                <td>ケリークーア</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="自由民主党">
+                                
+                                <td>88</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>自由民主党</td>
+                                
+                                <td>ぶふーあ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="秋のパン祭り">
+                                
+                                <td>89</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>秋のパン祭り</td>
+                                
+                                <td>MeatMax</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="鯖缶">
+                                
+                                <td>90</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>鯖缶</td>
+                                
+                                <td>さば子</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>91</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>東場</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="烏合の衆">
+                                
+                                <td>92</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>烏合の衆</td>
+                                
+                                <td>ひーまにB</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="おさけやさん">
+                                
+                                <td>93</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>おさけやさん</td>
+                                
+                                <td>赤玉パンチ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="鯖缶">
+                                
+                                <td>94</td>
+                                
+                                <td>82</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>鯖缶</td>
+                                
+                                <td>よいじ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting2" data-guild="KMK48">
+                                
+                                <td>95</td>
+                                
+                                <td>81</td>
+                                
+                                <td>Boosting2</td>
+                                
+                                <td>KMK48</td>
+                                
+                                <td>鯖と鮭</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="星の調律者">
+                                
+                                <td>96</td>
+                                
+                                <td>81</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>星の調律者</td>
+                                
+                                <td>アスボーン</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="異世界レストラン">
+                                
+                                <td>97</td>
+                                
+                                <td>81</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>異世界レストラン</td>
+                                
+                                <td>プッチンププリン</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="秋のパン祭り">
+                                
+                                <td>98</td>
+                                
+                                <td>81</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>秋のパン祭り</td>
+                                
+                                <td>イギリストースト</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting3" data-guild="自由への招待">
+                                
+                                <td>99</td>
+                                
+                                <td>81</td>
+                                
+                                <td>Boosting3</td>
+                                
+                                <td>自由への招待</td>
+                                
+                                <td>メロクロ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Boosting1" data-guild="秋のパン祭り">
+                                
+                                <td>100</td>
+                                
+                                <td>81</td>
+                                
+                                <td>Boosting1</td>
+                                
+                                <td>秋のパン祭り</td>
+                                
+                                <td>触犯男</td>
                                 
                             </tr>
                             

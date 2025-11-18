@@ -689,6 +689,172 @@
             });
         </script>
         
+        <h2 style="margin-top:40px;background-color:rgb(64,64,64);color:white;padding:4px;">Boosting</h2>
+        
+        <h3>Top5</h3>
+        <table style="text-align:left;margin-bottom:20px;margin-left:10px;">
+            <tr><th style="padding-right:8px;">順位</th> <th style="padding-right:8px;">レベル</th> <th style="padding-right:8px;">サーバー</th> <th style="padding-right:8px;">ギルド</th> <th>プレイヤー</th> </tr>
+            <tr><td style="padding-right:8px;">1.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting3</td> <td style="padding-right:8px;">自由民主党</td> <td>あそでたろたろ</td> </tr><tr><td style="padding-right:8px;">2.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting3</td> <td style="padding-right:8px;">猫の部屋出張所</td> <td>スープごはん</td> </tr><tr><td style="padding-right:8px;">3.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting3</td> <td style="padding-right:8px;">どういうこっ茶</td> <td>カ茶ンドラ</td> </tr><tr><td style="padding-right:8px;">4.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting3</td> <td style="padding-right:8px;">自由民主党</td> <td>菅義偉</td> </tr><tr><td style="padding-right:8px;">5.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting3</td> <td style="padding-right:8px;">自由民主党</td> <td>幻影白虎</td> </tr></table>
+        <h3>サーバー比較</h3>
+        <p>※凡例クリックで表示・非表示を切り替えられます</p>
+        <div class="chart-container">
+            <div class="chart-item">
+                <div style="position: relative; height: 400px;">
+                    <canvas id="boostingLineChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-item">
+                <canvas id="boostingChart"></canvas>
+            </div>
+        </div>
+        <h3>所属ギルド</h3>
+        <p>※表示順序はギルド最上位プレイヤーの順位</p>
+        <div class="list-container">
+<ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Boosting1</li>
+                    <li>鯖缶: 11名</li>
+                    <li>にんにんランド: 6名</li>
+                    <li>ぺこりん村: 1名</li>
+                    <li>LEVABULL: 1名</li>
+                    <li>お珍珍亭: 1名</li>
+                    <li>秋のパン祭り: 5名</li>
+                    <li>星の調律者: 1名</li>
+                <li>所属無し: 0名</li></ul>
+<ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Boosting2</li>
+                    <li>烏合の衆: 15名</li>
+                    <li>レッツサーフィス: 4名</li>
+                    <li>モールス: 7名</li>
+                    <li>KMK48: 6名</li>
+                    <li>MBTI: 1名</li>
+                    <li>おさけやさん: 5名</li>
+                    <li>セラポン: 2名</li>
+                    <li>烏合の衆ー弐: 1名</li>
+                    <li>夢の異世界生活: 1名</li>
+                    <li>mofmof: 2名</li>
+                    <li>封印されし、めう: 2名</li>
+                    <li>こくみん: 1名</li>
+                    <li>二度目の骨折: 1名</li>
+                <li>所属無し: 0名</li></ul>
+<ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Boosting3</li>
+                    <li>自由民主党: 5名</li>
+                    <li>猫の部屋出張所: 5名</li>
+                    <li>どういうこっ茶: 3名</li>
+                    <li>聖女の洗脳騎士団: 4名</li>
+                    <li>B朧: 2名</li>
+                    <li>自由への招待: 3名</li>
+                    <li>Elnyath: 1名</li>
+                    <li>異世界レストラン: 2名</li>
+                    <li>日進月歩: 1名</li>
+                <li>所属無し: 0名</li></ul>
+
+        <script>
+            var ctxLine = document.getElementById('boostingLineChart').getContext('2d');
+            var boostingLineChart = new Chart(ctxLine, {
+                type: 'line',
+                data: {
+                    labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48]),
+                    datasets: [{"label": "Boosting1", "data": [13, 14, 15, 16, 17, 19, 21, 23, 26, 28, 33, 37, 38, 39, 48, 49, 53, 57, 84, 87, 89, 90, 94, 96, 98, 100], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Boosting2", "data": [7, 8, 9, 10, 11, 12, 20, 22, 25, 27, 30, 31, 32, 34, 36, 40, 41, 42, 43, 44, 45, 46, 50, 51, 52, 55, 56, 58, 59, 62, 63, 64, 65, 68, 69, 70, 71, 72, 76, 78, 81, 82, 83, 85, 91, 92, 93, 95], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Boosting3", "data": [1, 2, 3, 4, 5, 6, 18, 24, 29, 35, 47, 54, 60, 61, 66, 67, 73, 74, 75, 77, 79, 80, 86, 88, 97, 99], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: '人数'
+                            },
+                            min: 1,
+                            max: 48
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'ランキング'
+                            },
+                            min: 1,
+                            max: 100,
+                            reverse: true
+                        },
+                        y2: {
+                            type: 'category',
+                            labels: [85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 83, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 81, 81, 81, 81, 81, 81],
+                            position: 'right',
+                            grid: {
+                                drawOnChartArea: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            onClick: function(e, legendItem) {
+                                var index = legendItem.datasetIndex;
+                                var ci = this.chart;
+                                var meta = ci.getDatasetMeta(index);
+
+                                // 表示・非表示を切り替える
+                                meta.hidden = meta.hidden === null ? !ci.data.datasets[index].hidden : null;
+
+                                // 更新処理
+                                ci.update();
+
+                                // 新しい横軸の最大値を計算
+                                var newMaxLength = 0;
+                                ci.data.datasets.forEach(function(dataset, i) {
+                                    if (!ci.isDatasetVisible(i)) return;
+                                    newMaxLength = Math.max(newMaxLength, dataset.data.length);
+                                });
+
+                                // 横軸の最大値を更新
+                                ci.options.scales.x.max = newMaxLength;
+                                ci.update();
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Boostingサーバー別分布'
+                        },
+                        annotation: {
+                            annotations: [{"type": "line", "yMin": 19.5, "yMax": 19.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 85", "position": "end"}}, {"type": "line", "yMin": 41.5, "yMax": 41.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 84", "position": "end"}}, {"type": "line", "yMin": 62.5, "yMax": 62.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 83", "position": "end"}}, {"type": "line", "yMin": 94.5, "yMax": 94.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 82", "position": "end"}}]
+                        }
+                    }
+                }
+            });
+
+            var ctxPie = document.getElementById('boostingChart').getContext('2d');
+            var boostingChart = new Chart(ctxPie, {
+                type: 'pie',
+                data: {"labels": ["Boosting1", "Boosting2", "Boosting3"], "datasets": [{"data": [26, 48, 26], "backgroundColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderWidth": 0}]},
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Boostingサーバー別割合'
+                        },
+                        datalabels: {
+                            formatter: (value, ctx) => {
+                                let sum = ctx.chart.data.datasets[0].data.reduce((a, b) => a + b, 0);
+                                let percentage = (value * 100 / sum).toFixed(2) + "%";
+                                return percentage;
+                            },
+                            color: '#fff',
+                            font: {
+                                weight: 'bold',
+                                size: 14
+                            },
+                            display: true
+                        }
+                    },
+                },
+                plugins: [ChartDataLabels]
+            });
+        </script>
+        
         </div>
     </body>
     </html>
