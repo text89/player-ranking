@@ -75,14 +75,14 @@
     <body>
         <h1 class="break-keep">サーバー別 <wbr />Top100ランキング サマリー</h1>
         <div id="content-wrapper">
-        <p><a href="./ranking.html">>>ランキング</a><br>更新日: 2026/01/31</p>
+        <p><a href="./ranking.html">>>ランキング</a><br>更新日: 2026/02/01</p>
         
         <h2 style="margin-top:40px;background-color:rgb(64,64,64);color:white;padding:4px;">Kiki</h2>
         
         <h3>Top5</h3>
         <table style="text-align:left;margin-bottom:20px;margin-left:10px;">
             <tr><th style="padding-right:8px;">順位</th> <th style="padding-right:8px;">レベル</th> <th style="padding-right:8px;">サーバー</th> <th style="padding-right:8px;">ギルド</th> <th>プレイヤー</th> </tr>
-            <tr><td style="padding-right:8px;">1.</td> <td style="padding-right:8px;">96</td> <td style="padding-right:8px;">Kiki1</td> <td style="padding-right:8px;">わっしょい</td> <td>窓際じい</td> </tr><tr><td style="padding-right:8px;">2.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Kiki1</td> <td style="padding-right:8px;">わっしょい</td> <td>oかおるーo</td> </tr><tr><td style="padding-right:8px;">3.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Kiki1</td> <td style="padding-right:8px;">M2O</td> <td>がっつり亀太郎</td> </tr><tr><td style="padding-right:8px;">4.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Kiki1</td> <td style="padding-right:8px;">わっしょい</td> <td>カッカ閣下</td> </tr><tr><td style="padding-right:8px;">5.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Kiki1</td> <td style="padding-right:8px;">M2O</td> <td>だいきん</td> </tr></table>
+            <tr><td style="padding-right:8px;">1.</td> <td style="padding-right:8px;">96</td> <td style="padding-right:8px;">Kiki1</td> <td style="padding-right:8px;">わっしょい</td> <td>窓際じい</td> </tr><tr><td style="padding-right:8px;">2.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Kiki1</td> <td style="padding-right:8px;">わっしょい</td> <td>カッカ閣下</td> </tr><tr><td style="padding-right:8px;">3.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Kiki1</td> <td style="padding-right:8px;">わっしょい</td> <td>oかおるーo</td> </tr><tr><td style="padding-right:8px;">4.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Kiki1</td> <td style="padding-right:8px;">M2O</td> <td>がっつり亀太郎</td> </tr><tr><td style="padding-right:8px;">5.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Kiki1</td> <td style="padding-right:8px;">M2O</td> <td>だいきん</td> </tr></table>
         <h3>サーバー比較</h3>
         <p>※凡例クリックで表示・非表示を切り替えられます</p>
         <div class="chart-container">
@@ -105,7 +105,7 @@
                     <li>Vendetta: 1名</li>
                     <li>NoWords: 2名</li>
                     <li>ぴーすxくまさん: 1名</li>
-                <li>所属無し: 4名</li></ul>
+                <li>所属無し: 3名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Kiki2</li>
                     <li>silent: 1名</li>
                     <li>ばちるす: 4名</li>
@@ -118,7 +118,7 @@
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Kiki4</li>
                     <li>血盟騎士団: 2名</li>
                     <li>ー朧ー: 9名</li>
-                    <li>OZ: 1名</li>
+                    <li>OZ: 2名</li>
                     <li>まいなぽいん: 1名</li>
                     <li>Sticky: 1名</li>
                 <li>所属無し: 0名</li></ul>
@@ -128,8 +128,8 @@
             var kikiLineChart = new Chart(ctxLine, {
                 type: 'line',
                 data: {
-                    labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77]),
-                    datasets: [{"label": "Kiki1", "data": [1, 2, 3, 4, 5, 6, 9, 11, 13, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 35, 36, 37, 39, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 57, 58, 61, 63, 65, 66, 67, 68, 69, 71, 72, 74, 76, 77, 80, 81, 82, 84, 85, 86, 87, 88, 89, 91, 92, 93, 94, 95, 97, 99, 100], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Kiki2", "data": [7, 12, 34, 40, 62, 70, 90], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Kiki3", "data": [10, 78], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Kiki4", "data": [8, 14, 15, 38, 56, 59, 60, 64, 73, 75, 79, 83, 96, 98], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
+                    labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76]),
+                    datasets: [{"label": "Kiki1", "data": [1, 2, 3, 4, 5, 6, 8, 10, 13, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 37, 39, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 57, 58, 60, 61, 63, 66, 68, 69, 70, 72, 73, 75, 76, 78, 79, 80, 83, 84, 86, 87, 88, 89, 90, 92, 93, 94, 95, 97, 98, 100], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Kiki2", "data": [7, 12, 36, 40, 65, 71, 91], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Kiki3", "data": [11, 81], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Kiki4", "data": [9, 14, 16, 38, 56, 59, 62, 64, 67, 74, 77, 82, 85, 96, 99], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
                 },
                 options: {
                     responsive: true,
@@ -141,7 +141,7 @@
                                 text: '人数'
                             },
                             min: 1,
-                            max: 77
+                            max: 76
                         },
                         y: {
                             title: {
@@ -154,7 +154,7 @@
                         },
                         y2: {
                             type: 'category',
-                            labels: [96, 95, 95, 95, 95, 95, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91],
+                            labels: [96, 95, 95, 95, 95, 95, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91],
                             position: 'right',
                             grid: {
                                 drawOnChartArea: false
@@ -192,7 +192,7 @@
                             text: 'Kikiサーバー別分布'
                         },
                         annotation: {
-                            annotations: [{"type": "line", "yMin": 1.5, "yMax": 1.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 96", "position": "end"}}, {"type": "line", "yMin": 6.5, "yMax": 6.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 95", "position": "end"}}, {"type": "line", "yMin": 19.5, "yMax": 19.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 94", "position": "end"}}, {"type": "line", "yMin": 51.5, "yMax": 51.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 93", "position": "end"}}, {"type": "line", "yMin": 81.5, "yMax": 81.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 92", "position": "end"}}]
+                            annotations: [{"type": "line", "yMin": 1.5, "yMax": 1.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 96", "position": "end"}}, {"type": "line", "yMin": 6.5, "yMax": 6.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 95", "position": "end"}}, {"type": "line", "yMin": 19.5, "yMax": 19.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 94", "position": "end"}}, {"type": "line", "yMin": 53.5, "yMax": 53.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 93", "position": "end"}}, {"type": "line", "yMin": 83.5, "yMax": 83.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 92", "position": "end"}}]
                         }
                     }
                 }
@@ -201,7 +201,7 @@
             var ctxPie = document.getElementById('kikiChart').getContext('2d');
             var kikiChart = new Chart(ctxPie, {
                 type: 'pie',
-                data: {"labels": ["Kiki1", "Kiki2", "Kiki3", "Kiki4"], "datasets": [{"data": [77, 7, 2, 14], "backgroundColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderWidth": 0}]},
+                data: {"labels": ["Kiki1", "Kiki2", "Kiki3", "Kiki4"], "datasets": [{"data": [76, 7, 2, 15], "backgroundColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderWidth": 0}]},
                 options: {
                     responsive: true,
                     maintainAspectRatio: true,
@@ -237,7 +237,7 @@
         <h3>Top5</h3>
         <table style="text-align:left;margin-bottom:20px;margin-left:10px;">
             <tr><th style="padding-right:8px;">順位</th> <th style="padding-right:8px;">レベル</th> <th style="padding-right:8px;">サーバー</th> <th style="padding-right:8px;">ギルド</th> <th>プレイヤー</th> </tr>
-            <tr><td style="padding-right:8px;">1.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Anica1</td> <td style="padding-right:8px;">セラフィム</td> <td>pieeru</td> </tr><tr><td style="padding-right:8px;">2.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Anica3</td> <td style="padding-right:8px;">Freak</td> <td>wasabi5</td> </tr><tr><td style="padding-right:8px;">3.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Anica1</td> <td style="padding-right:8px;">セラフィム</td> <td>Am4retto</td> </tr><tr><td style="padding-right:8px;">4.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Anica3</td> <td style="padding-right:8px;">Freak</td> <td>ふーな</td> </tr><tr><td style="padding-right:8px;">5.</td> <td style="padding-right:8px;">94</td> <td style="padding-right:8px;">Anica2</td> <td style="padding-right:8px;">怪盗サカナ団</td> <td>銀ノ助</td> </tr></table>
+            <tr><td style="padding-right:8px;">1.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Anica1</td> <td style="padding-right:8px;">セラフィム</td> <td>pieeru</td> </tr><tr><td style="padding-right:8px;">2.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Anica3</td> <td style="padding-right:8px;">Freak</td> <td>wasabi5</td> </tr><tr><td style="padding-right:8px;">3.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Anica3</td> <td style="padding-right:8px;">Freak</td> <td>ふーな</td> </tr><tr><td style="padding-right:8px;">4.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Anica1</td> <td style="padding-right:8px;">セラフィム</td> <td>Am4retto</td> </tr><tr><td style="padding-right:8px;">5.</td> <td style="padding-right:8px;">94</td> <td style="padding-right:8px;">Anica2</td> <td style="padding-right:8px;">怪盗サカナ団</td> <td>銀ノ助</td> </tr></table>
         <h3>サーバー比較</h3>
         <p>※凡例クリックで表示・非表示を切り替えられます</p>
         <div class="chart-container">
@@ -264,17 +264,16 @@
                     <li>Cradle: 1名</li>
                 <li>所属無し: 3名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Anica3</li>
-                    <li>Freak: 17名</li>
-                    <li>MINERVA: 4名</li>
-                    <li>月花町の安らげ荘: 3名</li>
+                    <li>Freak: 16名</li>
+                    <li>MINERVA: 3名</li>
                     <li>猫部屋: 3名</li>
-                <li>所属無し: 0名</li></ul>
+                    <li>月花町の安らげ荘: 3名</li>
+                <li>所属無し: 2名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Anica4</li>
-                    <li>Harmony: 19名</li>
+                    <li>Harmony: 20名</li>
                     <li>猫と愉快な仲間: 9名</li>
                     <li>HOALOHA: 3名</li>
                     <li>始まりのギルド: 1名</li>
-                    <li>HOALOHA友: 1名</li>
                     <li>百花繚乱: 1名</li>
                 <li>所属無し: 1名</li></ul>
 
@@ -284,7 +283,7 @@
                 type: 'line',
                 data: {
                     labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]),
-                    datasets: [{"label": "Anica1", "data": [1, 3, 8, 9, 17, 18, 19, 27, 28, 46, 54, 56, 61, 64, 67, 72, 75, 90, 92, 95], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Anica2", "data": [5, 7, 13, 14, 16, 29, 37, 43, 50, 51, 53, 69, 71, 73, 84, 88, 89, 98], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Anica3", "data": [2, 4, 6, 11, 20, 22, 23, 25, 31, 33, 35, 36, 44, 47, 52, 55, 57, 58, 60, 62, 66, 79, 81, 86, 87, 91, 94], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Anica4", "data": [10, 12, 15, 21, 24, 26, 30, 32, 34, 38, 39, 40, 41, 42, 45, 48, 49, 59, 63, 65, 68, 70, 74, 76, 77, 78, 80, 82, 83, 85, 93, 96, 97, 99, 100], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
+                    datasets: [{"label": "Anica1", "data": [1, 4, 8, 9, 17, 18, 20, 27, 28, 47, 53, 57, 62, 64, 67, 72, 77, 91, 95, 96], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Anica2", "data": [5, 7, 12, 14, 16, 29, 32, 43, 50, 51, 54, 69, 73, 74, 85, 88, 89, 98], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Anica3", "data": [2, 3, 6, 10, 19, 21, 22, 25, 31, 34, 36, 37, 44, 45, 52, 55, 56, 58, 59, 61, 66, 70, 80, 81, 86, 87, 92], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Anica4", "data": [11, 13, 15, 23, 24, 26, 30, 33, 35, 38, 39, 40, 41, 42, 46, 48, 49, 60, 63, 65, 68, 71, 75, 76, 78, 79, 82, 83, 84, 90, 93, 94, 97, 99, 100], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
                 },
                 options: {
                     responsive: true,
@@ -309,7 +308,7 @@
                         },
                         y2: {
                             type: 'category',
-                            labels: [95, 95, 95, 95, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 91, 91, 91, 91],
+                            labels: [95, 95, 95, 95, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 91, 91],
                             position: 'right',
                             grid: {
                                 drawOnChartArea: false
@@ -347,7 +346,7 @@
                             text: 'Anicaサーバー別分布'
                         },
                         annotation: {
-                            annotations: [{"type": "line", "yMin": 4.5, "yMax": 4.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 95", "position": "end"}}, {"type": "line", "yMin": 17.5, "yMax": 17.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 94", "position": "end"}}, {"type": "line", "yMin": 44.5, "yMax": 44.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 93", "position": "end"}}, {"type": "line", "yMin": 96.5, "yMax": 96.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 92", "position": "end"}}]
+                            annotations: [{"type": "line", "yMin": 4.5, "yMax": 4.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 95", "position": "end"}}, {"type": "line", "yMin": 17.5, "yMax": 17.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 94", "position": "end"}}, {"type": "line", "yMin": 45.5, "yMax": 45.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 93", "position": "end"}}, {"type": "line", "yMin": 98.5, "yMax": 98.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 92", "position": "end"}}]
                         }
                     }
                 }
@@ -418,13 +417,13 @@
                     <li>castra: 1名</li>
                     <li>Remake: 11名</li>
                     <li>Tempest: 2名</li>
-                    <li>Lien: 7名</li>
+                    <li>Lien: 3名</li>
                     <li>覇桜花: 6名</li>
-                <li>所属無し: 0名</li></ul>
+                <li>所属無し: 4名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Hugo3</li>
                     <li>森のハチミツ商会: 13名</li>
-                    <li>サブの家: 6名</li>
-                    <li>ミーティス: 7名</li>
+                    <li>サブの家: 5名</li>
+                    <li>ミーティス: 8名</li>
                     <li>我道: 1名</li>
                 <li>所属無し: 0名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Hugo4</li>
@@ -438,7 +437,7 @@
                 type: 'line',
                 data: {
                     labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]),
-                    datasets: [{"label": "Hugo1", "data": [11, 24, 28, 35, 38, 39, 47, 52, 54, 59, 60, 64, 75, 77, 79, 81, 88], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Hugo2", "data": [1, 3, 7, 9, 12, 13, 15, 17, 25, 27, 30, 40, 44, 45, 50, 51, 57, 61, 63, 67, 68, 71, 74, 78, 87, 96, 99], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Hugo3", "data": [5, 8, 19, 21, 23, 29, 32, 33, 36, 43, 46, 48, 49, 58, 62, 65, 66, 72, 73, 80, 85, 86, 91, 95, 97, 98, 100], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Hugo4", "data": [2, 4, 6, 10, 14, 16, 18, 20, 22, 26, 31, 34, 37, 41, 42, 53, 55, 56, 69, 70, 76, 82, 83, 84, 89, 90, 92, 93, 94], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
+                    datasets: [{"label": "Hugo1", "data": [12, 25, 29, 36, 38, 41, 47, 52, 55, 59, 60, 65, 76, 77, 80, 81, 88], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Hugo2", "data": [1, 3, 6, 11, 13, 14, 15, 17, 26, 28, 31, 39, 40, 45, 50, 51, 57, 61, 64, 68, 70, 73, 75, 78, 87, 97, 99], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Hugo3", "data": [5, 10, 18, 22, 24, 30, 33, 34, 37, 44, 46, 48, 49, 58, 63, 66, 69, 72, 74, 79, 85, 86, 90, 95, 96, 98, 100], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Hugo4", "data": [2, 4, 7, 8, 9, 16, 19, 20, 21, 23, 27, 32, 35, 42, 43, 53, 54, 56, 62, 67, 71, 82, 83, 84, 89, 91, 92, 93, 94], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
                 },
                 options: {
                     responsive: true,
@@ -463,7 +462,7 @@
                         },
                         y2: {
                             type: 'category',
-                            labels: [96, 95, 95, 95, 94, 94, 94, 94, 94, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 90, 90, 90, 90, 90, 90, 90, 90],
+                            labels: [96, 95, 95, 95, 94, 94, 94, 94, 94, 94, 94, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 91, 90, 90, 90, 90, 90, 90, 90, 90],
                             position: 'right',
                             grid: {
                                 drawOnChartArea: false
@@ -501,7 +500,7 @@
                             text: 'Hugoサーバー別分布'
                         },
                         annotation: {
-                            annotations: [{"type": "line", "yMin": 1.5, "yMax": 1.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 96", "position": "end"}}, {"type": "line", "yMin": 4.5, "yMax": 4.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 95", "position": "end"}}, {"type": "line", "yMin": 9.5, "yMax": 9.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 94", "position": "end"}}, {"type": "line", "yMin": 36.5, "yMax": 36.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 93", "position": "end"}}, {"type": "line", "yMin": 61.5, "yMax": 61.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 92", "position": "end"}}, {"type": "line", "yMin": 92.5, "yMax": 92.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 91", "position": "end"}}]
+                            annotations: [{"type": "line", "yMin": 1.5, "yMax": 1.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 96", "position": "end"}}, {"type": "line", "yMin": 4.5, "yMax": 4.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 95", "position": "end"}}, {"type": "line", "yMin": 11.5, "yMax": 11.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 94", "position": "end"}}, {"type": "line", "yMin": 37.5, "yMax": 37.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 93", "position": "end"}}, {"type": "line", "yMin": 64.5, "yMax": 64.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 92", "position": "end"}}, {"type": "line", "yMin": 92.5, "yMax": 92.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 91", "position": "end"}}]
                         }
                     }
                 }
@@ -546,7 +545,7 @@
         <h3>Top5</h3>
         <table style="text-align:left;margin-bottom:20px;margin-left:10px;">
             <tr><th style="padding-right:8px;">順位</th> <th style="padding-right:8px;">レベル</th> <th style="padding-right:8px;">サーバー</th> <th style="padding-right:8px;">ギルド</th> <th>プレイヤー</th> </tr>
-            <tr><td style="padding-right:8px;">1.</td> <td style="padding-right:8px;">96</td> <td style="padding-right:8px;">Lucas2</td> <td style="padding-right:8px;">グレイゴースト</td> <td>カツキ</td> </tr><tr><td style="padding-right:8px;">2.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Lucas2</td> <td style="padding-right:8px;">グレイゴースト</td> <td>きない</td> </tr><tr><td style="padding-right:8px;">3.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Lucas2</td> <td style="padding-right:8px;">グレイゴースト</td> <td>nonsense</td> </tr><tr><td style="padding-right:8px;">4.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Lucas2</td> <td style="padding-right:8px;">グレイゴースト</td> <td>ネコ、愛すv</td> </tr><tr><td style="padding-right:8px;">5.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Lucas3</td> <td style="padding-right:8px;">桜華爛漫</td> <td>あるみちゃん</td> </tr></table>
+            <tr><td style="padding-right:8px;">1.</td> <td style="padding-right:8px;">96</td> <td style="padding-right:8px;">Lucas2</td> <td style="padding-right:8px;">グレイゴースト</td> <td>カツキ</td> </tr><tr><td style="padding-right:8px;">2.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Lucas2</td> <td style="padding-right:8px;">グレイゴースト</td> <td>きない</td> </tr><tr><td style="padding-right:8px;">3.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Lucas2</td> <td style="padding-right:8px;">グレイゴースト</td> <td>ネコ、愛すv</td> </tr><tr><td style="padding-right:8px;">4.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Lucas2</td> <td style="padding-right:8px;">グレイゴースト</td> <td>nonsense</td> </tr><tr><td style="padding-right:8px;">5.</td> <td style="padding-right:8px;">95</td> <td style="padding-right:8px;">Lucas3</td> <td style="padding-right:8px;">桜華爛漫</td> <td>あるみちゃん</td> </tr></table>
         <h3>サーバー比較</h3>
         <p>※凡例クリックで表示・非表示を切り替えられます</p>
         <div class="chart-container">
@@ -567,18 +566,19 @@
                     <li>Speed: 2名</li>
                 <li>所属無し: 0名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Lucas2</li>
-                    <li>グレイゴースト: 30名</li>
-                    <li>なみだふくよ: 33名</li>
+                    <li>グレイゴースト: 31名</li>
+                    <li>なみだふくよ: 34名</li>
                     <li>Haunt: 3名</li>
                     <li>なみだF: 2名</li>
                     <li>プリキュア: 1名</li>
                 <li>所属無し: 1名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Lucas3</li>
-                    <li>桜華爛漫: 18名</li>
+                    <li>桜華爛漫: 17名</li>
+                    <li>FD: 1名</li>
                     <li>ぱぴもっちランド: 3名</li>
-                    <li>ぴよぴよ団: 3名</li>
+                    <li>ぴよぴよ団: 2名</li>
                     <li>ABCherry: 1名</li>
-                <li>所属無し: 1名</li></ul>
+                <li>所属無し: 0名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Lucas4</li>
                     <li>xALICEx: 1名</li>
                 <li>所属無し: 0名</li></ul>
@@ -588,8 +588,8 @@
             var lucasLineChart = new Chart(ctxLine, {
                 type: 'line',
                 data: {
-                    labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70]),
-                    datasets: [{"label": "Lucas1", "data": [39, 68, 89], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Lucas2", "data": [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 15, 17, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 37, 38, 40, 41, 42, 43, 44, 45, 46, 48, 49, 50, 51, 55, 57, 58, 60, 61, 65, 66, 67, 69, 70, 71, 72, 73, 74, 78, 80, 81, 82, 83, 84, 85, 86, 90, 92, 93, 94, 95, 96, 100], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Lucas3", "data": [5, 12, 13, 14, 16, 18, 23, 36, 47, 52, 53, 54, 56, 62, 63, 64, 75, 76, 77, 79, 87, 88, 91, 97, 98, 99], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Lucas4", "data": [59], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
+                    labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72]),
+                    datasets: [{"label": "Lucas1", "data": [45, 70, 92], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Lucas2", "data": [1, 2, 3, 4, 6, 7, 8, 9, 12, 13, 15, 16, 18, 20, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 44, 46, 47, 48, 50, 51, 52, 53, 58, 59, 62, 63, 65, 66, 67, 68, 71, 72, 73, 74, 75, 76, 77, 82, 83, 84, 85, 86, 87, 89, 90, 93, 95, 96, 97, 99, 100], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Lucas3", "data": [5, 10, 11, 14, 17, 19, 22, 35, 49, 54, 55, 56, 57, 61, 64, 69, 78, 79, 80, 81, 88, 91, 94, 98], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Lucas4", "data": [60], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
                 },
                 options: {
                     responsive: true,
@@ -601,7 +601,7 @@
                                 text: '人数'
                             },
                             min: 1,
-                            max: 70
+                            max: 72
                         },
                         y: {
                             title: {
@@ -614,7 +614,7 @@
                         },
                         y2: {
                             type: 'category',
-                            labels: [96, 95, 95, 95, 95, 95, 95, 95, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92],
+                            labels: [96, 95, 95, 95, 95, 95, 95, 95, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 94, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92],
                             position: 'right',
                             grid: {
                                 drawOnChartArea: false
@@ -652,7 +652,7 @@
                             text: 'Lucasサーバー別分布'
                         },
                         annotation: {
-                            annotations: [{"type": "line", "yMin": 1.5, "yMax": 1.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 96", "position": "end"}}, {"type": "line", "yMin": 8.5, "yMax": 8.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 95", "position": "end"}}, {"type": "line", "yMin": 21.5, "yMax": 21.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 94", "position": "end"}}, {"type": "line", "yMin": 51.5, "yMax": 51.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 93", "position": "end"}}]
+                            annotations: [{"type": "line", "yMin": 1.5, "yMax": 1.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 96", "position": "end"}}, {"type": "line", "yMin": 8.5, "yMax": 8.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 95", "position": "end"}}, {"type": "line", "yMin": 23.5, "yMax": 23.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 94", "position": "end"}}, {"type": "line", "yMin": 52.5, "yMax": 52.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 93", "position": "end"}}]
                         }
                     }
                 }
@@ -661,7 +661,7 @@
             var ctxPie = document.getElementById('lucasChart').getContext('2d');
             var lucasChart = new Chart(ctxPie, {
                 type: 'pie',
-                data: {"labels": ["Lucas1", "Lucas2", "Lucas3", "Lucas4"], "datasets": [{"data": [3, 70, 26, 1], "backgroundColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderWidth": 0}]},
+                data: {"labels": ["Lucas1", "Lucas2", "Lucas3", "Lucas4"], "datasets": [{"data": [3, 72, 24, 1], "backgroundColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderWidth": 0}]},
                 options: {
                     responsive: true,
                     maintainAspectRatio: true,
@@ -697,7 +697,7 @@
         <h3>Top5</h3>
         <table style="text-align:left;margin-bottom:20px;margin-left:10px;">
             <tr><th style="padding-right:8px;">順位</th> <th style="padding-right:8px;">レベル</th> <th style="padding-right:8px;">サーバー</th> <th style="padding-right:8px;">ギルド</th> <th>プレイヤー</th> </tr>
-            <tr><td style="padding-right:8px;">1.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting2</td> <td style="padding-right:8px;">レッツサーフィス</td> <td>白州12年</td> </tr><tr><td style="padding-right:8px;">2.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting2</td> <td style="padding-right:8px;">レッツサーフィス</td> <td>ooAIRUoo</td> </tr><tr><td style="padding-right:8px;">3.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting2</td> <td style="padding-right:8px;">セラポン</td> <td>クポン極楽</td> </tr><tr><td style="padding-right:8px;">4.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting2</td> <td style="padding-right:8px;">おさけやさん</td> <td>柴犬太郎</td> </tr><tr><td style="padding-right:8px;">5.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting2</td> <td style="padding-right:8px;">レッツサーフィス</td> <td>英里</td> </tr></table>
+            <tr><td style="padding-right:8px;">1.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting3</td> <td style="padding-right:8px;">自由民主党</td> <td>抹茶の息子</td> </tr><tr><td style="padding-right:8px;">2.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting3</td> <td style="padding-right:8px;">日進月歩</td> <td>桜梅桃李</td> </tr><tr><td style="padding-right:8px;">3.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting3</td> <td style="padding-right:8px;">Blendy3</td> <td>にゃんこ元帥</td> </tr><tr><td style="padding-right:8px;">4.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting3</td> <td style="padding-right:8px;">自由への招待</td> <td>イヒ牛勿</td> </tr><tr><td style="padding-right:8px;">5.</td> <td style="padding-right:8px;">85</td> <td style="padding-right:8px;">Boosting3</td> <td style="padding-right:8px;">B朧</td> <td>うりゅりーん</td> </tr></table>
         <h3>サーバー比較</h3>
         <p>※凡例クリックで表示・非表示を切り替えられます</p>
         <div class="chart-container">
@@ -714,28 +714,29 @@
         <p>※表示順序はギルド最上位プレイヤーの順位</p>
         <div class="list-container">
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Boosting1</li>
-                    <li>鯖缶: 5名</li>
-                    <li>にんにんランド: 11名</li>
+                    <li>鯖缶: 6名</li>
+                    <li>にんにんランド: 10名</li>
                     <li>おやつカンパニー: 1名</li>
-                    <li>ゴミ箱: 1名</li>
                     <li>星の調律者: 1名</li>
                     <li>秋のパン祭り: 4名</li>
                     <li>LEVABULL: 2名</li>
                     <li>うささ: 1名</li>
-                <li>所属無し: 1名</li></ul>
+                    <li>ゴミ箱: 1名</li>
+                <li>所属無し: 0名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Boosting2</li>
+                    <li>モールス: 1名</li>
                     <li>レッツサーフィス: 12名</li>
-                    <li>セラポン: 2名</li>
                     <li>おさけやさん: 2名</li>
                     <li>烏合の衆: 11名</li>
-                    <li>モールス: 1名</li>
                     <li>KMK48: 5名</li>
+                    <li>セラポン: 2名</li>
                     <li>ピンクスパイダー: 1名</li>
                     <li>mofmof: 3名</li>
                     <li>こくみん: 1名</li>
+                    <li>二度目の骨折: 1名</li>
                 <li>所属無し: 0名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Boosting3</li>
-                    <li>自由民主党: 7名</li>
+                    <li>自由民主党: 6名</li>
                     <li>日進月歩: 6名</li>
                     <li>Blendy3: 1名</li>
                     <li>自由への招待: 3名</li>
@@ -744,15 +745,15 @@
                     <li>聖女の洗脳騎士団: 3名</li>
                     <li>異世界レストラン: 1名</li>
                     <li>かふぇー: 1名</li>
-                <li>所属無し: 1名</li></ul>
+                <li>所属無し: 2名</li></ul>
 
         <script>
             var ctxLine = document.getElementById('boostingLineChart').getContext('2d');
             var boostingLineChart = new Chart(ctxLine, {
                 type: 'line',
                 data: {
-                    labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38]),
-                    datasets: [{"label": "Boosting1", "data": [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 78, 80, 88, 97, 99, 100], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Boosting2", "data": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 79, 83, 84, 87, 89, 91, 92, 94, 95, 98], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Boosting3", "data": [32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 77, 81, 82, 85, 86, 90, 93, 96], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}]
+                    labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]),
+                    datasets: [{"label": "Boosting1", "data": [28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 76, 82, 89, 90, 98, 99], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Boosting2", "data": [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 77, 78, 79, 80, 81, 84, 91, 92, 94, 95, 96, 100], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Boosting3", "data": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 75, 83, 85, 86, 87, 88, 93, 97], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}]
                 },
                 options: {
                     responsive: true,
@@ -764,7 +765,7 @@
                                 text: '人数'
                             },
                             min: 1,
-                            max: 38
+                            max: 39
                         },
                         y: {
                             title: {
@@ -777,7 +778,7 @@
                         },
                         y2: {
                             type: 'category',
-                            labels: [85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84],
+                            labels: [85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84],
                             position: 'right',
                             grid: {
                                 drawOnChartArea: false
@@ -815,7 +816,7 @@
                             text: 'Boostingサーバー別分布'
                         },
                         annotation: {
-                            annotations: [{"type": "line", "yMin": 77.5, "yMax": 77.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 85", "position": "end"}}]
+                            annotations: [{"type": "line", "yMin": 80.5, "yMax": 80.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 85", "position": "end"}}]
                         }
                     }
                 }
@@ -824,7 +825,7 @@
             var ctxPie = document.getElementById('boostingChart').getContext('2d');
             var boostingChart = new Chart(ctxPie, {
                 type: 'pie',
-                data: {"labels": ["Boosting1", "Boosting2", "Boosting3"], "datasets": [{"data": [27, 38, 35], "backgroundColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderWidth": 0}]},
+                data: {"labels": ["Boosting1", "Boosting2", "Boosting3"], "datasets": [{"data": [26, 39, 35], "backgroundColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderWidth": 0}]},
                 options: {
                     responsive: true,
                     maintainAspectRatio: true,
