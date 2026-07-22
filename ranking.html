@@ -262,7 +262,7 @@
     <body>
         <h1>プレイヤーランキング</h1>
         <div id="content-wrapper">
-            <p><a href="./index.html">>>ランキングサマリー</a><br>更新日: 2026/07/21</p>
+            <p><a href="./index.html">>>ランキングサマリー</a><br>更新日: 2026/07/23</p>
             <div>
                 
                 <div class="tab" id="Virba-tab" onclick="showTab('Virba')">Virba</div>
@@ -313,14 +313,14 @@
                                 
                                 <label><input type="checkbox" name="guild" value="Virba1-NoWords" onchange="toggleGuildCheckbox('Virba')"> NoWords</label>
                                 
-                                <label><input type="checkbox" name="guild" value="Virba1-月の皇女" onchange="toggleGuildCheckbox('Virba')"> 月の皇女</label>
-                                
                                 <label><input type="checkbox" name="guild" value="Virba1-所属無し" onchange="toggleGuildCheckbox('Virba')"> 所属無し</label>
                                 
                             </div>
                             
                             <div class="guild-filter-group">
                                 <h4>Virba2</h4>
+                                
+                                <label><input type="checkbox" name="guild" value="Virba2-asylum" onchange="toggleGuildCheckbox('Virba')"> asylum</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Virba2-Oblivion" onchange="toggleGuildCheckbox('Virba')"> Oblivion</label>
                                 
@@ -339,9 +339,9 @@
                                 
                                 <label><input type="checkbox" name="guild" value="Virba3-月花町の安らげ荘" onchange="toggleGuildCheckbox('Virba')"> 月花町の安らげ荘</label>
                                 
-                                <label><input type="checkbox" name="guild" value="Virba3-とりあえずギルド" onchange="toggleGuildCheckbox('Virba')"> とりあえずギルド</label>
-                                
                                 <label><input type="checkbox" name="guild" value="Virba3-黒炎" onchange="toggleGuildCheckbox('Virba')"> 黒炎</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Virba3-とりあえずギルド" onchange="toggleGuildCheckbox('Virba')"> とりあえずギルド</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Virba3-所属無し" onchange="toggleGuildCheckbox('Virba')"> 所属無し</label>
                                 
@@ -391,7 +391,7 @@
                         </thead>
                         <tbody>
                             
-                            <tr data-server="Virba2" data-guild="所属無し">
+                            <tr data-server="Virba2" data-guild="asylum">
                                 
                                 <td>1</td>
                                 
@@ -399,9 +399,9 @@
                                 
                                 <td>Virba2</td>
                                 
-                                <td>所属無し</td>
+                                <td>asylum</td>
                                 
-                                <td>久美子の彼氏</td>
+                                <td>みんな元気でね</td>
                                 
                             </tr>
                             
@@ -415,7 +415,7 @@
                                 
                                 <td>Oblivion</td>
                                 
-                                <td>佐天涙子のよっ友</td>
+                                <td>wasabi5</td>
                                 
                             </tr>
                             
@@ -429,7 +429,7 @@
                                 
                                 <td>Oblivion</td>
                                 
-                                <td>wasabi5</td>
+                                <td>佐天涙子のよっ友</td>
                                 
                             </tr>
                             
@@ -503,9 +503,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba1" data-guild="サーフィス">
+                            <tr data-server="Virba2" data-guild="Oblivion">
                                 
                                 <td>9</td>
+                                
+                                <td>97</td>
+                                
+                                <td>Virba2</td>
+                                
+                                <td>Oblivion</td>
+                                
+                                <td>桐ケ谷和人</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba1" data-guild="サーフィス">
+                                
+                                <td>10</td>
                                 
                                 <td>97</td>
                                 
@@ -519,35 +533,7 @@
                             
                             <tr data-server="Virba2" data-guild="Oblivion">
                                 
-                                <td>10</td>
-                                
-                                <td>97</td>
-                                
-                                <td>Virba2</td>
-                                
-                                <td>Oblivion</td>
-                                
-                                <td>桐ケ谷和人</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Virba3" data-guild="月花町の安らげ荘">
-                                
                                 <td>11</td>
-                                
-                                <td>97</td>
-                                
-                                <td>Virba3</td>
-                                
-                                <td>月花町の安らげ荘</td>
-                                
-                                <td>善良なノヴァ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Virba2" data-guild="Oblivion">
-                                
-                                <td>12</td>
                                 
                                 <td>97</td>
                                 
@@ -556,6 +542,20 @@
                                 <td>Oblivion</td>
                                 
                                 <td>元すもうぶ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba3" data-guild="月花町の安らげ荘">
+                                
+                                <td>12</td>
+                                
+                                <td>97</td>
+                                
+                                <td>Virba3</td>
+                                
+                                <td>月花町の安らげ荘</td>
+                                
+                                <td>善良なノヴァ</td>
                                 
                             </tr>
                             
@@ -713,23 +713,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba4" data-guild="Harmony">
-                                
-                                <td>24</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Virba4</td>
-                                
-                                <td>Harmony</td>
-                                
-                                <td>でんでん太鼓</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Virba2" data-guild="Oblivion">
                                 
-                                <td>25</td>
+                                <td>24</td>
                                 
                                 <td>96</td>
                                 
@@ -743,7 +729,7 @@
                             
                             <tr data-server="Virba1" data-guild="サーフィス">
                                 
-                                <td>26</td>
+                                <td>25</td>
                                 
                                 <td>96</td>
                                 
@@ -757,7 +743,7 @@
                             
                             <tr data-server="Virba4" data-guild="Harmony">
                                 
-                                <td>27</td>
+                                <td>26</td>
                                 
                                 <td>96</td>
                                 
@@ -769,23 +755,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba3" data-guild="とりあえずギルド">
-                                
-                                <td>28</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Virba3</td>
-                                
-                                <td>とりあえずギルド</td>
-                                
-                                <td>ナルビ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Virba2" data-guild="Oblivion">
                                 
-                                <td>29</td>
+                                <td>27</td>
                                 
                                 <td>96</td>
                                 
@@ -797,23 +769,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba3" data-guild="月花町の安らげ荘">
-                                
-                                <td>30</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Virba3</td>
-                                
-                                <td>月花町の安らげ荘</td>
-                                
-                                <td>ナブディス</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Virba2" data-guild="Oblivion">
                                 
-                                <td>31</td>
+                                <td>28</td>
                                 
                                 <td>96</td>
                                 
@@ -825,15 +783,29 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba4" data-guild="所属無し">
+                            <tr data-server="Virba3" data-guild="月花町の安らげ荘">
                                 
-                                <td>32</td>
+                                <td>29</td>
+                                
+                                <td>96</td>
+                                
+                                <td>Virba3</td>
+                                
+                                <td>月花町の安らげ荘</td>
+                                
+                                <td>ナブディス</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba4" data-guild="Harmony">
+                                
+                                <td>30</td>
                                 
                                 <td>96</td>
                                 
                                 <td>Virba4</td>
                                 
-                                <td>所属無し</td>
+                                <td>Harmony</td>
                                 
                                 <td>ト琴</td>
                                 
@@ -841,7 +813,7 @@
                             
                             <tr data-server="Virba4" data-guild="朧桜">
                                 
-                                <td>33</td>
+                                <td>31</td>
                                 
                                 <td>96</td>
                                 
@@ -855,7 +827,7 @@
                             
                             <tr data-server="Virba1" data-guild="サーフィス">
                                 
-                                <td>34</td>
+                                <td>32</td>
                                 
                                 <td>96</td>
                                 
@@ -869,7 +841,7 @@
                             
                             <tr data-server="Virba4" data-guild="月華">
                                 
-                                <td>35</td>
+                                <td>33</td>
                                 
                                 <td>95</td>
                                 
@@ -881,23 +853,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba4" data-guild="所属無し">
+                            <tr data-server="Virba4" data-guild="Harmony">
                                 
-                                <td>36</td>
+                                <td>34</td>
                                 
                                 <td>95</td>
                                 
                                 <td>Virba4</td>
                                 
-                                <td>所属無し</td>
+                                <td>Harmony</td>
                                 
-                                <td>じぇけ</td>
+                                <td>でんでん太鼓</td>
                                 
                             </tr>
                             
                             <tr data-server="Virba2" data-guild="Oblivion">
                                 
-                                <td>37</td>
+                                <td>35</td>
                                 
                                 <td>95</td>
                                 
@@ -909,9 +881,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Virba4" data-guild="Harmony">
+                                
+                                <td>36</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Virba4</td>
+                                
+                                <td>Harmony</td>
+                                
+                                <td>じぇけ</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Virba1" data-guild="Lamium">
                                 
-                                <td>38</td>
+                                <td>37</td>
                                 
                                 <td>95</td>
                                 
@@ -925,7 +911,7 @@
                             
                             <tr data-server="Virba4" data-guild="Harmony">
                                 
-                                <td>39</td>
+                                <td>38</td>
                                 
                                 <td>95</td>
                                 
@@ -939,7 +925,7 @@
                             
                             <tr data-server="Virba2" data-guild="Oblivion">
                                 
-                                <td>40</td>
+                                <td>39</td>
                                 
                                 <td>95</td>
                                 
@@ -953,7 +939,7 @@
                             
                             <tr data-server="Virba1" data-guild="サーフィス">
                                 
-                                <td>41</td>
+                                <td>40</td>
                                 
                                 <td>95</td>
                                 
@@ -967,7 +953,7 @@
                             
                             <tr data-server="Virba4" data-guild="猫と愉快な仲間">
                                 
-                                <td>42</td>
+                                <td>41</td>
                                 
                                 <td>95</td>
                                 
@@ -981,7 +967,7 @@
                             
                             <tr data-server="Virba4" data-guild="HOALOHA">
                                 
-                                <td>43</td>
+                                <td>42</td>
                                 
                                 <td>95</td>
                                 
@@ -995,7 +981,7 @@
                             
                             <tr data-server="Virba4" data-guild="朧桜">
                                 
-                                <td>44</td>
+                                <td>43</td>
                                 
                                 <td>95</td>
                                 
@@ -1009,7 +995,7 @@
                             
                             <tr data-server="Virba4" data-guild="朧桜">
                                 
-                                <td>45</td>
+                                <td>44</td>
                                 
                                 <td>95</td>
                                 
@@ -1023,7 +1009,7 @@
                             
                             <tr data-server="Virba4" data-guild="朧桜">
                                 
-                                <td>46</td>
+                                <td>45</td>
                                 
                                 <td>95</td>
                                 
@@ -1032,6 +1018,20 @@
                                 <td>朧桜</td>
                                 
                                 <td>UEPOM</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba2" data-guild="Oblivion">
+                                
+                                <td>46</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Virba2</td>
+                                
+                                <td>Oblivion</td>
+                                
+                                <td>狂ちゃん</td>
                                 
                             </tr>
                             
@@ -1049,17 +1049,17 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba2" data-guild="Oblivion">
+                            <tr data-server="Virba1" data-guild="Lamium">
                                 
                                 <td>48</td>
                                 
                                 <td>95</td>
                                 
-                                <td>Virba2</td>
+                                <td>Virba1</td>
                                 
-                                <td>Oblivion</td>
+                                <td>Lamium</td>
                                 
-                                <td>狂ちゃん</td>
+                                <td>ホー助君DXsp</td>
                                 
                             </tr>
                             
@@ -1077,23 +1077,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba1" data-guild="Lamium">
-                                
-                                <td>50</td>
-                                
-                                <td>95</td>
-                                
-                                <td>Virba1</td>
-                                
-                                <td>Lamium</td>
-                                
-                                <td>ホー助君DXsp</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Virba4" data-guild="猫と愉快な仲間">
                                 
-                                <td>51</td>
+                                <td>50</td>
                                 
                                 <td>95</td>
                                 
@@ -1102,6 +1088,20 @@
                                 <td>猫と愉快な仲間</td>
                                 
                                 <td>Ehekatl</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba1" data-guild="サーフィス">
+                                
+                                <td>51</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Virba1</td>
+                                
+                                <td>サーフィス</td>
+                                
+                                <td>RONTAMA</td>
                                 
                             </tr>
                             
@@ -1129,27 +1129,13 @@
                                 
                                 <td>サーフィス</td>
                                 
-                                <td>RONTAMA</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Virba1" data-guild="サーフィス">
-                                
-                                <td>54</td>
-                                
-                                <td>95</td>
-                                
-                                <td>Virba1</td>
-                                
-                                <td>サーフィス</td>
-                                
                                 <td>アルシア</td>
                                 
                             </tr>
                             
                             <tr data-server="Virba2" data-guild="Oblivion">
                                 
-                                <td>55</td>
+                                <td>54</td>
                                 
                                 <td>95</td>
                                 
@@ -1158,6 +1144,20 @@
                                 <td>Oblivion</td>
                                 
                                 <td>原田マハラジャ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba2" data-guild="所属無し">
+                                
+                                <td>55</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Virba2</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>VioILet</td>
                                 
                             </tr>
                             
@@ -1175,29 +1175,15 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba2" data-guild="NoCtuRN">
+                            <tr data-server="Virba1" data-guild="サーフィス">
                                 
                                 <td>57</td>
                                 
                                 <td>95</td>
                                 
-                                <td>Virba2</td>
-                                
-                                <td>NoCtuRN</td>
-                                
-                                <td>VioILet</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Virba1" data-guild="月の皇女">
-                                
-                                <td>58</td>
-                                
-                                <td>95</td>
-                                
                                 <td>Virba1</td>
                                 
-                                <td>月の皇女</td>
+                                <td>サーフィス</td>
                                 
                                 <td>T4Y</td>
                                 
@@ -1205,7 +1191,7 @@
                             
                             <tr data-server="Virba4" data-guild="朧桜">
                                 
-                                <td>59</td>
+                                <td>58</td>
                                 
                                 <td>95</td>
                                 
@@ -1214,6 +1200,20 @@
                                 <td>朧桜</td>
                                 
                                 <td>魔天ノ人</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba1" data-guild="サーフィス">
+                                
+                                <td>59</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Virba1</td>
+                                
+                                <td>サーフィス</td>
+                                
+                                <td>Quixotic</td>
                                 
                             </tr>
                             
@@ -1231,17 +1231,17 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba1" data-guild="サーフィス">
+                            <tr data-server="Virba2" data-guild="NoCtuRN">
                                 
                                 <td>61</td>
                                 
                                 <td>95</td>
                                 
-                                <td>Virba1</td>
+                                <td>Virba2</td>
                                 
-                                <td>サーフィス</td>
+                                <td>NoCtuRN</td>
                                 
-                                <td>Quixotic</td>
+                                <td>ウィドゥ</td>
                                 
                             </tr>
                             
@@ -1259,37 +1259,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba2" data-guild="NoCtuRN">
-                                
-                                <td>63</td>
-                                
-                                <td>95</td>
-                                
-                                <td>Virba2</td>
-                                
-                                <td>NoCtuRN</td>
-                                
-                                <td>ウィドゥ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Virba4" data-guild="所属無し">
-                                
-                                <td>64</td>
-                                
-                                <td>95</td>
-                                
-                                <td>Virba4</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>ジゼルタ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Virba2" data-guild="Abyss">
                                 
-                                <td>65</td>
+                                <td>63</td>
                                 
                                 <td>95</td>
                                 
@@ -1301,9 +1273,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Virba4" data-guild="Harmony">
+                                
+                                <td>64</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Virba4</td>
+                                
+                                <td>Harmony</td>
+                                
+                                <td>ジゼルタ</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Virba2" data-guild="Oblivion">
                                 
-                                <td>66</td>
+                                <td>65</td>
                                 
                                 <td>95</td>
                                 
@@ -1317,7 +1303,7 @@
                             
                             <tr data-server="Virba4" data-guild="朧桜">
                                 
-                                <td>67</td>
+                                <td>66</td>
                                 
                                 <td>95</td>
                                 
@@ -1329,37 +1315,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba4" data-guild="所属無し">
+                            <tr data-server="Virba4" data-guild="Harmony">
                                 
-                                <td>68</td>
+                                <td>67</td>
                                 
                                 <td>95</td>
                                 
                                 <td>Virba4</td>
                                 
-                                <td>所属無し</td>
+                                <td>Harmony</td>
                                 
                                 <td>ヴィオラo</td>
                                 
                             </tr>
                             
-                            <tr data-server="Virba4" data-guild="所属無し">
-                                
-                                <td>69</td>
-                                
-                                <td>95</td>
-                                
-                                <td>Virba4</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>ける</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Virba2" data-guild="Abyss">
                                 
-                                <td>70</td>
+                                <td>68</td>
                                 
                                 <td>95</td>
                                 
@@ -1368,6 +1340,34 @@
                                 <td>Abyss</td>
                                 
                                 <td>Naーsan</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba4" data-guild="Harmony">
+                                
+                                <td>69</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Virba4</td>
+                                
+                                <td>Harmony</td>
+                                
+                                <td>ける</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba2" data-guild="所属無し">
+                                
+                                <td>70</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Virba2</td>
+                                
+                                <td>所属無し</td>
+                                
+                                <td>ピンポン</td>
                                 
                             </tr>
                             
@@ -1385,23 +1385,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba2" data-guild="所属無し">
-                                
-                                <td>72</td>
-                                
-                                <td>95</td>
-                                
-                                <td>Virba2</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>ピンポン</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Virba4" data-guild="朧桜">
                                 
-                                <td>73</td>
+                                <td>72</td>
                                 
                                 <td>95</td>
                                 
@@ -1410,6 +1396,20 @@
                                 <td>朧桜</td>
                                 
                                 <td>ミケーレ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba2" data-guild="Oblivion">
+                                
+                                <td>73</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Virba2</td>
+                                
+                                <td>Oblivion</td>
+                                
+                                <td>おぶりっぴぃ</td>
                                 
                             </tr>
                             
@@ -1437,27 +1437,13 @@
                                 
                                 <td>Oblivion</td>
                                 
-                                <td>おぶりっぴぃ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Virba2" data-guild="Oblivion">
-                                
-                                <td>76</td>
-                                
-                                <td>95</td>
-                                
-                                <td>Virba2</td>
-                                
-                                <td>Oblivion</td>
-                                
                                 <td>ーArroWー</td>
                                 
                             </tr>
                             
                             <tr data-server="Virba4" data-guild="Harmony">
                                 
-                                <td>77</td>
+                                <td>76</td>
                                 
                                 <td>95</td>
                                 
@@ -1471,7 +1457,7 @@
                             
                             <tr data-server="Virba4" data-guild="HOALOHA友">
                                 
-                                <td>78</td>
+                                <td>77</td>
                                 
                                 <td>95</td>
                                 
@@ -1480,6 +1466,20 @@
                                 <td>HOALOHA友</td>
                                 
                                 <td>べろりんぬちゃん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba4" data-guild="月華">
+                                
+                                <td>78</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Virba4</td>
+                                
+                                <td>月華</td>
+                                
+                                <td>hiroちあん</td>
                                 
                             </tr>
                             
@@ -1497,7 +1497,7 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba4" data-guild="月華">
+                            <tr data-server="Virba4" data-guild="朧桜">
                                 
                                 <td>80</td>
                                 
@@ -1505,9 +1505,9 @@
                                 
                                 <td>Virba4</td>
                                 
-                                <td>月華</td>
+                                <td>朧桜</td>
                                 
-                                <td>hiroちあん</td>
+                                <td>るーろ</td>
                                 
                             </tr>
                             
@@ -1525,17 +1525,17 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba4" data-guild="朧桜">
+                            <tr data-server="Virba2" data-guild="Abyss">
                                 
                                 <td>82</td>
                                 
                                 <td>95</td>
                                 
-                                <td>Virba4</td>
+                                <td>Virba2</td>
                                 
-                                <td>朧桜</td>
+                                <td>Abyss</td>
                                 
-                                <td>るーろ</td>
+                                <td>ハル蔵</td>
                                 
                             </tr>
                             
@@ -1553,39 +1553,11 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba2" data-guild="Abyss">
+                            <tr data-server="Virba4" data-guild="朧桜">
                                 
                                 <td>84</td>
                                 
                                 <td>95</td>
-                                
-                                <td>Virba2</td>
-                                
-                                <td>Abyss</td>
-                                
-                                <td>ハル蔵</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Virba2" data-guild="Abyss">
-                                
-                                <td>85</td>
-                                
-                                <td>94</td>
-                                
-                                <td>Virba2</td>
-                                
-                                <td>Abyss</td>
-                                
-                                <td>あおみとり</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Virba4" data-guild="朧桜">
-                                
-                                <td>86</td>
-                                
-                                <td>94</td>
                                 
                                 <td>Virba4</td>
                                 
@@ -1595,25 +1567,25 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba2" data-guild="MI6">
+                            <tr data-server="Virba2" data-guild="Abyss">
                                 
-                                <td>87</td>
+                                <td>85</td>
                                 
-                                <td>94</td>
+                                <td>95</td>
                                 
                                 <td>Virba2</td>
                                 
-                                <td>MI6</td>
+                                <td>Abyss</td>
                                 
-                                <td>おピンクマン参上</td>
+                                <td>あおみとり</td>
                                 
                             </tr>
                             
                             <tr data-server="Virba1" data-guild="サーフィス">
                                 
-                                <td>88</td>
+                                <td>86</td>
                                 
-                                <td>94</td>
+                                <td>95</td>
                                 
                                 <td>Virba1</td>
                                 
@@ -1625,7 +1597,7 @@
                             
                             <tr data-server="Virba1" data-guild="サーフィス">
                                 
-                                <td>89</td>
+                                <td>87</td>
                                 
                                 <td>94</td>
                                 
@@ -1639,7 +1611,7 @@
                             
                             <tr data-server="Virba3" data-guild="月花町の安らげ荘">
                                 
-                                <td>90</td>
+                                <td>88</td>
                                 
                                 <td>94</td>
                                 
@@ -1648,6 +1620,34 @@
                                 <td>月花町の安らげ荘</td>
                                 
                                 <td>サイネリア</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba2" data-guild="MI6">
+                                
+                                <td>89</td>
+                                
+                                <td>94</td>
+                                
+                                <td>Virba2</td>
+                                
+                                <td>MI6</td>
+                                
+                                <td>おピンクマン参上</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba4" data-guild="朧桜">
+                                
+                                <td>90</td>
+                                
+                                <td>94</td>
+                                
+                                <td>Virba4</td>
+                                
+                                <td>朧桜</td>
+                                
+                                <td>ムーミン改</td>
                                 
                             </tr>
                             
@@ -1661,21 +1661,21 @@
                                 
                                 <td>Harmony</td>
                                 
-                                <td>Iili</td>
+                                <td>カサンドラ</td>
                                 
                             </tr>
                             
-                            <tr data-server="Virba1" data-guild="サーフィス">
+                            <tr data-server="Virba4" data-guild="Harmony">
                                 
                                 <td>92</td>
                                 
                                 <td>94</td>
                                 
-                                <td>Virba1</td>
+                                <td>Virba4</td>
                                 
-                                <td>サーフィス</td>
+                                <td>Harmony</td>
                                 
-                                <td>天ぷらそば</td>
+                                <td>Iili</td>
                                 
                             </tr>
                             
@@ -1693,17 +1693,17 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba4" data-guild="所属無し">
+                            <tr data-server="Virba1" data-guild="サーフィス">
                                 
                                 <td>94</td>
                                 
                                 <td>94</td>
                                 
-                                <td>Virba4</td>
+                                <td>Virba1</td>
                                 
-                                <td>所属無し</td>
+                                <td>サーフィス</td>
                                 
-                                <td>ムーミン改</td>
+                                <td>天ぷらそば</td>
                                 
                             </tr>
                             
@@ -1717,41 +1717,13 @@
                                 
                                 <td>Harmony</td>
                                 
-                                <td>MEVIUS</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Virba2" data-guild="Abyss">
-                                
-                                <td>96</td>
-                                
-                                <td>94</td>
-                                
-                                <td>Virba2</td>
-                                
-                                <td>Abyss</td>
-                                
-                                <td>クリエル</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Virba4" data-guild="Harmony">
-                                
-                                <td>97</td>
-                                
-                                <td>94</td>
-                                
-                                <td>Virba4</td>
-                                
-                                <td>Harmony</td>
-                                
                                 <td>手拍子</td>
                                 
                             </tr>
                             
                             <tr data-server="Virba4" data-guild="Harmony">
                                 
-                                <td>98</td>
+                                <td>96</td>
                                 
                                 <td>94</td>
                                 
@@ -1759,13 +1731,13 @@
                                 
                                 <td>Harmony</td>
                                 
-                                <td>カサンドラ</td>
+                                <td>MEVIUS</td>
                                 
                             </tr>
                             
                             <tr data-server="Virba2" data-guild="Oblivion">
                                 
-                                <td>99</td>
+                                <td>97</td>
                                 
                                 <td>94</td>
                                 
@@ -1777,7 +1749,35 @@
                                 
                             </tr>
                             
-                            <tr data-server="Virba4" data-guild="Harmony">
+                            <tr data-server="Virba2" data-guild="Abyss">
+                                
+                                <td>98</td>
+                                
+                                <td>94</td>
+                                
+                                <td>Virba2</td>
+                                
+                                <td>Abyss</td>
+                                
+                                <td>クリエル</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba2" data-guild="Abyss">
+                                
+                                <td>99</td>
+                                
+                                <td>94</td>
+                                
+                                <td>Virba2</td>
+                                
+                                <td>Abyss</td>
+                                
+                                <td>ロックネット</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Virba4" data-guild="朧桜">
                                 
                                 <td>100</td>
                                 
@@ -1785,9 +1785,9 @@
                                 
                                 <td>Virba4</td>
                                 
-                                <td>Harmony</td>
+                                <td>朧桜</td>
                                 
-                                <td>ほーねっと</td>
+                                <td>U7</td>
                                 
                             </tr>
                             
@@ -1861,6 +1861,10 @@
                                 
                                 <label><input type="checkbox" name="guild" value="Eda3-どっこいしょ" onchange="toggleGuildCheckbox('Eda')"> どっこいしょ</label>
                                 
+                                <label><input type="checkbox" name="guild" value="Eda3-ウウイング" onchange="toggleGuildCheckbox('Eda')"> ウウイング</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Eda3-ぴよぴよ団" onchange="toggleGuildCheckbox('Eda')"> ぴよぴよ団</label>
+                                
                                 <label><input type="checkbox" name="guild" value="Eda3-所属無し" onchange="toggleGuildCheckbox('Eda')"> 所属無し</label>
                                 
                             </div>
@@ -1873,6 +1877,8 @@
                                 <label><input type="checkbox" name="guild" value="Eda4-なみだふくよ" onchange="toggleGuildCheckbox('Eda')"> なみだふくよ</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Eda4-エス" onchange="toggleGuildCheckbox('Eda')"> エス</label>
+                                
+                                <label><input type="checkbox" name="guild" value="Eda4-一念通天" onchange="toggleGuildCheckbox('Eda')"> 一念通天</label>
                                 
                                 <label><input type="checkbox" name="guild" value="Eda4-すうぃーてぃす" onchange="toggleGuildCheckbox('Eda')"> すうぃーてぃす</label>
                                 
@@ -1905,7 +1911,7 @@
                         </thead>
                         <tbody>
                             
-                            <tr data-server="Eda3" data-guild="わっしょい">
+                            <tr data-server="Eda3" data-guild="所属無し">
                                 
                                 <td>1</td>
                                 
@@ -1913,7 +1919,7 @@
                                 
                                 <td>Eda3</td>
                                 
-                                <td>わっしょい</td>
+                                <td>所属無し</td>
                                 
                                 <td>きゅあじい</td>
                                 
@@ -1975,7 +1981,7 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="所属無し">
+                            <tr data-server="Eda3" data-guild="M2O">
                                 
                                 <td>6</td>
                                 
@@ -1983,13 +1989,13 @@
                                 
                                 <td>Eda3</td>
                                 
-                                <td>所属無し</td>
+                                <td>M2O</td>
                                 
                                 <td>だいきん</td>
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="わっしょい">
+                            <tr data-server="Eda3" data-guild="所属無し">
                                 
                                 <td>7</td>
                                 
@@ -1997,7 +2003,7 @@
                                 
                                 <td>Eda3</td>
                                 
-                                <td>わっしょい</td>
+                                <td>所属無し</td>
                                 
                                 <td>ぽめまる一</td>
                                 
@@ -2007,7 +2013,7 @@
                                 
                                 <td>8</td>
                                 
-                                <td>98</td>
+                                <td>99</td>
                                 
                                 <td>Eda4</td>
                                 
@@ -2125,7 +2131,7 @@
                                 
                                 <td>ぱてぃすりーず</td>
                                 
-                                <td>解放のぷりん</td>
+                                <td>大納言善哉</td>
                                 
                             </tr>
                             
@@ -2139,7 +2145,7 @@
                                 
                                 <td>ぱてぃすりーず</td>
                                 
-                                <td>パンニャコッタ</td>
+                                <td>解放のぷりん</td>
                                 
                             </tr>
                             
@@ -2153,7 +2159,7 @@
                                 
                                 <td>ぱてぃすりーず</td>
                                 
-                                <td>大納言善哉</td>
+                                <td>パンニャコッタ</td>
                                 
                             </tr>
                             
@@ -2171,9 +2177,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda4" data-guild="なみだふくよ">
+                            <tr data-server="Eda3" data-guild="わっしょい">
                                 
                                 <td>20</td>
+                                
+                                <td>97</td>
+                                
+                                <td>Eda3</td>
+                                
+                                <td>わっしょい</td>
+                                
+                                <td>きゅあすずこ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda4" data-guild="なみだふくよ">
+                                
+                                <td>21</td>
                                 
                                 <td>97</td>
                                 
@@ -2187,7 +2207,7 @@
                             
                             <tr data-server="Eda4" data-guild="エス">
                                 
-                                <td>21</td>
+                                <td>22</td>
                                 
                                 <td>97</td>
                                 
@@ -2196,20 +2216,6 @@
                                 <td>エス</td>
                                 
                                 <td>きない</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Eda3" data-guild="わっしょい">
-                                
-                                <td>22</td>
-                                
-                                <td>97</td>
-                                
-                                <td>Eda3</td>
-                                
-                                <td>わっしょい</td>
-                                
-                                <td>きゅあすずこ</td>
                                 
                             </tr>
                             
@@ -2237,11 +2243,11 @@
                                 
                                 <td>わっしょい</td>
                                 
-                                <td>狐様は魔法少女</td>
+                                <td>sumibi</td>
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="所属無し">
+                            <tr data-server="Eda3" data-guild="わっしょい">
                                 
                                 <td>25</td>
                                 
@@ -2249,29 +2255,15 @@
                                 
                                 <td>Eda3</td>
                                 
-                                <td>所属無し</td>
+                                <td>わっしょい</td>
                                 
-                                <td>sumibi</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Eda4" data-guild="なみだふくよ">
-                                
-                                <td>26</td>
-                                
-                                <td>97</td>
-                                
-                                <td>Eda4</td>
-                                
-                                <td>なみだふくよ</td>
-                                
-                                <td>二罰</td>
+                                <td>狐様は魔法少女</td>
                                 
                             </tr>
                             
                             <tr data-server="Eda3" data-guild="M2O">
                                 
-                                <td>27</td>
+                                <td>26</td>
                                 
                                 <td>97</td>
                                 
@@ -2280,6 +2272,20 @@
                                 <td>M2O</td>
                                 
                                 <td>嶽ちゃんマン</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda4" data-guild="なみだふくよ">
+                                
+                                <td>27</td>
+                                
+                                <td>97</td>
+                                
+                                <td>Eda4</td>
+                                
+                                <td>なみだふくよ</td>
+                                
+                                <td>二罰</td>
                                 
                             </tr>
                             
@@ -2343,7 +2349,7 @@
                                 
                                 <td>32</td>
                                 
-                                <td>96</td>
+                                <td>97</td>
                                 
                                 <td>Eda4</td>
                                 
@@ -2395,9 +2401,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="森のハチミツ商会">
+                            <tr data-server="Eda2" data-guild="5secret">
                                 
                                 <td>36</td>
+                                
+                                <td>96</td>
+                                
+                                <td>Eda2</td>
+                                
+                                <td>5secret</td>
+                                
+                                <td>へびちん</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda3" data-guild="森のハチミツ商会">
+                                
+                                <td>37</td>
                                 
                                 <td>96</td>
                                 
@@ -2411,7 +2431,7 @@
                             
                             <tr data-server="Eda4" data-guild="ぱてぃすりーず">
                                 
-                                <td>37</td>
+                                <td>38</td>
                                 
                                 <td>96</td>
                                 
@@ -2420,20 +2440,6 @@
                                 <td>ぱてぃすりーず</td>
                                 
                                 <td>食い逃げするゴミ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Eda2" data-guild="5secret">
-                                
-                                <td>38</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Eda2</td>
-                                
-                                <td>5secret</td>
-                                
-                                <td>へびちん</td>
                                 
                             </tr>
                             
@@ -2451,23 +2457,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="わっしょい">
-                                
-                                <td>40</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Eda3</td>
-                                
-                                <td>わっしょい</td>
-                                
-                                <td>マジカルパオーン</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Eda4" data-guild="ぱてぃすりーず">
                                 
-                                <td>41</td>
+                                <td>40</td>
                                 
                                 <td>96</td>
                                 
@@ -2476,6 +2468,20 @@
                                 <td>ぱてぃすりーず</td>
                                 
                                 <td>強欲の生ゴミ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda3" data-guild="わっしょい">
+                                
+                                <td>41</td>
+                                
+                                <td>96</td>
+                                
+                                <td>Eda3</td>
+                                
+                                <td>わっしょい</td>
+                                
+                                <td>マジカルパオーン</td>
                                 
                             </tr>
                             
@@ -2493,37 +2499,23 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="M2O">
+                            <tr data-server="Eda4" data-guild="なみだふくよ">
                                 
                                 <td>43</td>
                                 
                                 <td>96</td>
                                 
-                                <td>Eda3</td>
+                                <td>Eda4</td>
                                 
-                                <td>M2O</td>
+                                <td>なみだふくよ</td>
                                 
-                                <td>はにゃくま</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Eda3" data-guild="所属無し">
-                                
-                                <td>44</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Eda3</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>きづなマギカ</td>
+                                <td>帝亜</td>
                                 
                             </tr>
                             
                             <tr data-server="Eda4" data-guild="ぱてぃすりーず">
                                 
-                                <td>45</td>
+                                <td>44</td>
                                 
                                 <td>96</td>
                                 
@@ -2535,17 +2527,31 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda4" data-guild="なみだふくよ">
+                            <tr data-server="Eda3" data-guild="M2O">
+                                
+                                <td>45</td>
+                                
+                                <td>96</td>
+                                
+                                <td>Eda3</td>
+                                
+                                <td>M2O</td>
+                                
+                                <td>はにゃくま</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda3" data-guild="わっしょい">
                                 
                                 <td>46</td>
                                 
                                 <td>96</td>
                                 
-                                <td>Eda4</td>
+                                <td>Eda3</td>
                                 
-                                <td>なみだふくよ</td>
+                                <td>わっしょい</td>
                                 
-                                <td>帝亜</td>
+                                <td>きづなマギカ</td>
                                 
                             </tr>
                             
@@ -2577,7 +2583,7 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="所属無し">
+                            <tr data-server="Eda3" data-guild="わっしょい">
                                 
                                 <td>49</td>
                                 
@@ -2585,13 +2591,13 @@
                                 
                                 <td>Eda3</td>
                                 
-                                <td>所属無し</td>
+                                <td>わっしょい</td>
                                 
-                                <td>かいりマギカ</td>
+                                <td>チョコボ大魔王</td>
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="所属無し">
+                            <tr data-server="Eda3" data-guild="わっしょい">
                                 
                                 <td>50</td>
                                 
@@ -2599,9 +2605,9 @@
                                 
                                 <td>Eda3</td>
                                 
-                                <td>所属無し</td>
+                                <td>わっしょい</td>
                                 
-                                <td>チョコボ大魔王</td>
+                                <td>かいりマギカ</td>
                                 
                             </tr>
                             
@@ -2647,23 +2653,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="M2O">
-                                
-                                <td>54</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Eda3</td>
-                                
-                                <td>M2O</td>
-                                
-                                <td>Jupis</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Eda4" data-guild="ぱてぃすりーず">
                                 
-                                <td>55</td>
+                                <td>54</td>
                                 
                                 <td>96</td>
                                 
@@ -2672,6 +2664,20 @@
                                 <td>ぱてぃすりーず</td>
                                 
                                 <td>キャメリーゼ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda3" data-guild="M2O">
+                                
+                                <td>55</td>
+                                
+                                <td>96</td>
+                                
+                                <td>Eda3</td>
+                                
+                                <td>M2O</td>
+                                
+                                <td>Jupis</td>
                                 
                             </tr>
                             
@@ -2689,17 +2695,17 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda4" data-guild="なみだふくよ">
+                            <tr data-server="Eda2" data-guild="れくいえむ">
                                 
                                 <td>57</td>
                                 
                                 <td>96</td>
                                 
-                                <td>Eda4</td>
+                                <td>Eda2</td>
                                 
-                                <td>なみだふくよ</td>
+                                <td>れくいえむ</td>
                                 
-                                <td>煌茶燦</td>
+                                <td>もふもふらんど</td>
                                 
                             </tr>
                             
@@ -2713,13 +2719,41 @@
                                 
                                 <td>なみだふくよ</td>
                                 
+                                <td>煌茶燦</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda4" data-guild="なみだふくよ">
+                                
+                                <td>59</td>
+                                
+                                <td>96</td>
+                                
+                                <td>Eda4</td>
+                                
+                                <td>なみだふくよ</td>
+                                
+                                <td>馬破</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda4" data-guild="なみだふくよ">
+                                
+                                <td>60</td>
+                                
+                                <td>96</td>
+                                
+                                <td>Eda4</td>
+                                
+                                <td>なみだふくよ</td>
+                                
                                 <td>技術</td>
                                 
                             </tr>
                             
                             <tr data-server="Eda3" data-guild="M2O">
                                 
-                                <td>59</td>
+                                <td>61</td>
                                 
                                 <td>96</td>
                                 
@@ -2731,23 +2765,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda2" data-guild="れくいえむ">
-                                
-                                <td>60</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Eda2</td>
-                                
-                                <td>れくいえむ</td>
-                                
-                                <td>もふもふらんど</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Eda3" data-guild="わっしょい">
                                 
-                                <td>61</td>
+                                <td>62</td>
                                 
                                 <td>96</td>
                                 
@@ -2761,7 +2781,7 @@
                             
                             <tr data-server="Eda4" data-guild="なみだふくよ">
                                 
-                                <td>62</td>
+                                <td>63</td>
                                 
                                 <td>96</td>
                                 
@@ -2775,7 +2795,7 @@
                             
                             <tr data-server="Eda4" data-guild="ぱてぃすりーず">
                                 
-                                <td>63</td>
+                                <td>64</td>
                                 
                                 <td>96</td>
                                 
@@ -2784,20 +2804,6 @@
                                 <td>ぱてぃすりーず</td>
                                 
                                 <td>暴食の生ゴミ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Eda3" data-guild="どっこいしょ">
-                                
-                                <td>64</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Eda3</td>
-                                
-                                <td>どっこいしょ</td>
-                                
-                                <td>まじかるばんび</td>
                                 
                             </tr>
                             
@@ -2815,7 +2821,7 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="所属無し">
+                            <tr data-server="Eda3" data-guild="どっこいしょ">
                                 
                                 <td>66</td>
                                 
@@ -2823,13 +2829,13 @@
                                 
                                 <td>Eda3</td>
                                 
-                                <td>所属無し</td>
+                                <td>どっこいしょ</td>
                                 
-                                <td>魔法少女ろべりあ</td>
+                                <td>まじかるばんび</td>
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="所属無し">
+                            <tr data-server="Eda3" data-guild="わっしょい">
                                 
                                 <td>67</td>
                                 
@@ -2837,21 +2843,35 @@
                                 
                                 <td>Eda3</td>
                                 
-                                <td>所属無し</td>
+                                <td>わっしょい</td>
                                 
-                                <td>まじかるえいだ</td>
+                                <td>魔法少女ろべりあ</td>
                                 
                             </tr>
                             
-                            <tr data-server="Eda4" data-guild="所属無し">
+                            <tr data-server="Eda3" data-guild="わっしょい">
                                 
                                 <td>68</td>
                                 
                                 <td>96</td>
                                 
+                                <td>Eda3</td>
+                                
+                                <td>わっしょい</td>
+                                
+                                <td>まじかるえいだ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda4" data-guild="一念通天">
+                                
+                                <td>69</td>
+                                
+                                <td>96</td>
+                                
                                 <td>Eda4</td>
                                 
-                                <td>所属無し</td>
+                                <td>一念通天</td>
                                 
                                 <td>ゴッツい生ゴミ</td>
                                 
@@ -2859,7 +2879,7 @@
                             
                             <tr data-server="Eda1" data-guild="ミーティス">
                                 
-                                <td>69</td>
+                                <td>70</td>
                                 
                                 <td>96</td>
                                 
@@ -2873,7 +2893,7 @@
                             
                             <tr data-server="Eda4" data-guild="エス">
                                 
-                                <td>70</td>
+                                <td>71</td>
                                 
                                 <td>96</td>
                                 
@@ -2887,7 +2907,7 @@
                             
                             <tr data-server="Eda3" data-guild="わっしょい">
                                 
-                                <td>71</td>
+                                <td>72</td>
                                 
                                 <td>96</td>
                                 
@@ -2901,7 +2921,7 @@
                             
                             <tr data-server="Eda4" data-guild="ぱてぃすりーず">
                                 
-                                <td>72</td>
+                                <td>73</td>
                                 
                                 <td>96</td>
                                 
@@ -2913,15 +2933,15 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="所属無し">
+                            <tr data-server="Eda3" data-guild="わっしょい">
                                 
-                                <td>73</td>
+                                <td>74</td>
                                 
                                 <td>96</td>
                                 
                                 <td>Eda3</td>
                                 
-                                <td>所属無し</td>
+                                <td>わっしょい</td>
                                 
                                 <td>きゅあふれこ</td>
                                 
@@ -2929,7 +2949,7 @@
                             
                             <tr data-server="Eda4" data-guild="ぱてぃすりーず">
                                 
-                                <td>74</td>
+                                <td>75</td>
                                 
                                 <td>96</td>
                                 
@@ -2941,9 +2961,23 @@
                                 
                             </tr>
                             
+                            <tr data-server="Eda2" data-guild="5secret">
+                                
+                                <td>76</td>
+                                
+                                <td>96</td>
+                                
+                                <td>Eda2</td>
+                                
+                                <td>5secret</td>
+                                
+                                <td>ももちん</td>
+                                
+                            </tr>
+                            
                             <tr data-server="Eda3" data-guild="わっしょい">
                                 
-                                <td>75</td>
+                                <td>77</td>
                                 
                                 <td>96</td>
                                 
@@ -2955,51 +2989,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="所属無し">
-                                
-                                <td>76</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Eda3</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>魔法少女りりぃ</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Eda3" data-guild="所属無し">
-                                
-                                <td>77</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Eda3</td>
-                                
-                                <td>所属無し</td>
-                                
-                                <td>chisama</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Eda2" data-guild="Lien">
-                                
-                                <td>78</td>
-                                
-                                <td>96</td>
-                                
-                                <td>Eda2</td>
-                                
-                                <td>Lien</td>
-                                
-                                <td>お嬢ですがなにか</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Eda3" data-guild="わっしょい">
                                 
-                                <td>79</td>
+                                <td>78</td>
                                 
                                 <td>96</td>
                                 
@@ -3007,27 +2999,27 @@
                                 
                                 <td>わっしょい</td>
                                 
-                                <td>魔法少女ゴリラ</td>
+                                <td>魔法少女りりぃ</td>
                                 
                             </tr>
                             
-                            <tr data-server="Eda3" data-guild="所属無し">
+                            <tr data-server="Eda3" data-guild="ウウイング">
                                 
-                                <td>80</td>
+                                <td>79</td>
                                 
                                 <td>96</td>
                                 
                                 <td>Eda3</td>
                                 
-                                <td>所属無し</td>
+                                <td>ウウイング</td>
                                 
-                                <td>魔法少女丼</td>
+                                <td>chisama</td>
                                 
                             </tr>
                             
                             <tr data-server="Eda3" data-guild="M2O">
                                 
-                                <td>81</td>
+                                <td>80</td>
                                 
                                 <td>96</td>
                                 
@@ -3036,6 +3028,20 @@
                                 <td>M2O</td>
                                 
                                 <td>シンデレラバスト</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda3" data-guild="わっしょい">
+                                
+                                <td>81</td>
+                                
+                                <td>96</td>
+                                
+                                <td>Eda3</td>
+                                
+                                <td>わっしょい</td>
+                                
+                                <td>魔法少女丼</td>
                                 
                             </tr>
                             
@@ -3081,17 +3087,17 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda2" data-guild="5secret">
+                            <tr data-server="Eda4" data-guild="なみだふくよ">
                                 
                                 <td>85</td>
                                 
                                 <td>96</td>
                                 
-                                <td>Eda2</td>
+                                <td>Eda4</td>
                                 
-                                <td>5secret</td>
+                                <td>なみだふくよ</td>
                                 
-                                <td>ももちん</td>
+                                <td>美酒詠流天</td>
                                 
                             </tr>
                             
@@ -3109,37 +3115,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda4" data-guild="なみだふくよ">
-                                
-                                <td>87</td>
-                                
-                                <td>95</td>
-                                
-                                <td>Eda4</td>
-                                
-                                <td>なみだふくよ</td>
-                                
-                                <td>美酒詠流天</td>
-                                
-                            </tr>
-                            
-                            <tr data-server="Eda4" data-guild="なみだふくよ">
-                                
-                                <td>88</td>
-                                
-                                <td>95</td>
-                                
-                                <td>Eda4</td>
-                                
-                                <td>なみだふくよ</td>
-                                
-                                <td>堕賭苦一</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Eda4" data-guild="ぱてぃすりーず">
                                 
-                                <td>89</td>
+                                <td>87</td>
                                 
                                 <td>95</td>
                                 
@@ -3153,7 +3131,7 @@
                             
                             <tr data-server="Eda4" data-guild="ぱてぃすりーず">
                                 
-                                <td>90</td>
+                                <td>88</td>
                                 
                                 <td>95</td>
                                 
@@ -3167,7 +3145,7 @@
                             
                             <tr data-server="Eda4" data-guild="なみだふくよ">
                                 
-                                <td>91</td>
+                                <td>89</td>
                                 
                                 <td>95</td>
                                 
@@ -3181,7 +3159,7 @@
                             
                             <tr data-server="Eda3" data-guild="M2O">
                                 
-                                <td>92</td>
+                                <td>90</td>
                                 
                                 <td>95</td>
                                 
@@ -3190,6 +3168,34 @@
                                 <td>M2O</td>
                                 
                                 <td>超あるふred</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda2" data-guild="Lien">
+                                
+                                <td>91</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Eda2</td>
+                                
+                                <td>Lien</td>
+                                
+                                <td>お嬢ですがなにか</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda4" data-guild="すうぃーてぃす">
+                                
+                                <td>92</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Eda4</td>
+                                
+                                <td>すうぃーてぃす</td>
+                                
+                                <td>まいる</td>
                                 
                             </tr>
                             
@@ -3207,23 +3213,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda4" data-guild="すうぃーてぃす">
-                                
-                                <td>94</td>
-                                
-                                <td>95</td>
-                                
-                                <td>Eda4</td>
-                                
-                                <td>すうぃーてぃす</td>
-                                
-                                <td>まいる</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Eda4" data-guild="なみだふくよ">
                                 
-                                <td>95</td>
+                                <td>94</td>
                                 
                                 <td>95</td>
                                 
@@ -3232,6 +3224,20 @@
                                 <td>なみだふくよ</td>
                                 
                                 <td>星桃丸</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda2" data-guild="れくいえむ">
+                                
+                                <td>95</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Eda2</td>
+                                
+                                <td>れくいえむ</td>
+                                
+                                <td>あおたろ</td>
                                 
                             </tr>
                             
@@ -3263,23 +3269,9 @@
                                 
                             </tr>
                             
-                            <tr data-server="Eda2" data-guild="れくいえむ">
-                                
-                                <td>98</td>
-                                
-                                <td>95</td>
-                                
-                                <td>Eda2</td>
-                                
-                                <td>れくいえむ</td>
-                                
-                                <td>あおたろ</td>
-                                
-                            </tr>
-                            
                             <tr data-server="Eda4" data-guild="ぱてぃすりーず">
                                 
-                                <td>99</td>
+                                <td>98</td>
                                 
                                 <td>95</td>
                                 
@@ -3288,6 +3280,20 @@
                                 <td>ぱてぃすりーず</td>
                                 
                                 <td>徘徊する生ゴミ</td>
+                                
+                            </tr>
+                            
+                            <tr data-server="Eda3" data-guild="ぴよぴよ団">
+                                
+                                <td>99</td>
+                                
+                                <td>95</td>
+                                
+                                <td>Eda3</td>
+                                
+                                <td>ぴよぴよ団</td>
+                                
+                                <td>Momonga</td>
                                 
                             </tr>
                             
