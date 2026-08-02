@@ -75,7 +75,7 @@
     <body>
         <h1 class="break-keep">サーバー別 <wbr />Top100ランキング サマリー</h1>
         <div id="content-wrapper">
-        <p><a href="./ranking.html">>>ランキング</a><br>更新日: 2026/08/01</p>
+        <p><a href="./ranking.html">>>ランキング</a><br>更新日: 2026/08/02</p>
         
         <h2 style="margin-top:40px;background-color:rgb(64,64,64);color:white;padding:4px;">Virba</h2>
         
@@ -105,7 +105,7 @@
                 <li>所属無し: 0名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Virba2</li>
                     <li>Oblivion: 28名</li>
-                    <li>Abyss: 5名</li>
+                    <li>Abyss: 6名</li>
                 <li>所属無し: 2名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Virba3</li>
                     <li>月花町の安らげ荘: 5名</li>
@@ -114,7 +114,7 @@
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Virba4</li>
                     <li>朧桜: 15名</li>
                     <li>血盟騎士団: 1名</li>
-                    <li>Harmony: 18名</li>
+                    <li>Harmony: 17名</li>
                     <li>猫と愉快な仲間: 6名</li>
                     <li>HOALOHA: 1名</li>
                     <li>月華: 2名</li>
@@ -126,8 +126,8 @@
             var virbaLineChart = new Chart(ctxLine, {
                 type: 'line',
                 data: {
-                    labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]),
-                    datasets: [{"label": "Virba1", "data": [9, 28, 37, 43, 45, 47, 52, 61, 65, 66, 73, 85, 86, 98], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Virba2", "data": [1, 2, 3, 4, 7, 8, 10, 12, 14, 17, 19, 20, 21, 22, 23, 33, 38, 39, 44, 46, 49, 54, 55, 59, 62, 63, 67, 68, 75, 76, 81, 83, 90, 92, 94], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Virba3", "data": [11, 13, 15, 32, 57, 82, 89], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Virba4", "data": [5, 6, 16, 18, 24, 25, 26, 27, 29, 30, 31, 34, 35, 36, 40, 41, 42, 48, 50, 51, 53, 56, 58, 60, 64, 69, 70, 71, 72, 74, 77, 78, 79, 80, 84, 87, 88, 91, 93, 95, 96, 97, 99, 100], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
+                    labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43]),
+                    datasets: [{"label": "Virba1", "data": [9, 28, 35, 42, 44, 53, 56, 61, 62, 71, 74, 86, 87, 96], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Virba2", "data": [1, 2, 3, 4, 7, 8, 10, 11, 16, 18, 19, 20, 21, 22, 23, 36, 37, 40, 43, 50, 51, 55, 59, 60, 64, 65, 72, 73, 75, 79, 82, 85, 90, 94, 95, 98], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Virba3", "data": [12, 13, 14, 31, 48, 81, 92], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Virba4", "data": [5, 6, 15, 17, 24, 25, 26, 27, 29, 30, 32, 33, 34, 38, 39, 41, 45, 46, 47, 49, 52, 54, 57, 58, 63, 66, 67, 68, 69, 70, 76, 77, 78, 80, 83, 84, 88, 89, 91, 93, 97, 99, 100], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
                 },
                 options: {
                     responsive: true,
@@ -139,7 +139,7 @@
                                 text: '人数'
                             },
                             min: 1,
-                            max: 44
+                            max: 43
                         },
                         y: {
                             title: {
@@ -152,7 +152,7 @@
                         },
                         y2: {
                             type: 'category',
-                            labels: [100, 98, 98, 98, 98, 98, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95],
+                            labels: [100, 98, 98, 98, 98, 98, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95],
                             position: 'right',
                             grid: {
                                 drawOnChartArea: false
@@ -190,7 +190,7 @@
                             text: 'Virbaサーバー別分布'
                         },
                         annotation: {
-                            annotations: [{"type": "line", "yMin": 1.5, "yMax": 1.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 99", "position": "end"}}, {"type": "line", "yMin": 6.5, "yMax": 6.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 98", "position": "end"}}, {"type": "line", "yMin": 17.5, "yMax": 17.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 97", "position": "end"}}, {"type": "line", "yMin": 41.5, "yMax": 41.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 96", "position": "end"}}]
+                            annotations: [{"type": "line", "yMin": 1.5, "yMax": 1.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 99", "position": "end"}}, {"type": "line", "yMin": 6.5, "yMax": 6.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 98", "position": "end"}}, {"type": "line", "yMin": 19.5, "yMax": 19.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 97", "position": "end"}}, {"type": "line", "yMin": 41.5, "yMax": 41.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 96", "position": "end"}}]
                         }
                     }
                 }
@@ -199,7 +199,7 @@
             var ctxPie = document.getElementById('virbaChart').getContext('2d');
             var virbaChart = new Chart(ctxPie, {
                 type: 'pie',
-                data: {"labels": ["Virba1", "Virba2", "Virba3", "Virba4"], "datasets": [{"data": [14, 35, 7, 44], "backgroundColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderWidth": 0}]},
+                data: {"labels": ["Virba1", "Virba2", "Virba3", "Virba4"], "datasets": [{"data": [14, 36, 7, 43], "backgroundColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderWidth": 0}]},
                 options: {
                     responsive: true,
                     maintainAspectRatio: true,
@@ -235,7 +235,7 @@
         <h3>Top5</h3>
         <table style="text-align:left;margin-bottom:20px;margin-left:10px;">
             <tr><th style="padding-right:8px;">順位</th> <th style="padding-right:8px;">レベル</th> <th style="padding-right:8px;">サーバー</th> <th style="padding-right:8px;">ギルド</th> <th>プレイヤー</th> </tr>
-            <tr><td style="padding-right:8px;">1.</td> <td style="padding-right:8px;">101</td> <td style="padding-right:8px;">Eda3</td> <td style="padding-right:8px;">わっしょい</td> <td>きゅあじい</td> </tr><tr><td style="padding-right:8px;">2.</td> <td style="padding-right:8px;">101</td> <td style="padding-right:8px;">Eda3</td> <td style="padding-right:8px;">わっしょい</td> <td>魔法少女かおる一</td> </tr><tr><td style="padding-right:8px;">3.</td> <td style="padding-right:8px;">100</td> <td style="padding-right:8px;">Eda3</td> <td style="padding-right:8px;">わっしょい</td> <td>魔法少女首領閣下</td> </tr><tr><td style="padding-right:8px;">4.</td> <td style="padding-right:8px;">99</td> <td style="padding-right:8px;">Eda4</td> <td style="padding-right:8px;">すうぃーてぃす</td> <td>激辛Sugar</td> </tr><tr><td style="padding-right:8px;">5.</td> <td style="padding-right:8px;">99</td> <td style="padding-right:8px;">Eda3</td> <td style="padding-right:8px;">M2O</td> <td>だいきん</td> </tr></table>
+            <tr><td style="padding-right:8px;">1.</td> <td style="padding-right:8px;">101</td> <td style="padding-right:8px;">Eda3</td> <td style="padding-right:8px;">わっしょい</td> <td>きゅあじい</td> </tr><tr><td style="padding-right:8px;">2.</td> <td style="padding-right:8px;">101</td> <td style="padding-right:8px;">Eda3</td> <td style="padding-right:8px;">わっしょい</td> <td>魔法少女かおる一</td> </tr><tr><td style="padding-right:8px;">3.</td> <td style="padding-right:8px;">100</td> <td style="padding-right:8px;">Eda3</td> <td style="padding-right:8px;">わっしょい</td> <td>魔法少女首領閣下</td> </tr><tr><td style="padding-right:8px;">4.</td> <td style="padding-right:8px;">99</td> <td style="padding-right:8px;">Eda4</td> <td style="padding-right:8px;">ぱてぃすりーず</td> <td>激辛Sugar</td> </tr><tr><td style="padding-right:8px;">5.</td> <td style="padding-right:8px;">99</td> <td style="padding-right:8px;">Eda3</td> <td style="padding-right:8px;">M2O</td> <td>だいきん</td> </tr></table>
         <h3>サーバー比較</h3>
         <p>※凡例クリックで表示・非表示を切り替えられます</p>
         <div class="chart-container">
@@ -253,38 +253,37 @@
         <div class="list-container">
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Eda1</li>
                     <li>ミーティス: 1名</li>
-                    <li>Pecos: 1名</li>
-                <li>所属無し: 0名</li></ul>
+                <li>所属無し: 1名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Eda2</li>
                     <li>5secret: 6名</li>
-                    <li>Lien: 2名</li>
+                    <li>Lien: 1名</li>
                     <li>れくいえむ: 1名</li>
                     <li>猫部屋: 1名</li>
                 <li>所属無し: 0名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Eda3</li>
-                    <li>わっしょい: 24名</li>
-                    <li>M2O: 8名</li>
+                    <li>わっしょい: 25名</li>
+                    <li>M2O: 10名</li>
                     <li>森のハチミツ商会: 2名</li>
                     <li>どっこいしょ: 2名</li>
                     <li>ぴよぴよ団: 1名</li>
                 <li>所属無し: 0名</li></ul>
 <ul style="margin-bottom:20px"><li style='font-size: 15px;font-weight: bold;'>Eda4</li>
-                    <li>すうぃーてぃす: 4名</li>
-                    <li>なみだふくよ: 10名</li>
-                    <li>ぱてぃすりーず: 17名</li>
+                    <li>ぱてぃすりーず: 10名</li>
+                    <li>なみだふくよ: 22名</li>
                     <li>エス: 2名</li>
+                    <li>インターセプター: 5名</li>
                     <li>一念通天: 1名</li>
                     <li>なみだしてんし: 1名</li>
                     <li>慰安旅行に行こう: 1名</li>
-                <li>所属無し: 15名</li></ul>
+                <li>所属無し: 7名</li></ul>
 
         <script>
             var ctxLine = document.getElementById('edaLineChart').getContext('2d');
             var edaLineChart = new Chart(ctxLine, {
                 type: 'line',
                 data: {
-                    labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51]),
-                    datasets: [{"label": "Eda1", "data": [72, 98], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Eda2", "data": [20, 31, 34, 44, 48, 59, 80, 82, 83, 94], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Eda3", "data": [1, 2, 3, 5, 6, 7, 12, 15, 19, 23, 24, 27, 29, 36, 40, 43, 45, 47, 53, 54, 55, 60, 61, 62, 63, 65, 66, 67, 70, 71, 76, 79, 81, 92, 96, 97, 100], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Eda4", "data": [4, 8, 9, 10, 11, 13, 14, 16, 17, 18, 21, 22, 25, 26, 28, 30, 32, 33, 35, 37, 38, 39, 41, 42, 46, 49, 50, 51, 52, 56, 57, 58, 64, 68, 69, 73, 74, 75, 77, 78, 84, 85, 86, 87, 88, 89, 90, 91, 93, 95, 99], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
+                    labels: Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]),
+                    datasets: [{"label": "Eda1", "data": [74, 88], "fill": false, "borderColor": "rgba(205, 92, 92, 1)", "tension": 0.1}, {"label": "Eda2", "data": [20, 32, 34, 45, 60, 61, 84, 85, 98], "fill": false, "borderColor": "rgba(255, 140, 0, 1)", "tension": 0.1}, {"label": "Eda3", "data": [1, 2, 3, 5, 6, 7, 12, 15, 19, 23, 24, 26, 29, 37, 39, 44, 47, 48, 52, 53, 54, 55, 59, 62, 63, 65, 66, 67, 70, 72, 75, 78, 80, 82, 83, 93, 94, 97, 99, 100], "fill": false, "borderColor": "rgba(154, 205, 50, 1)", "tension": 0.1}, {"label": "Eda4", "data": [4, 8, 9, 10, 11, 13, 14, 16, 17, 18, 21, 22, 25, 27, 28, 30, 31, 33, 35, 36, 38, 40, 41, 42, 43, 46, 49, 50, 51, 56, 57, 58, 64, 68, 69, 71, 73, 76, 77, 79, 81, 86, 87, 89, 90, 91, 92, 95, 96], "fill": false, "borderColor": "rgba(30, 144, 255, 1)", "tension": 0.1}]
                 },
                 options: {
                     responsive: true,
@@ -296,7 +295,7 @@
                                 text: '人数'
                             },
                             min: 1,
-                            max: 51
+                            max: 49
                         },
                         y: {
                             title: {
@@ -309,7 +308,7 @@
                         },
                         y2: {
                             type: 'category',
-                            labels: [101, 101, 100, 99, 99, 99, 99, 99, 99, 98, 98, 98, 98, 98, 98, 98, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 95, 95],
+                            labels: [101, 101, 100, 99, 99, 99, 99, 99, 99, 98, 98, 98, 98, 98, 98, 98, 98, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 97, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96],
                             position: 'right',
                             grid: {
                                 drawOnChartArea: false
@@ -347,7 +346,7 @@
                             text: 'Edaサーバー別分布'
                         },
                         annotation: {
-                            annotations: [{"type": "line", "yMin": 2.5, "yMax": 2.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 101", "position": "end"}}, {"type": "line", "yMin": 3.5, "yMax": 3.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 100", "position": "end"}}, {"type": "line", "yMin": 9.5, "yMax": 9.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 99", "position": "end"}}, {"type": "line", "yMin": 16.5, "yMax": 16.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 98", "position": "end"}}, {"type": "line", "yMin": 39.5, "yMax": 39.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 97", "position": "end"}}, {"type": "line", "yMin": 98.5, "yMax": 98.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 96", "position": "end"}}]
+                            annotations: [{"type": "line", "yMin": 2.5, "yMax": 2.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 101", "position": "end"}}, {"type": "line", "yMin": 3.5, "yMax": 3.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 100", "position": "end"}}, {"type": "line", "yMin": 9.5, "yMax": 9.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 99", "position": "end"}}, {"type": "line", "yMin": 17.5, "yMax": 17.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 98", "position": "end"}}, {"type": "line", "yMin": 41.5, "yMax": 41.5, "borderColor": "rgba(0, 0, 0, 0.5)", "borderWidth": 2, "label": {"enabled": true, "content": "\u30ec\u30d9\u30eb 97", "position": "end"}}]
                         }
                     }
                 }
@@ -356,7 +355,7 @@
             var ctxPie = document.getElementById('edaChart').getContext('2d');
             var edaChart = new Chart(ctxPie, {
                 type: 'pie',
-                data: {"labels": ["Eda1", "Eda2", "Eda3", "Eda4"], "datasets": [{"data": [2, 10, 37, 51], "backgroundColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderWidth": 0}]},
+                data: {"labels": ["Eda1", "Eda2", "Eda3", "Eda4"], "datasets": [{"data": [2, 9, 40, 49], "backgroundColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderColor": ["rgba(205, 92, 92, 1)", "rgba(255, 140, 0, 1)", "rgba(154, 205, 50, 1)", "rgba(30, 144, 255, 1)", "rgba(218, 112, 214, 1)", "rgba(255, 159, 64, 1)"], "borderWidth": 0}]},
                 options: {
                     responsive: true,
                     maintainAspectRatio: true,
